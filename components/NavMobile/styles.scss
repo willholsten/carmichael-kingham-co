@@ -54,9 +54,10 @@
       margin: 10px 16px;
       border-radius: $border-radius;
       padding: 16px;
+      color: $darker-grey;
+      cursor: pointer;
 
       a {
-        color: $darker-grey;
         font-weight: $semi-bold;
       }
     }
@@ -109,5 +110,12 @@
       justify-content: center;
       align-items: center;
     }
+  }
+}
+
+:global {
+  .active {
+    color: $blue !important;
+    background-color: rgba($blue, 0.1) !important;
   }
 }

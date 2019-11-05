@@ -11,19 +11,24 @@
     li {
       display: flex;
       align-items: center;
-      padding: 5px 20px;
+      padding: 10px 20px;
+      color: $dark-grey;
 
       img {
         display: none;
-      }
-
-      a {
-        color: $dark-grey;
       }
     }
     :last-child {
       padding-right: 0;
       margin-right: 0;
     }
+  }
+}
+
+:global {
+  .active {
+    color: $blue !important;
+    background-color: rgba($blue, 0.1);
+    border-radius: $border-radius;
   }
 }
