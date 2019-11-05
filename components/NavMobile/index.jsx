@@ -65,12 +65,12 @@ export default function NavMobile() {
         <div className={styles.terms}>
           <Link href="/careers">Careers</Link>
           <span>
-            <Link href="/careers">Privacy & Cookies</Link>
-            <Link href="/careers"> | Ts&Cs</Link>
+            <Link href="/careers">Privacy &amp; Cookies</Link>
+            <Link href="/careers"> | Ts &amp; Cs</Link>
           </span>
         </div>
         <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()}. Carmichael Kingham & Co
+          &copy; {new Date().getFullYear()}. Carmichael Kingham &amp; Co
         </div>
       </div>
     </div>

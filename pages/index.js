@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 export default function Home() {
   return (
     <Layout
-      title="Carmichael Kingham & Co"
+      title="Carmichael Kingham &amp; Co"
       description="Insert page description"
       keywords="Insert keywords"
     >
