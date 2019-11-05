@@ -37,14 +37,42 @@ export default function NavMobile() {
       onClick={toggleDrawer(side, false)}
       onKeyDown={toggleDrawer(side, false)}
     >
-      <div className={styles.NavMobile_header}>
-        <Link href="/">
-          <img className={styles.logo} src="/svg/logo-web.svg" />
-        </Link>
-        <i class="fab fa-linkedin"></i>
+      <div>
+        <div className={styles.header}>
+          <Link href="/">
+            <img className={styles.logo} src="/svg/logo-web.svg" />
+          </Link>
+          <i class="fab fa-linkedin"></i>
+        </div>
+        <NavList />
+        <div className={styles.contact}>
+          <Link href="/">
+            <div className={styles.button_phone}>
+              <i class="fas fa-phone"></i>
+              Phone
+            </div>
+          </Link>
+          <Link href="/">
+            <div className={styles.button_email}>
+              <i class="fas fa-envelope"></i>
+              Email
+            </div>
+          </Link>
+        </div>
       </div>
-      <NavList />
-      <Divider />
+      <div className={styles.footer}>
+        <Divider />
+        <div className={styles.terms}>
+          <Link href="/careers">Careers</Link>
+          <span>
+            <Link href="/careers">Privacy & Cookies</Link>
+            <Link href="/careers"> | Ts&Cs</Link>
+          </span>
+        </div>
+        <div className={styles.copyright}>
+          &copy; {new Date().getFullYear()}. Carmichael Kingham & Co
+        </div>
+      </div>
     </div>
   );
 
