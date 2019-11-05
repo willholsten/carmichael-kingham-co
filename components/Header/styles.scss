@@ -1,0 +1,46 @@
+.Header {
+  .header_snippet {
+    display: none;
+
+    @include screen-md {
+      display: block;
+      background-color: $blue;
+      height: 40px;
+    }
+
+    .snippet_container {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 40px;
+
+      div {
+        margin-left: 40px;
+        line-height: $line-height-small;
+
+        i {
+          color: $green;
+          margin-right: 15px;
+          font-size: $font-size-small;
+        }
+
+        a {
+          color: $white;
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+
+  .header_main {
+    background-color: $lightest-grey;
+    height: 65px;
+
+    .main_container {
+      height: 65px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

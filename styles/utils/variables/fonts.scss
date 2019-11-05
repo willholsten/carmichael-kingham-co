@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Constantia";
+  src: url("/public/fonts/Constantia.ttf");
+}
+
+$serif: "Constantia", serif;
+$sans-serif: "Source Sans Pro", Helvetica, Arial, sans-serif;
+
+$font-size-small: 12px;
+$font-size-normal: 14px;
+
+$line-height-small: 12px;
+$line-height-normal: 14px;
+
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 800;
+
+$border-radius: 10px;

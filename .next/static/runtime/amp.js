@@ -2364,7 +2364,7 @@ var _onDemandEntriesUtils = __webpack_require__(/*! ./on-demand-entries-utils */
 
 
 if (!window.EventSource) {
-  window.EventSource = _eventSourcePolyfill["default"];
+  window.EventSource = _eventSourcePolyfill.default;
 }
 
 var data = JSON.parse(document.getElementById('__NEXT_DATA__').textContent);
@@ -2397,7 +2397,7 @@ function tryApplyUpdates() {
 }
 
 function _tryApplyUpdates() {
-  _tryApplyUpdates = (0, _asyncToGenerator2["default"])(
+  _tryApplyUpdates = (0, _asyncToGenerator2.default)(
   /*#__PURE__*/
   _regeneratorRuntime.mark(function _callee() {
     var res, _data, curPage, pageUpdated;
@@ -2416,7 +2416,7 @@ function _tryApplyUpdates() {
           case 2:
             _context.prev = 2;
             _context.next = 5;
-            return (0, _unfetch["default"])("" + hotUpdatePath + curHash + ".hot-update.json");
+            return (0, _unfetch.default)("" + hotUpdatePath + curHash + ".hot-update.json");
 
           case 5:
             res = _context.sent;
@@ -2426,7 +2426,7 @@ function _tryApplyUpdates() {
           case 8:
             _data = _context.sent;
             curPage = page === '/' ? 'index' : page;
-            pageUpdated = (0, _keys["default"])(_data.c).some(function (mod) {
+            pageUpdated = (0, _keys.default)(_data.c).some(function (mod) {
               return mod.indexOf("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)) !== -1 || mod.indexOf(("pages" + (curPage.substr(0, 1) === '/' ? curPage : "/" + curPage)).replace(/\//g, '\\')) !== -1;
             });
 
@@ -2585,7 +2585,7 @@ function getEventSourceWrapper(options) {
 var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/helpers/interopRequireDefault */ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js");
 
 exports.__esModule = true;
-exports["default"] = void 0;
+exports.default = void 0;
 
 var _stringify = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js"));
 
@@ -2974,7 +2974,7 @@ function toLowerCase(name) {
 
 function HeadersPolyfill(all) {
   // Get headers: implemented according to mozilla's example code: https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/getAllResponseHeaders#Example
-  var map = (0, _create["default"])(null);
+  var map = (0, _create.default)(null);
   var array = all.split('\r\n');
 
   for (var i = 0; i < array.length; i += 1) {
@@ -3046,7 +3046,7 @@ FetchTransport.prototype.open = function (xhr, onStartCallback, onProgressCallba
   var signal = controller.signal; // see #120
 
   var textDecoder = new TextDecoder();
-  (0, _unfetch["default"])(url, {
+  (0, _unfetch.default)(url, {
     headers: headers,
     credentials: withCredentials ? 'include' : 'same-origin',
     signal: signal,
@@ -3057,7 +3057,7 @@ FetchTransport.prototype.open = function (xhr, onStartCallback, onProgressCallba
       controller.abort();
       reader.cancel();
     });
-    return new _promise["default"](function (resolve, reject) {
+    return new _promise.default(function (resolve, reject) {
       var readNextChunk = function readNextChunk() {
         reader.read().then(function (result) {
           if (result.done) {
@@ -3082,12 +3082,12 @@ FetchTransport.prototype.open = function (xhr, onStartCallback, onProgressCallba
     return result;
   }, function (error) {
     onFinishCallback();
-    return _promise["default"].reject(error);
+    return _promise.default.reject(error);
   });
 };
 
 function EventTarget() {
-  this._listeners = (0, _create["default"])(null);
+  this._listeners = (0, _create.default)(null);
 }
 
 function throwError(e) {
@@ -3175,7 +3175,7 @@ function MessageEvent(type, options) {
   this.lastEventId = options.lastEventId;
 }
 
-MessageEvent.prototype = (0, _create["default"])(Event.prototype);
+MessageEvent.prototype = (0, _create.default)(Event.prototype);
 
 function ConnectionEvent(type, options) {
   Event.call(this, type);
@@ -3184,7 +3184,7 @@ function ConnectionEvent(type, options) {
   this.headers = options.headers;
 }
 
-ConnectionEvent.prototype = (0, _create["default"])(Event.prototype);
+ConnectionEvent.prototype = (0, _create.default)(Event.prototype);
 var WAITING = -1;
 var CONNECTING = 0;
 var OPEN = 1;
@@ -3199,7 +3199,7 @@ var MINIMUM_DURATION = 1000;
 var MAXIMUM_DURATION = 18000000;
 
 var parseDuration = function parseDuration(value, def) {
-  var n = (0, _parseInt2["default"])(value, 10);
+  var n = (0, _parseInt2.default)(value, 10);
 
   if (n !== n) {
     n = def;
@@ -3234,7 +3234,7 @@ function EventSourcePolyfill(url, options) {
   start(this, url, options);
 }
 
-var isFetchSupported = _unfetch["default"] != undefined && Response != undefined && 'body' in Response.prototype;
+var isFetchSupported = _unfetch.default != undefined && Response != undefined && 'body' in Response.prototype;
 
 function start(es, url, options) {
   url = String(url);
@@ -3244,7 +3244,7 @@ function start(es, url, options) {
   var lastEventId = '';
   var retry = initialRetry;
   var wasActivity = false;
-  var headers = options != undefined && options.headers != undefined ? JSON.parse((0, _stringify["default"])(options.headers)) : undefined;
+  var headers = options != undefined && options.headers != undefined ? JSON.parse((0, _stringify.default)(options.headers)) : undefined;
   var CurrentTransport = options != undefined && options.Transport != undefined ? options.Transport : XMLHttpRequest;
   var xhr = isFetchSupported && !(options != undefined && options.Transport != undefined) ? undefined : new XHRWrapper(new CurrentTransport());
   var transport = xhr == undefined ? new FetchTransport() : new XHRTransport();
@@ -3511,7 +3511,7 @@ function start(es, url, options) {
   onTimeout();
 }
 
-EventSourcePolyfill.prototype = (0, _create["default"])(EventTarget.prototype);
+EventSourcePolyfill.prototype = (0, _create.default)(EventTarget.prototype);
 EventSourcePolyfill.prototype.CONNECTING = CONNECTING;
 EventSourcePolyfill.prototype.OPEN = OPEN;
 EventSourcePolyfill.prototype.CLOSED = CLOSED;
@@ -3525,7 +3525,7 @@ EventSourcePolyfill.OPEN = OPEN;
 EventSourcePolyfill.CLOSED = CLOSED;
 EventSourcePolyfill.prototype.withCredentials = undefined;
 var _default = EventSourcePolyfill;
-exports["default"] = _default;
+exports.default = _default;
 
 /***/ }),
 
@@ -3583,7 +3583,7 @@ function setupPing(assetPrefix, pathnameFn, retry) {
       if (payload.invalid) {
         // Payload can be invalid even if the page does not exist.
         // So, we need to make sure it exists before reloading.
-        (0, _unfetch["default"])(location.href, {
+        (0, _unfetch.default)(location.href, {
           credentials: 'same-origin'
         }).then(function (pageRes) {
           if (pageRes.status === 200) {

@@ -3466,7 +3466,7 @@ var _interopRequireDefault = __webpack_require__(/*! @babel/runtime-corejs2/help
 exports.__esModule = true;
 exports.Container = Container;
 exports.createUrl = createUrl;
-exports["default"] = void 0;
+exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
 
@@ -3487,7 +3487,7 @@ function appGetInitialProps(_x) {
 }
 
 function _appGetInitialProps() {
-  _appGetInitialProps = (0, _asyncToGenerator2["default"])(
+  _appGetInitialProps = (0, _asyncToGenerator2.default)(
   /*#__PURE__*/
   _regeneratorRuntime.mark(function _callee(_ref) {
     var Component, ctx, pageProps;
@@ -3542,16 +3542,16 @@ function (_react$default$Compon) {
           Component = _this$props.Component,
           pageProps = _this$props.pageProps;
       var url = createUrl(router);
-      return _react["default"].createElement(Component, (0, _extends2["default"])({}, pageProps, {
+      return _react.default.createElement(Component, (0, _extends2.default)({}, pageProps, {
         url: url
       }));
     }
   }]);
 
   return App;
-}(_react["default"].Component);
+}(_react.default.Component);
 
-exports["default"] = App;
+exports.default = App;
 App.origGetInitialProps = appGetInitialProps;
 App.getInitialProps = appGetInitialProps;
 var warnContainer;

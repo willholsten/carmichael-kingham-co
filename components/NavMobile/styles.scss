@@ -1,0 +1,63 @@
+.NavMobile {
+  display: block;
+
+  @include screen-md {
+    display: none;
+  }
+
+  .button_bars {
+    min-width: auto;
+
+    i {
+      color: $grey;
+      font-size: 20px;
+    }
+  }
+}
+
+.list {
+  background-color: $lightest-grey;
+  width: 320px;
+  height: 100%;
+  padding: 32px 0;
+
+  .NavMobile_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 16px;
+
+    .logo {
+      width: 120px;
+    }
+
+    i {
+      font-size: 32px;
+      color: $grey;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+
+    li {
+      background-color: $white;
+      display: flex;
+      align-items: center;
+      height: 70px;
+      margin: 10px 16px;
+      border-radius: $border-radius;
+      padding: 16px;
+
+      a {
+        color: $dark-grey;
+        font-weight: $semi-bold;
+      }
+    }
+    :last-child {
+      padding-right: 0;
+      margin-right: 0;
+    }
+  }
+}

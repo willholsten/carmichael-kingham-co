@@ -8,8 +8,22 @@
     "start": "next start"
   },
   "dependencies": {
+    "@material-ui/core": "^4.5.2",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "autoprefixer": "^9.7.1",
     "next": "9.1.2",
+    "node-sass": "^4.13.0",
+    "normalize.css": "^8.0.1",
+    "postcss": "^7.0.21",
+    "postcss-nested": "^4.1.2",
     "react": "16.11.0",
-    "react-dom": "16.11.0"
-  }
+    "react-dom": "16.11.0",
+    "sass-loader": "^8.0.0",
+    "sass-resources-loader": "^2.0.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%"
+  ]
 }
