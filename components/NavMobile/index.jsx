@@ -10,6 +10,7 @@ import Divider from "@material-ui/core/Divider";
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
+import ContactButtons from "../ContactButtons";
 
 export default function NavMobile() {
   const [state, setState] = React.useState({
@@ -45,20 +46,7 @@ export default function NavMobile() {
           <i className="fab fa-linkedin"></i>
         </div>
         <NavList />
-        <div className={styles.contact}>
-          <Link href="/">
-            <div className={styles.button_phone}>
-              <i className="fas fa-phone"></i>
-              <a>Phone</a>
-            </div>
-          </Link>
-          <Link href="/">
-            <div className={styles.button_email}>
-              <i className="fas fa-envelope"></i>
-              <a>Email</a>
-            </div>
-          </Link>
-        </div>
+        <ContactButtons />
       </div>
       <div className={styles.footer}>
         <Divider />

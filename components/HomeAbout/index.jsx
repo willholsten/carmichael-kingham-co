@@ -13,7 +13,7 @@ export default function HomeAbout() {
   return (
     <Container maxWidth="md">
       <div className={styles.HomeAbout}>
-        <SectionHeader text="About us" />
+        <SectionHeader text="About us" image="/svg/about-us.svg" />
         <p className={styles.text}>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

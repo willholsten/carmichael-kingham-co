@@ -1,0 +1,71 @@
+.Footer {
+  background-color: $footer-bg;
+
+  @include screen-md {
+    padding-top: 100px;
+  }
+
+  .FooterLinks {
+    display: none;
+    padding-bottom: 100px;
+
+    @include screen-md {
+      display: block;
+    }
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+
+    h4 {
+      color: $lightest-grey;
+    }
+
+    a {
+      padding: 5px 0;
+      color: $lightest-grey;
+    }
+
+    img {
+      height: 30px;
+    }
+    i {
+      font-size: 24px;
+      opacity: 0.7;
+    }
+  }
+
+  .contactButtons {
+    background-color: $footer-bg;
+
+    @include screen-md {
+      display: none;
+    }
+  }
+
+  .FooterSnippet {
+    background-color: darken($footer-bg, 10%);
+
+    > div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 48px;
+      color: $white;
+      font-size: $font-size-small;
+
+      @include screen-md {
+        justify-content: space-between;
+      }
+    }
+
+    .companyInfo {
+      display: none;
+
+      @include screen-md {
+        display: inline;
+      }
+    }
+  }
+}

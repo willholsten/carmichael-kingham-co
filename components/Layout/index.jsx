@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../Header";
-// import Footer from '../Footer';
+import Footer from "../Footer";
 
 export default class Layout extends React.Component {
   render(props) {
@@ -37,7 +37,7 @@ export default class Layout extends React.Component {
         </Head>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );

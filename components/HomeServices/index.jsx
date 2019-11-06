@@ -53,7 +53,7 @@ export default function HomeServices(props) {
   return (
     <Container maxWidth="md">
       <div className={styles.HomeServices}>
-        <SectionHeader text="Services" />
+        <SectionHeader text="Services" image="/svg/services.svg" />
         <Grid container spacing={3} className={styles.tileContainer}>
           {services.map(service => (
             <Grid key={service.title} item xs={12} sm={6}>

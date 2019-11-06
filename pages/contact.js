@@ -1,14 +1,22 @@
 import React from "react";
-import Layout from "../components/Layout";
 
-export default function OurPeople() {
+// Components
+import Layout from "../components/Layout";
+import SectionHeader from "../components/SectionHeader";
+
+// Resources
+import Container from "@material-ui/core/Container";
+
+export default function Contact() {
   return (
     <Layout
       title="Contact | Carmichael Kingham &amp; Co"
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <div>Contact</div>
+      <Container maxWidth="md">
+        <SectionHeader text="Contact" image="/svg/contact.svg" />
+      </Container>
     </Layout>
   );
 }

@@ -1,5 +1,11 @@
 import React from "react";
+
+// Components
 import Layout from "../components/Layout";
+import SectionHeader from "../components/SectionHeader";
+
+// Resources
+import Container from "@material-ui/core/Container";
 
 export default function AboutUs() {
   return (
@@ -8,7 +14,9 @@ export default function AboutUs() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <div>About us</div>
+      <Container maxWidth="md">
+        <SectionHeader text="About us" image="/svg/about-us.svg" />
+      </Container>
     </Layout>
   );
 }

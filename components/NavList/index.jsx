@@ -9,34 +9,44 @@ export default function NavList() {
   return (
     <ul className={styles.NavList}>
       <Link activeClassName="active" href="/about-us">
-        <li>
-          <img className={styles.NavMobile_icon} src="/svg/about-us.svg" />
-          <a>About Us</a>
-        </li>
+        <a>
+          <li>
+            <img className={styles.NavMobile_icon} src="/svg/about-us.svg" />
+            About Us
+          </li>
+        </a>
       </Link>
       <Link activeClassName="active" href="/our-people">
-        <li>
-          <img className={styles.NavMobile_icon} src="/svg/our-people.svg" />
-          <a>Our People</a>
-        </li>
+        <a>
+          <li>
+            <img className={styles.NavMobile_icon} src="/svg/our-people.svg" />
+            Our People
+          </li>
+        </a>
       </Link>
       <Link activeClassName="active" href="/services">
-        <li>
-          <img className={styles.NavMobile_icon} src="/svg/services.svg" />
-          <a>Services</a>
-        </li>
+        <a>
+          <li>
+            <img className={styles.NavMobile_icon} src="/svg/services.svg" />
+            Services
+          </li>
+        </a>
       </Link>
       <Link activeClassName="active" href="/blog">
-        <li>
-          <img className={styles.NavMobile_icon} src="/svg/blog.svg" />
-          <a>Blog</a>
-        </li>
+        <a>
+          <li>
+            <img className={styles.NavMobile_icon} src="/svg/blog.svg" />
+            Blog
+          </li>
+        </a>
       </Link>
       <Link activeClassName="active" href="/contact">
-        <li>
-          <img className={styles.NavMobile_icon} src="/svg/contact.svg" />
-          <a>Contact</a>
-        </li>
+        <a>
+          <li>
+            <img className={styles.NavMobile_icon} src="/svg/contact.svg" />
+            Contact
+          </li>
+        </a>
       </Link>
     </ul>
   );
