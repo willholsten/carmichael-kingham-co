@@ -20,10 +20,10 @@ export default function NavList() {
           Our People
         </a>
       </Link>
-      <Link activeClassName="active" href="/services">
+      <Link activeClassName="active" href="/expertise">
         <a>
           <img className={styles.NavMobile_icon} src="/svg/services.svg" />
-          Services
+          Expertise
         </a>
       </Link>
       <Link activeClassName="active" href="/blog">

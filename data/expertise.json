@@ -2,31 +2,31 @@
   {
     "title": "Bookkeeping",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    "href": "/about-us#bookkeeping"
+    "href": "/expertise#bookkeeping"
   },
   {
     "title": "Management & Financial Reporting",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    "href": "/about-us#management-financial-reporting"
+    "href": "/expertise#management-financial-reporting"
   },
   {
     "title": "VAT & Corporation Tax",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    "href": "/about-us#vat-corporation-tax"
+    "href": "/expertise#vat-corporation-tax"
   },
   {
     "title": "Budgeting & Forecasting",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    "href": "/about-us#budgeting-forecasting"
+    "href": "/expertise#budgeting-forecasting"
   },
   {
     "title": "Ad Hoc Projects & Analysis",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",
-    "href": "/about-us#ad-hoc-projects-analysis"
+    "href": "/expertise#ad-hoc-projects-analysis"
   },
   {
-    "title": "View all our services",
+    "title": "View all",
     "text": "",
-    "href": "/about-us"
+    "href": "/expertise"
   }
 ]

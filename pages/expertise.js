@@ -7,15 +7,15 @@ import SectionHeader from "../components/Common/SectionHeader";
 // Resources
 import Container from "@material-ui/core/Container";
 
-export default function Services() {
+export default function Expertise() {
   return (
     <Layout
-      title="Services | Carmichael Kingham &amp; Co"
+      title="Expertise | Carmichael Kingham &amp; Co"
       description="Insert page description"
       keywords="Insert keywords"
     >
       <Container maxWidth="md">
-        <SectionHeader text="Services" image="/svg/services.svg" />
+        <SectionHeader text="Expertise" image="/svg/services.svg" />
       </Container>
     </Layout>
   );
