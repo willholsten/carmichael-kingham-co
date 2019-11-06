@@ -1,0 +1,16 @@
+.SectionHeader {
+  margin-bottom: 30px;
+  h1 {
+    display: flex;
+    align-items: center;
+    &:before {
+      content: "";
+      float: left;
+      height: 50px;
+      width: 4px;
+      border-radius: 3px;
+      background-color: $green;
+      margin-right: 15px;
+    }
+  }
+}

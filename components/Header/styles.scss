@@ -1,4 +1,6 @@
 .Header {
+  margin-bottom: 50px;
+
   .header_snippet {
     display: none;
 
@@ -27,6 +29,9 @@
         a {
           color: $white;
           font-size: $font-size-small;
+        }
+        &:last-child {
+          margin-right: 20px;
         }
       }
     }

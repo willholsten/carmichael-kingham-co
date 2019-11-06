@@ -1,0 +1,19 @@
+.HomeBanner {
+  position: relative;
+  .banner {
+    max-width: 100%;
+    border-radius: $border-radius;
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h4 {
+      color: $dark-grey;
+      text-transform: uppercase;
+    }
+  }
+}

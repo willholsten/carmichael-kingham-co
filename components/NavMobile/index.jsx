@@ -42,20 +42,20 @@ export default function NavMobile() {
           <Link href="/">
             <img className={styles.logo} src="/svg/logo-web.svg" />
           </Link>
-          <i class="fab fa-linkedin"></i>
+          <i className="fab fa-linkedin"></i>
         </div>
         <NavList />
         <div className={styles.contact}>
           <Link href="/">
             <div className={styles.button_phone}>
-              <i class="fas fa-phone"></i>
-              Phone
+              <i className="fas fa-phone"></i>
+              <a>Phone</a>
             </div>
           </Link>
           <Link href="/">
             <div className={styles.button_email}>
-              <i class="fas fa-envelope"></i>
-              Email
+              <i className="fas fa-envelope"></i>
+              <a>Email</a>
             </div>
           </Link>
         </div>
@@ -82,7 +82,7 @@ export default function NavMobile() {
         className={styles.button_bars}
         onClick={toggleDrawer("right", true)}
       >
-        <i class="fas fa-bars"></i>
+        <i className="fas fa-bars"></i>
       </Button>
       <Drawer
         anchor="right"

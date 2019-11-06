@@ -5,7 +5,6 @@ import NavMobile from "../NavMobile";
 
 // Resources
 import Container from "@material-ui/core/Container";
-import Link from "next/link";
 
 // Styles
 import "../../styles/main.scss";
@@ -17,11 +16,11 @@ export default function Header() {
       <div className={styles.header_snippet}>
         <Container className={styles.snippet_container}>
           <div>
-            <i class="fas fa-phone"></i>
+            <i className="fas fa-phone"></i>
             <a href="">+44 (0) 20 3468 2472</a>
           </div>
           <div>
-            <i class="fas fa-envelope"></i>
+            <i className="fas fa-envelope"></i>
             <a href="mailto:info@carmichaelkingham.com">
               info@carmichaelkingham.com
             </a>
