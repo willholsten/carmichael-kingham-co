@@ -19,7 +19,7 @@ export default function TeamTile(props) {
             <a>
               <Paper className={styles.tile}>
                 <img className={styles.avatar} src={team.avatar} />
-                <div>
+                <div className={styles.text}>
                   <h2>{team.name}</h2>
                   <h4>{team.credentials}</h4>
                   <p>{team.bio}</p>

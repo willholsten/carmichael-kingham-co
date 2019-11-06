@@ -2,11 +2,14 @@ import Head from "next/head";
 import Header from "../Header";
 import Footer from "../Footer";
 
+// Styles
+import styles from "./styles.scss";
+
 export default class Layout extends React.Component {
   render(props) {
     const { children, title, description, keywords } = this.props;
     return (
-      <div>
+      <div className={styles.site}>
         <Head>
           <title key="MetaTitle">{title}</title>
           <meta charSet="utf-8" />
@@ -36,8 +39,9 @@ export default class Layout extends React.Component {
           />
         </Head>
         <Header />
-        {children}
+        <div className={styles.content}>{children}</div>
         <Footer />
+
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );

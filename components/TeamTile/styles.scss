@@ -12,16 +12,17 @@
         border-radius: 50%;
         width: 80px;
         height: 80px;
-        margin-right: 32px;
       }
+      .text {
+        margin-left: 32px;
+        h2,
+        h4 {
+          margin: 0 0 5px;
+        }
 
-      h2,
-      h4 {
-        margin: 0 0 5px;
-      }
-
-      p {
-        margin-bottom: 0;
+        p {
+          margin-bottom: 0;
+        }
       }
     }
   }
