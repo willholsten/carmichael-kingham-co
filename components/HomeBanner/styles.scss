@@ -1,10 +1,27 @@
 .HomeBanner {
   position: relative;
-  .banner {
+  .banner_web {
+    display: none;
+
+    @include screen-md {
+      display: block;
+      width: 100%;
+      max-width: 100%;
+      border-radius: $border-radius;
+    }
+  }
+  .banner_mobile {
+    display: block;
+    width: 100%;
     max-width: 100%;
     border-radius: $border-radius;
+
+    @include screen-md {
+      display: none;
+    }
   }
   .content {
+    width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;

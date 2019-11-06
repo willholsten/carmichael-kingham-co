@@ -54,12 +54,7 @@ export default function HomeServices(props) {
     <Container maxWidth="md">
       <div className={styles.HomeServices}>
         <SectionHeader text="Services" />
-        <Grid
-          container
-          justify="left"
-          spacing={3}
-          className={styles.tileContainer}
-        >
+        <Grid container spacing={3} className={styles.tileContainer}>
           {services.map(service => (
             <Grid key={service.title} item xs={12} sm={6}>
               <Link href={service.link}>
