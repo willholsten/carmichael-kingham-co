@@ -7,47 +7,37 @@ import styles from "./styles.scss";
 
 export default function NavList() {
   return (
-    <ul className={styles.NavList}>
+    <div className={styles.NavList}>
       <Link activeClassName="active" href="/about-us">
         <a>
-          <li>
-            <img className={styles.NavMobile_icon} src="/svg/about-us.svg" />
-            About Us
-          </li>
+          <img className={styles.NavMobile_icon} src="/svg/about-us.svg" />
+          About Us
         </a>
       </Link>
       <Link activeClassName="active" href="/our-people">
         <a>
-          <li>
-            <img className={styles.NavMobile_icon} src="/svg/our-people.svg" />
-            Our People
-          </li>
+          <img className={styles.NavMobile_icon} src="/svg/our-people.svg" />
+          Our People
         </a>
       </Link>
       <Link activeClassName="active" href="/services">
         <a>
-          <li>
-            <img className={styles.NavMobile_icon} src="/svg/services.svg" />
-            Services
-          </li>
+          <img className={styles.NavMobile_icon} src="/svg/services.svg" />
+          Services
         </a>
       </Link>
       <Link activeClassName="active" href="/blog">
         <a>
-          <li>
-            <img className={styles.NavMobile_icon} src="/svg/blog.svg" />
-            Blog
-          </li>
+          <img className={styles.NavMobile_icon} src="/svg/blog.svg" />
+          Blog
         </a>
       </Link>
       <Link activeClassName="active" href="/contact">
         <a>
-          <li>
-            <img className={styles.NavMobile_icon} src="/svg/contact.svg" />
-            Contact
-          </li>
+          <img className={styles.NavMobile_icon} src="/svg/contact.svg" />
+          Contact
         </a>
       </Link>
-    </ul>
+    </div>
   );
 }

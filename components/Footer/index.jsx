@@ -1,5 +1,5 @@
 // Comnponents
-import ContactButtons from "../ContactButtons";
+import ContactButtons from "../Common/ContactButtons";
 
 // Resources
 import Link from "next/link";
@@ -10,56 +10,12 @@ import Grid from "@material-ui/core/Grid";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-const site = [
-  {
-    label: "About Us",
-    href: "/about-us"
-  },
-  {
-    label: "Our People",
-    href: "/our-people"
-  },
-  {
-    label: "Services",
-    href: "/services"
-  },
-  {
-    label: "Blog",
-    href: "/blog"
-  },
-  {
-    label: "Contact",
-    href: "/contact"
-  }
-];
+// Data
+import site from "./../../data/site.json";
+import company from "./../../data/company.json";
+import partners from "./../../data/partners.json";
 
-const company = [
-  {
-    label: "Privacy & Cookies",
-    href: "/terms"
-  },
-  {
-    label: "Ts & Cs",
-    href: "/terms"
-  },
-  {
-    label: "Careers",
-    href: "/careers"
-  }
-];
-
-const partners = [
-  {
-    src: "/svg/xero.svg",
-    href: "/our-people"
-  },
-  {
-    src: "/svg/acca.svg",
-    href: "/our-people"
-  }
-];
-
-export default function Header() {
+export default function Footer() {
   return (
     <footer className={styles.Footer}>
       <Container maxWidth="md" className={styles.FooterLinks}>

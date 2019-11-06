@@ -2,7 +2,7 @@ import React from "react";
 
 // Components
 import Layout from "../components/Layout";
-import SectionHeader from "../components/SectionHeader";
+import SectionHeader from "../components/Common/SectionHeader";
 
 // Resources
 import Container from "@material-ui/core/Container";

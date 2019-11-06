@@ -2,9 +2,14 @@ import React from "react";
 
 // Components
 import Layout from "../components/Layout";
-import HomeAbout from "../components/HomeAbout";
 import HomeBanner from "../components/HomeBanner";
-import HomeServices from "../components/HomeServices";
+import SectionHeader from "../components/Common/SectionHeader";
+import AboutTile from "../components/AboutTile";
+import ExpertiseTile from "../components/ExpertiseTile";
+import TeamTile from "../components/TeamTile";
+
+// Resources
+import { Container } from "@material-ui/core";
 
 export default function Home() {
   return (
@@ -16,12 +21,20 @@ export default function Home() {
       <section>
         <HomeBanner />
       </section>
-      <section>
-        <HomeAbout />
-      </section>
-      <section>
-        <HomeServices />
-      </section>
+      <Container maxWidth="md">
+        <section>
+          <SectionHeader text="About us" image="/svg/about-us.svg" />
+          <AboutTile />
+        </section>
+        <section>
+          <SectionHeader text="Expertise" image="/svg/services.svg" />
+          <ExpertiseTile />
+        </section>
+        <section>
+          <SectionHeader text="Our people" image="/svg/our-people.svg" />
+          <TeamTile />
+        </section>
+      </Container>
     </Layout>
   );
 }

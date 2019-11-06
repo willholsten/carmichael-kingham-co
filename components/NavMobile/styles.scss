@@ -42,11 +42,11 @@
     }
   }
 
-  ul {
+  > div {
     display: flex;
     flex-direction: column;
 
-    li {
+    a {
       background-color: $white;
       display: flex;
       align-items: center;
@@ -73,6 +73,10 @@
 
       a {
         color: $dark-grey;
+        padding: 5px 0;
+        background-color: transparent;
+        height: auto;
+        margin: 0;
       }
     }
     .copyright {
@@ -89,7 +93,8 @@
 
 :global {
   .active {
-    color: $blue !important;
+    color: $dark-grey !important;
+    font-weight: $semi-bold;
     background-color: rgba($blue, 0.1) !important;
   }
 }

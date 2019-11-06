@@ -4,11 +4,11 @@
   @include screen-md {
     display: block;
   }
-  ul {
+  div {
     display: flex;
     flex-direction: row;
 
-    li {
+    a {
       display: flex;
       align-items: center;
       padding: 10px 20px;

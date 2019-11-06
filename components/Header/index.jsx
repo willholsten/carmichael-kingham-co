@@ -15,16 +15,14 @@ export default function Header() {
     <header className={styles.Header}>
       <div className={styles.header_snippet}>
         <Container className={styles.snippet_container}>
-          <div>
+          <a href="">
             <i className="fas fa-phone"></i>
-            <a href="">+44 (0) 20 3468 2472</a>
-          </div>
-          <div>
+            +44 (0) 20 3468 2472
+          </a>
+          <a href="mailto:info@carmichaelkingham.com">
             <i className="fas fa-envelope"></i>
-            <a href="mailto:info@carmichaelkingham.com">
-              info@carmichaelkingham.com
-            </a>
-          </div>
+            info@carmichaelkingham.com
+          </a>
         </Container>
       </div>
       <div className={styles.header_main}>

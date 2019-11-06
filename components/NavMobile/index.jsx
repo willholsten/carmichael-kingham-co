@@ -1,5 +1,6 @@
 // Components
 import NavList from "../NavList";
+import ContactButtons from "../Common/ContactButtons";
 
 // Resources
 import Link from "next/link";
@@ -10,7 +11,6 @@ import Divider from "@material-ui/core/Divider";
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
-import ContactButtons from "../ContactButtons";
 
 export default function NavMobile() {
   const [state, setState] = React.useState({
@@ -51,11 +51,12 @@ export default function NavMobile() {
       <div className={styles.footer}>
         <Divider />
         <div className={styles.terms}>
-          <Link href="/careers">Careers</Link>
-          <span>
-            <Link href="/careers">Privacy &amp; Cookies</Link>
-            <Link href="/careers"> | Ts &amp; Cs</Link>
-          </span>
+          <Link href="/careers">
+            <a>Careers</a>
+          </Link>
+          <Link href="/careers">
+            <a>Privacy Policy</a>
+          </Link>
         </div>
         <div className={styles.copyright}>
           &copy; {new Date().getFullYear()}. Carmichael Kingham &amp; Co

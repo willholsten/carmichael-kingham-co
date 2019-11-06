@@ -29,6 +29,18 @@ h1 {
   }
 }
 
+h2 {
+  font-family: $serif;
+  color: $text;
+  font-weight: $regular;
+  font-size: 16px;
+  margin: 0;
+
+  @include screen-md {
+    font-size: 20px;
+  }
+}
+
 h4 {
   color: $text;
   letter-spacing: $letter-spacing-small;

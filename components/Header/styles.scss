@@ -16,22 +16,16 @@
       align-items: center;
       height: 40px;
 
-      div {
-        margin-left: 40px;
-        line-height: $line-height-small;
-
+      a {
+        color: $white;
+        font-size: $font-size-small;
         i {
           color: $green;
           margin-right: 15px;
           font-size: $font-size-small;
         }
-
-        a {
-          color: $white;
-          font-size: $font-size-small;
-        }
         &:last-child {
-          margin-right: 20px;
+          margin: 0 20px;
         }
       }
     }
