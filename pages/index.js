@@ -2,11 +2,12 @@ import React from "react";
 
 // Components
 import Layout from "../components/Layout";
-import HomeBanner from "../components/HomeBanner";
-import SectionHeader from "../components/Common/SectionHeader";
-import AboutTile from "../components/AboutTile";
-import ExpertiseTile from "../components/ExpertiseTile";
-import TeamTile from "../components/TeamTile";
+// import HomeBanner from "../components/HomeBanner";
+// import SectionHeader from "../components/Common/SectionHeader";
+// import AboutTile from "../components/AboutTile";
+// import ExpertiseTile from "../components/ExpertiseTile";
+// import TeamTile from "../components/TeamTile";
+import ComingSoon from "../components/ComingSoon";
 
 // Resources
 import { Container } from "@material-ui/core";
@@ -18,11 +19,11 @@ export default function Home() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <section>
+      {/* <section>
         <HomeBanner />
-      </section>
+      </section> */}
       <Container maxWidth="md">
-        <section>
+        {/* <section>
           <SectionHeader text="About us" image="/svg/about-us.svg" />
           <AboutTile />
         </section>
@@ -33,7 +34,8 @@ export default function Home() {
         <section>
           <SectionHeader text="Our people" image="/svg/our-people.svg" />
           <TeamTile />
-        </section>
+        </section> */}
+        <ComingSoon />
       </Container>
     </Layout>
   );

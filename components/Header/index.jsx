@@ -28,8 +28,8 @@ export default function Header() {
       <div className={styles.header_main}>
         <Container className={styles.main_container}>
           <Logo />
-          <Nav />
-          <NavMobile />
+          {/* <Nav /> */}
+          {/* <NavMobile /> */}
         </Container>
       </div>
     </header>

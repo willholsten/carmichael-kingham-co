@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "../Header";
-import Footer from "../Footer";
+// import Footer from "../Footer";
 
 // Styles
 import styles from "./styles.scss";
@@ -40,7 +40,7 @@ export default class Layout extends React.Component {
         </Head>
         <Header />
         <div className={styles.content}>{children}</div>
-        <Footer />
+        {/* <Footer /> */}
 
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
