@@ -1,3 +1,5 @@
+const webpack = require("webpack");
+require("dotenv").config();
 const withSass = require("@zeit/next-sass");
 const resourcesLoader = {
   loader: "sass-resources-loader",
@@ -18,6 +20,13 @@ module.exports = withSass({
     localIdentName: "[name]__[local]___[hash:base64:5]"
   },
   webpack: (config, options) => {
+    const env = Object.keys(process.env).reduce((acc, curr) => {
+      acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
+      return acc;
+    }, {});
+
+    config.plugins.push(new webpack.DefinePlugin(env));
+
     config.module.rules.map(rule => {
       if (
         rule.test.source.includes("scss") ||
