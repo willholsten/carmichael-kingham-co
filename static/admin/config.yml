@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: master
+  site_domain: dev.carmichaelkingham.co.uk
 media_folder: static/img
 collections:
   - name: "pages"
