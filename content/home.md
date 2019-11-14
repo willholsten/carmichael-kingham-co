@@ -21,7 +21,7 @@ team:
     image: "annabelle.jpg"
     link: "/our-people#annabelle-carmichael"
   - name: "Alasdair Kingham"
-    credentials: "credentials"
+    credentials: "Credentials"
     image: "alasdair.jpg"
     link: "/our-people#alasdair-kingham"
 ---
