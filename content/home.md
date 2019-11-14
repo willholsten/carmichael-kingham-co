@@ -17,11 +17,11 @@ aboutText:
 annabelleBio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 team:
   - name: "Annabelle Carmichael"
-    credentials: "Credentials"
+    credentials: "credentials"
     image: "annabelle.jpg"
     link: "/our-people#annabelle-carmichael"
   - name: "Alasdair Kingham"
-    credentials: "Credentials"
+    credentials: "credentials"
     image: "alasdair.jpg"
     link: "/our-people#alasdair-kingham"
 ---
