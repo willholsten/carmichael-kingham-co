@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: master
+  branch: dev
   site_domain: dev.carmichaelkingham.co.uk
 media_folder: static/img
 collections:
