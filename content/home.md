@@ -1,15 +1,29 @@
 ---
-title: Awesome kitties
-date: 2019-03-17T19:31:20.591Z
-cats:
-  - description: "Maru is a Scottish Fold from Japan, and he loves boxes."
-    name: Maru (まる)
-  - description: Lil Bub is an American celebrity cat known for her unique appearance.
-    name: Lil Bub
-  - description: "Grumpy cat is an American celebrity cat known for her grumpy appearance. "
-    name: Grumpy cat (Tardar Sauce)
+bannerText: Awesome kitties
+aboutText:
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+  commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+  occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+  mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur
+  adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+  magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+  laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+  pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+  qui officia deserunt mollit anim id est laborum.
+annabelleBio: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+team:
+  - name: "Annabelle Carmichael"
+    credentials: "Credentials"
+    image: "annabelle.jpg"
+    link: "/our-people#annabelle-carmichael"
+  - name: "Alasdair Kingham"
+    credentials: "credentials"
+    image: "alasdair.jpg"
+    link: "/our-people#alasdair-kingham"
 ---
 
-Welcome to my awesome page about cats of the internet.
-
-This page is built with NextJS, and content is managed in Netlify CMS
+Homepage
