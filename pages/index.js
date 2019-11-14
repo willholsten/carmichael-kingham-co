@@ -11,19 +11,12 @@ import TeamTile from "../components/TeamTile";
 // Resources
 import { Container } from "@material-ui/core";
 
-// Data
-import content from "../content/home.md";
-
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
   }
 
   render() {
-    let {
-      html,
-      attributes: { title, cats }
-    } = content;
     return (
       <Layout
         title="Carmichael Kingham &amp; Co"
@@ -32,7 +25,6 @@ export default class Home extends React.Component {
       >
         <section>
           <HomeBanner />
-          <h1>{title}</h1>
         </section>
         <Container maxWidth="md">
           <section>
