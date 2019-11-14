@@ -26,6 +26,10 @@ module.exports = withSass({
         rule.use.push(resourcesLoader);
       }
     });
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "frontmatter-markdown-loader"
+    });
     return config;
   }
 });
