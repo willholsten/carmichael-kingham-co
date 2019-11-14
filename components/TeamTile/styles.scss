@@ -1,6 +1,7 @@
 .TeamTile {
   a {
     > .tile {
+      @include tile;
       display: flex;
       flex-direction: row;
       align-items: center;

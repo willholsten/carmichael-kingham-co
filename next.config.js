@@ -1,5 +1,6 @@
-const webpack = require("webpack");
 require("dotenv").config();
+
+const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
 const resourcesLoader = {
   loader: "sass-resources-loader",
@@ -34,6 +35,10 @@ module.exports = withSass({
       ) {
         rule.use.push(resourcesLoader);
       }
+    });
+    config.module.rules.push({
+      test: /\.md$/,
+      use: "frontmatter-markdown-loader"
     });
     return config;
   }

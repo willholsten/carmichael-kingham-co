@@ -1,6 +1,7 @@
-/node_modules
-/out
-/.next
+.next/
+node_modules/
+/npm-debug.log
 .DS_Store
+out/
 .vscode
 .env

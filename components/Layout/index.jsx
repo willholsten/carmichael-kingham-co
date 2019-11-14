@@ -28,11 +28,7 @@ export default class Layout extends React.Component {
             content={description}
           />
           <meta key="MetaKeywords" name="keywords" content={keywords} />
-          <link
-            rel="shortcut icon"
-            type="image/x-icon"
-            href="/static/favicon.ico"
-          />
+          <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
@@ -41,7 +37,6 @@ export default class Layout extends React.Component {
         <Header />
         <div className={styles.content}>{children}</div>
         <Footer />
-
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );

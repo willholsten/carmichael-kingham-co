@@ -15,10 +15,12 @@ export default function AboutUs() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <Container maxWidth="md">
-        <SectionHeader text="About us" image="/svg/about-us.svg" />
-        <About />
-      </Container>
+      <section>
+        <Container maxWidth="md">
+          <SectionHeader text="About us" image="/svg/about-us.svg" />
+          <About />
+        </Container>
+      </section>
     </Layout>
   );
 }
