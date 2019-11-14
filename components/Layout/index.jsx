@@ -37,6 +37,7 @@ export default class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
           />
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
         <Header />
         <div className={styles.content}>{children}</div>
