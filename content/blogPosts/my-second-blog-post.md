@@ -1,7 +1,7 @@
 ---
 title: "My Second blog post"
 date: 2019-09-06T08:28:44.549Z
-image: "/blog1.jpg"
+image: "/blog2.jpg"
 content:
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
