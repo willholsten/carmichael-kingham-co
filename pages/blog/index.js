@@ -31,6 +31,7 @@ export default class Blog extends Component {
   }
   render() {
     const { postsList } = this.props;
+    console.log(postsList);
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co"

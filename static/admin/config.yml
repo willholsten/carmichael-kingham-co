@@ -3,6 +3,10 @@ backend:
   branch: dev
   site_domain: dev.carmichaelkingham.co.uk
 media_folder: static/img
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "_"
 collections:
   - name: "pages"
     label: "Pages"
