@@ -21,7 +21,7 @@ class Post extends Component {
 
     const {
       html,
-      attributes: { image, title, content, date }
+      attributes: { image, title, date }
     } = this.props.blogpost.default;
 
     return (
