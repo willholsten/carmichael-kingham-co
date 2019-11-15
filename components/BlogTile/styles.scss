@@ -5,16 +5,27 @@
     @include tile;
     border-radius: $border-radius;
     box-shadow: none;
-    padding: 32px;
+    padding: 16px;
+
+    @include screen-sm {
+      padding: 32px;
+    }
   }
 
   .title {
     margin-bottom: 20px;
   }
 
+  .imageContainer {
+    height: 200px;
+  }
   .image {
     width: 100%;
     height: 100%;
     border-radius: $border-radius;
+  }
+
+  .link {
+    @include link;
   }
 }

@@ -23,17 +23,17 @@ export default function BlogTile({ title, image, summary }) {
     <div className={styles.BlogTile}>
       <Card className={classes.card}>
         <Grid container spacing={3}>
-          <Grid item xs={12} xs={5}>
+          <Grid item xs={12} sm={5} className={styles.imageContainer}>
             <CardMedia className={styles.image} image={image} />
           </Grid>
-          <Grid item xs={12} xs={7}>
+          <Grid item xs={12} sm={7}>
             <CardContent className={styles.content}>
               <h2 className={styles.title}>{title}</h2>
               <p className={styles.summary}>{`${summary.substring(
                 0,
                 150
               )}...`}</p>
-              Read More
+              <span className={styles.link}>Read More</span>
             </CardContent>
           </Grid>
         </Grid>

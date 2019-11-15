@@ -25,10 +25,3 @@
     @content;
   }
 }
-
-@mixin tile {
-  &:hover {
-    transition: all 0.3s;
-    box-shadow: 0 4px 5px rgba(darken($grey, 0.5), 0.3) !important;
-  }
-}

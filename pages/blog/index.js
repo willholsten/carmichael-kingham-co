@@ -32,6 +32,7 @@ export default class Blog extends Component {
   }
   render() {
     const { postsList } = this.props;
+    console.log(postsList);
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co"
@@ -41,8 +42,13 @@ export default class Blog extends Component {
         <section>
           <Container maxWidth="md">
             <SectionHeader text="Blog" image="/svg/blog.svg" />
+            <select>
+              <option>Alphabetically (A-Z)</option>
+              <option>Alphabetically (Z-A)</option>
+              <option>Newest</option>
+              <option>Oldest</option>
+            </select>
             {postsList.map(post => {
-              console.log(postsList);
               return (
                 <Link href={`blog/post/${post.slug}`} key={post.slug}>
                   <a>

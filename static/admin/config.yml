@@ -43,13 +43,12 @@ collections:
     name: "blog"
     folder: "content/blogPosts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+    slug: "{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
       - {
           label: "Publish Date",
           name: "date",
-          format: "LLL",
           widget: "datetime",
           required: true,
         }
@@ -66,3 +65,4 @@ collections:
           required: true,
         }
       - { label: "Body", name: "body", widget: "markdown", required: true }
+      - { label: "Tags", name: "tags", widget: "list" }
