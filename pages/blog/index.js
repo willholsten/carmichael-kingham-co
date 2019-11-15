@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Link from "next/link";
 
 // Components
 import Layout from "../../components/Layout";
@@ -8,6 +7,7 @@ import BlogTile from "../../components/BlogTile";
 
 // Resources
 import { Container } from "@material-ui/core";
+import Link from "next/link";
 
 const BLOG_POSTS_PATH = "../../content/blogPosts";
 
@@ -27,11 +27,11 @@ const importBlogPosts = async () => {
 export default class Blog extends Component {
   static async getInitialProps() {
     const postsList = await importBlogPosts();
+
     return { postsList };
   }
   render() {
     const { postsList } = this.props;
-    console.log(postsList);
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co"
@@ -41,17 +41,19 @@ export default class Blog extends Component {
         <section>
           <Container maxWidth="md">
             <SectionHeader text="Blog" image="/svg/blog.svg" />
-            {postsList.map(post => (
-              <Link href={`blog/post/${post.slug}`} key={post.slug}>
-                <a>
-                  <BlogTile
-                    title={post.attributes.title}
-                    image={post.attributes.image}
-                    summary={post.attributes.summary}
-                  />
-                </a>
-              </Link>
-            ))}
+            {postsList.map(post => {
+              return (
+                <Link href={`blog/post/${post.slug}`} key={post.slug}>
+                  <a>
+                    <BlogTile
+                      title={post.attributes.title}
+                      image={post.attributes.image}
+                      summary={post.attributes.summary}
+                    />
+                  </a>
+                </Link>
+              );
+            })}
           </Container>
         </section>
       </Layout>
