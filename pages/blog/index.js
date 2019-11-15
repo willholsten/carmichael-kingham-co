@@ -42,6 +42,7 @@ export default class Blog extends Component {
           <Container maxWidth="md">
             <SectionHeader text="Blog" image="/svg/blog.svg" />
             {postsList.map(post => {
+              console.log(postsList);
               return (
                 <Link href={`blog/post/${post.slug}`} key={post.slug}>
                   <a>
