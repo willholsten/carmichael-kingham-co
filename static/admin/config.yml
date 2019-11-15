@@ -39,6 +39,22 @@ collections:
                 }
               - { label: Photo, name: photo, widget: image, required: true }
               - { label: Link, name: link, widget: hidden }
+      - label: "Expertise"
+        name: "expertise"
+        file: "content/expertise.md"
+        fields:
+          - label: Expertise
+            name: expertise
+            widget: list
+            fields:
+              - { label: Title, name: title, widget: string, required: true }
+              - {
+                  label: Content,
+                  name: content,
+                  widget: markup,
+                  required: true,
+                }
+              - { label: Id, name: id, widget: number, required: true }
   - label: "Blog"
     name: "blog"
     folder: "content/blogPosts"

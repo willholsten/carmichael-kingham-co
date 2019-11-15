@@ -8,6 +8,7 @@ import BlogTile from "../../components/BlogTile";
 // Resources
 import { Container } from "@material-ui/core";
 import Link from "next/link";
+import zIndex from "@material-ui/core/styles/zIndex";
 
 const BLOG_POSTS_PATH = "../../content/blogPosts";
 
@@ -30,9 +31,9 @@ export default class Blog extends Component {
 
     return { postsList };
   }
+
   render() {
     const { postsList } = this.props;
-    console.log(postsList);
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co"
@@ -42,12 +43,8 @@ export default class Blog extends Component {
         <section>
           <Container maxWidth="md">
             <SectionHeader text="Blog" image="/svg/blog.svg" />
-            <select>
-              <option>Alphabetically (A-Z)</option>
-              <option>Alphabetically (Z-A)</option>
-              <option>Newest</option>
-              <option>Oldest</option>
-            </select>
+            <i className="fas fa-sort-alpha-down"></i>
+            <i className="fas fa-sort-alpha-down-alt"></i>
             {postsList.map(post => {
               return (
                 <Link href={`blog/post/${post.slug}`} key={post.slug}>

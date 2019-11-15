@@ -1,0 +1,31 @@
+.VerticalTabs {
+  .tabList {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: 16px;
+
+    .tab {
+      color: $text;
+      background: transparent;
+      box-shadow: none;
+      border: none;
+      text-align: left;
+      padding: 10px 0;
+      font-weight: $semi-bold;
+
+      &[aria-selected="true"] {
+        color: $green;
+      }
+      &:focus,
+      &:active {
+        outline: 0;
+      }
+    }
+
+    .tabPanel {
+      color: $text;
+    }
+  }
+}

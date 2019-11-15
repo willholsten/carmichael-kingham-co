@@ -3,11 +3,12 @@ import React from "react";
 // Components
 import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
+import Expertise from "../components/Expertise";
 
 // Resources
 import Container from "@material-ui/core/Container";
 
-export default function Expertise() {
+export default function ExpertisePage() {
   return (
     <Layout
       title="Expertise | Carmichael Kingham &amp; Co"
@@ -16,6 +17,7 @@ export default function Expertise() {
     >
       <Container maxWidth="md">
         <SectionHeader text="Expertise" image="/svg/services.svg" />
+        <Expertise />
       </Container>
     </Layout>
   );
