@@ -28,7 +28,7 @@ export default function BlogPost({ html, title, image, date }) {
       />
       <Link href="/blog">
         <a className={styles.backToBlogs}>
-          <i className="fas fa-angle-left"></i>Back to Blogs
+          <i className="fas fa-angle-left"></i>Back to Posts
         </a>
       </Link>
     </div>

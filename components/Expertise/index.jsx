@@ -1,5 +1,6 @@
 // Components
-import VerticalTabs from "../VerticalTabs";
+import ExpertiseTabs from "../ExpertiseTabs";
+import ExpertiseAccordion from "../ExpertiseAccordion";
 
 // Styles
 import "../../styles/main.scss";
@@ -9,7 +10,12 @@ export default class Expertise extends React.Component {
   render() {
     return (
       <div className={styles.Expertise}>
-        <VerticalTabs />
+        <div className={styles.expertiseTabs}>
+          <ExpertiseTabs />
+        </div>
+        <div className={styles.expertiseAccordion}>
+          <ExpertiseAccordion />
+        </div>
       </div>
     );
   }

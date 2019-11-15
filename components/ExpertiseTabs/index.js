@@ -9,14 +9,14 @@ import content from "../../content/expertise.md";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class VerticalTabs extends React.PureComponent {
+export default class ExpertiseTabs extends React.PureComponent {
   render() {
     let {
       attributes: { expertise }
     } = content;
     return (
       <Tabs
-        defaultTab="vertical-tab-one"
+        defaultTab="vertical-tab-1"
         vertical
         className={styles.VerticalTabs}
       >

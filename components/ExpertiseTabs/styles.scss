@@ -1,0 +1,51 @@
+.VerticalTabs {
+  .tabList {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    // border-radius: $border-radius;
+
+    // border-right: 1px solid rgba($grey, 0.2);
+
+    .tab {
+      padding: 15px 10px;
+      background-color: $white;
+      height: 50px;
+      line-height: 18px;
+      position: relative;
+      color: $text;
+      box-shadow: none;
+      border: none;
+      text-align: left;
+      font-weight: $semi-bold;
+      margin-bottom: 15px;
+      border-radius: $border-radius;
+      overflow: hidden;
+      cursor: pointer;
+
+      &[aria-selected="true"] {
+        color: $white;
+        background-color: $green;
+
+        &:before {
+          content: "";
+          position: absolute;
+          right: -1px;
+          top: 0;
+          bottom: 0;
+          width: 7px;
+          background-color: $green;
+          height: 50px;
+        }
+      }
+      &:focus,
+      &:active {
+        outline: 0;
+      }
+    }
+
+    .tabPanel {
+      color: $text;
+    }
+  }
+}

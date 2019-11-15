@@ -1,26 +1,15 @@
 .Expertise {
-  .quoteTile {
-    position: relative;
-    background: rgba($green, 0.2);
-    box-shadow: none;
-    height: 200px;
-    width: 85%;
+  .expertiseTabs {
+    display: none;
 
-    .quote {
-      width: 110%;
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      line-height: 50px;
-      color: #538eab;
+    @include screen-sm {
+      display: block;
     }
   }
-
-  .textTile {
-    background: transparent;
-    box-shadow: none;
-  }
-  .text {
-    margin: 0 0 20px;
+  .expertiseAccordion {
+    display: block;
+    @include screen-sm {
+      display: none;
+    }
   }
 }

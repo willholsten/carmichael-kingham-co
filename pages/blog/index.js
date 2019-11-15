@@ -8,7 +8,6 @@ import BlogTile from "../../components/BlogTile";
 // Resources
 import { Container } from "@material-ui/core";
 import Link from "next/link";
-import zIndex from "@material-ui/core/styles/zIndex";
 
 const BLOG_POSTS_PATH = "../../content/blogPosts";
 
@@ -43,8 +42,7 @@ export default class Blog extends Component {
         <section>
           <Container maxWidth="md">
             <SectionHeader text="Blog" image="/svg/blog.svg" />
-            <i className="fas fa-sort-alpha-down"></i>
-            <i className="fas fa-sort-alpha-down-alt"></i>
+
             {postsList.map(post => {
               return (
                 <Link href={`blog/post/${post.slug}`} key={post.slug}>

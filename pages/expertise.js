@@ -15,10 +15,12 @@ export default function ExpertisePage() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <Container maxWidth="md">
-        <SectionHeader text="Expertise" image="/svg/services.svg" />
-        <Expertise />
-      </Container>
+      <section>
+        <Container maxWidth="md">
+          <SectionHeader text="Expertise" image="/svg/services.svg" />
+          <Expertise />
+        </Container>
+      </section>
     </Layout>
   );
 }
