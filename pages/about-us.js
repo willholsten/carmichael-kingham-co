@@ -8,7 +8,7 @@ import About from "../components/About";
 // Resources
 import Container from "@material-ui/core/Container";
 
-export default function AboutUs() {
+export default function AboutUsPage() {
   return (
     <Layout
       title="About Us | Carmichael Kingham &amp; Co"

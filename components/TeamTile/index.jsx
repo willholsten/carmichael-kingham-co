@@ -8,7 +8,6 @@ import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 // Data
-// import team from "../../data/team.json";
 import content from "../../content/home.md";
 
 export default class TeamTile extends React.Component {

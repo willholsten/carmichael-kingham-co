@@ -11,14 +11,53 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - { label: "Banner Text", name: "bannerText", widget: "string" }
-          - { label: "About Text", name: "aboutText", widget: "string" }
+          - {
+              label: "Banner Text",
+              name: "bannerText",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "About Text",
+              name: "aboutText",
+              widget: "markdown",
+              required: true,
+            }
           - label: Team
             name: team
             widget: list
             fields:
-              - { label: Name, name: name, widget: string }
-              - { label: Credentials, name: credentials, widget: string }
-              - { label: Bio, name: bio, widget: string }
-              - { label: Photo, name: photo, widget: image }
+              - { label: Name, name: name, widget: string, required: true }
+              - {
+                  label: Credentials,
+                  name: credentials,
+                  widget: string,
+                  required: true,
+                }
+              - { label: Photo, name: photo, widget: image, required: true }
               - { label: Link, name: link, widget: hidden }
+      - label: "Blog"
+        name: "blog"
+        folder: "content/blogPosts"
+        create: true
+        slug: "{{year}}-{{month}}-{{day}}_{{slug}}"
+        fields:
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - {
+              label: "Publish Date",
+              name: "date",
+              widget: "datetime",
+              required: true,
+            }
+          - {
+              label: "Featured Image",
+              name: "image",
+              widget: "image",
+              required: true,
+            }
+          - {
+              label: "Content",
+              name: "content",
+              widget: "markdown",
+              required: true,
+            }
