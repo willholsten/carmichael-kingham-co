@@ -20,6 +20,7 @@ class Post extends Component {
     if (!this.props.blogpost) return <div>not found</div>;
 
     const {
+      html,
       attributes: { image, title, content, date }
     } = this.props.blogpost.default;
 
@@ -31,12 +32,7 @@ class Post extends Component {
       >
         <section>
           <Container maxWidth="md">
-            <BlogPost
-              title={title}
-              image={image}
-              content={content}
-              date={date}
-            />
+            <BlogPost title={title} image={image} html={html} date={date} />
           </Container>
         </section>
       </Layout>

@@ -9,7 +9,7 @@ import Link from "next/link";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default function BlogPost({ title, image, content, date }) {
+export default function BlogPost({ html, title, image, date }) {
   return (
     <div className={styles.BlogPost}>
       <Container maxWidth="md">
@@ -19,7 +19,7 @@ export default function BlogPost({ title, image, content, date }) {
         </Link>
         <span>{date}</span>
         <img className={styles.image} src={image} />
-        <p className={styles.content}>{content}</p>
+        <div dangerouslySetInnerHTML={{ __html: html }} />
       </Container>
     </div>
   );

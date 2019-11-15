@@ -46,7 +46,7 @@ export default class Blog extends Component {
                   <BlogTile
                     title={post.attributes.title}
                     image={post.attributes.image}
-                    summary={post.attributes.content}
+                    summary={post.attributes.summary}
                   />
                 </a>
               </Link>
