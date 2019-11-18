@@ -62,6 +62,7 @@ export default class ContactForm extends React.PureComponent {
             <Grid item xs={12} md={4}>
               <div>
                 <PrimaryButton
+                  href=""
                   text="send"
                   icon="fab fa-telegram-plane"
                   type="submit"

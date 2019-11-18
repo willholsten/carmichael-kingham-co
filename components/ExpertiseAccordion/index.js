@@ -10,7 +10,7 @@ import content from "../../content/expertise.md";
 
 // Styles
 import "../../styles/main.scss";
-import styles from "./styles.scss";
+// import styles from "./styles.scss";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -34,7 +34,7 @@ export default function ExpertiseAccordion() {
       {expertise.map(expertise => (
         <ExpansionPanel key={expertise.id}>
           <ExpansionPanelSummary
-            expandIcon={<i class="fas fa-angle-down"></i>}
+            expandIcon={<i className="fas fa-angle-down"></i>}
             aria-controls="panel1a-content"
             id="panel1a-header"
           >
