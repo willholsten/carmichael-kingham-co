@@ -82,8 +82,8 @@ collections:
         }
       - { label: "Body", name: "body", widget: "markdown", required: true }
       - { label: "Tags", name: "tags", widget: "list" }
-  - name: "Company Details"
-    label: "companyDetails"
+  - name: "General"
+    label: "general"
     files:
       - label: "Company Details"
         name: "companyDetails"
