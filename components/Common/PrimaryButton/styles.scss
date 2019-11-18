@@ -1,7 +1,7 @@
 .Button {
   display: flex;
   justify-content: center;
-  margin: 0 auto;
+  // margin: 0 auto;
 
   a {
     display: flex;
@@ -16,6 +16,7 @@
     text-transform: uppercase;
     font-weight: $semi-bold;
     letter-spacing: $letter-spacing-small;
+    min-width: 180px;
   }
   .buttonIcon {
     margin-right: 16px;
