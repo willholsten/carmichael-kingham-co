@@ -39,11 +39,13 @@ export default class Layout extends React.Component {
           />
         </Head>
         <Header />
-        <section>
-          <Container maxWidth="md">
-            <div className={styles.content}>{children}</div>
-          </Container>
-        </section>
+
+        <div className={styles.content}>
+          <section>
+            <Container maxWidth="md">{children}</Container>
+          </section>
+        </div>
+
         <Footer />
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>

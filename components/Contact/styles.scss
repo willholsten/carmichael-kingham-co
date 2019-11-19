@@ -5,4 +5,22 @@
       margin-right: 10px;
     }
   }
+  .companyInfo {
+    padding-top: 15px;
+    padding-left: 15px;
+    > div {
+      margin: 20px 0;
+
+      a {
+        color: $text;
+      }
+
+      .appointment {
+        display: block;
+        margin-top: 5px;
+        margin-left: 20px;
+        font-style: italic;
+      }
+    }
+  }
 }

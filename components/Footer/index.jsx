@@ -1,5 +1,5 @@
 // Comnponents
-import ContactButtons from "../Common/ContactButtons";
+import ContactButtons from "../_Common/ContactButtons";
 
 // Resources
 import Link from "next/link";

@@ -1,5 +1,5 @@
 .Logo {
-  .logo_web {
+  .logoWeb {
     display: none;
 
     @include screen-md {
@@ -9,7 +9,7 @@
     }
   }
 
-  .logo_mobile {
+  .logoMobile {
     width: 35px;
 
     @include screen-md {

@@ -1,11 +1,8 @@
-// Data
-import content from "../../content/expertise.md";
-
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class IntroText extends React.PureComponent {
+export default class IntroText extends React.Component {
   render() {
     const { text } = this.props;
     return (

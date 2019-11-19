@@ -15,19 +15,17 @@ export default class HomeBanner extends React.Component {
     } = content;
 
     return (
-      <Container>
-        <div className={styles.HomeBanner}>
-          <img className={styles.banner_web} src="/homepage-banner-web.jpg" />
-          <img
-            className={styles.banner_mobile}
-            src="/homepage-banner-mobile.jpg"
-          />
-          <div className={styles.content}>
-            <h4>Carmichael Kingham &amp; Co</h4>
-            <h1>{bannerText}</h1>
-          </div>
+      <div className={styles.HomeBanner}>
+        <img className={styles.banner_web} src="/homepage-banner-web.jpg" />
+        <img
+          className={styles.banner_mobile}
+          src="/homepage-banner-mobile.jpg"
+        />
+        <div className={styles.content}>
+          <h4>Carmichael Kingham &amp; Co</h4>
+          <h1>{bannerText}</h1>
         </div>
-      </Container>
+      </div>
     );
   }
 }

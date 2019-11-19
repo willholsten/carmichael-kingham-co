@@ -1,21 +1,33 @@
 .CareersForm {
-  input,
-  textarea,
-  select {
-    width: 100%;
-    height: 45px;
-    padding: 15px;
-    border: 0;
-    background-color: rgba($white, 0.8);
+  .fileContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     border-radius: $border-radius;
-    transition: $transition;
+    background-color: $lightest-grey;
+    border: 2px dashed $lighter-grey;
 
-    &:focus {
-      background-color: $white;
+    &:hover {
+      border: 2px dashed $grey;
+    }
+
+    a,
+    p {
+      text-align: center;
+      margin: 5px auto;
+    }
+
+    .dropzone {
+      padding: 100px 30px;
     }
   }
-
-  textarea {
-    height: 150px;
+  input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
   }
 }

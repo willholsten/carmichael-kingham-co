@@ -6,7 +6,7 @@ import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class WebTabs extends React.PureComponent {
+export default class WebTabs extends React.Component {
   render() {
     const { data } = this.props;
     return (

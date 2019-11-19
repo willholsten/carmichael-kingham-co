@@ -12,7 +12,7 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div className={styles.ContactForm}>
-        <form name="contact" method="POST" data-netlify="true">
+        <form name="Contact Us" method="POST" data-netlify="true">
           <Grid container spacing={2}>
             <Grid item xs={12} md={6}>
               <input
@@ -40,15 +40,6 @@ export default class ContactForm extends React.Component {
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "Email")}
               />
-            </Grid>
-            <Grid item xs={12}>
-              <select name="role[]">
-                <option value="requirements" defaultValue disabled>
-                  Requirements
-                </option>
-                <option value="leader">Leader</option>
-                <option value="follower">Follower</option>
-              </select>
             </Grid>
             <Grid item xs={12}>
               <textarea

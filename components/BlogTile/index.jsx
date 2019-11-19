@@ -1,5 +1,14 @@
 // Resources
-import { Grid, Card, CardMedia, CardContent } from "@material-ui/core";
+import {
+  Grid,
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Button,
+  CardActionArea,
+  Typography
+} from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
 // Styles
@@ -8,8 +17,8 @@ import styles from "./styles.scss";
 
 const useStyles = makeStyles({
   card: {
-    display: "flex",
-    padding: "34px"
+    // display: "flex",
+    // padding: "34px"
   },
   content: {
     flex: "1 0 auto"
@@ -21,7 +30,7 @@ export default function BlogTile({ title, image, summary }) {
 
   return (
     <div className={styles.BlogTile}>
-      <Card className={classes.card}>
+      {/* <Card className={classes.card}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={5} className={styles.imageContainer}>
             <CardMedia className={styles.image} image={image} />
@@ -37,6 +46,23 @@ export default function BlogTile({ title, image, summary }) {
             </CardContent>
           </Grid>
         </Grid>
+      </Card> */}
+
+      <Card className={classes.card}>
+        <CardActionArea>
+          <CardMedia className={styles.image} image={image} />
+          <CardContent>
+            <h4 className={styles.title}>{title}</h4>
+            <Typography variant="body2" color="textSecondary" component="p">
+              {`${summary.substring(0, 150)}...`}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+        <CardActions>
+          <Button className={styles.link} size="small" color="primary">
+            Read more
+          </Button>
+        </CardActions>
       </Card>
     </div>
   );
