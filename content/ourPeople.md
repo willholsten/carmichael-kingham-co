@@ -1,11 +1,12 @@
 ---
+pageTitle: Our People
 team:
   - id: 1
     title: Annabelle Carmichael
     credentials: Credentials
-    content: Lorem ipsum
+    content: Annabelle bio
   - id: 2
     title: Alasdair Kingham
     credentials: Credentials
-    content: Lorem ipsum
+    content: Alasdair bio
 ---

@@ -8,7 +8,7 @@ import { Grid } from "@material-ui/core";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class ContactForm extends React.PureComponent {
+export default class ContactForm extends React.Component {
   render() {
     return (
       <div className={styles.ContactForm}>

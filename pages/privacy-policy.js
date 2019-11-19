@@ -2,7 +2,6 @@ import React from "react";
 
 // Components
 import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
 import PrivacyPolicy from "../components/PrivacyPolicy";
 
 export default function Terms() {
@@ -12,7 +11,6 @@ export default function Terms() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <SectionHeader text="Privacy Policy" image="/svg/contact.svg" />
       <PrivacyPolicy />
     </Layout>
   );

@@ -12,7 +12,6 @@ export default function ExpertisePage() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <SectionHeader text="Expertise" image="/svg/services.svg" />
       <Expertise />
     </Layout>
   );

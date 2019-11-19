@@ -3,12 +3,14 @@ import { Component } from "react";
 // Components
 import Map from "../Map";
 import ContactForm from "../ContactForm";
+import IntroText from "../IntroText";
 
 // Resources
 import { Grid } from "@material-ui/core";
 
 // Data
 import content from "../../content/companyDetails.md";
+import contactContent from "../../content/contactUs.md";
 
 // Styles
 import "../../styles/main.scss";
@@ -19,8 +21,12 @@ export default class Contact extends Component {
     let {
       attributes: { address, phone, email }
     } = content;
+    let {
+      attributes: { pageSummary }
+    } = contactContent;
     return (
       <div className={styles.Contact}>
+        <IntroText text={pageSummary} />
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} className={styles.map}>
             <Map />

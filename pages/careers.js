@@ -2,7 +2,6 @@ import React from "react";
 
 // Components
 import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
 import Careers from "../components/Careers";
 
 export default function CareersPage() {
@@ -12,7 +11,6 @@ export default function CareersPage() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <SectionHeader text="Careers" image="/svg/blog.svg" />
       <Careers />
     </Layout>
   );
