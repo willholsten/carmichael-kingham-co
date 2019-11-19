@@ -1,3 +1,4 @@
+// Global
 * {
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
@@ -12,12 +13,12 @@ body {
   font-size: 14px;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
+// Layout
+section {
+  padding-bottom: 75px;
 }
 
+// Typography
 h1 {
   font-family: $serif;
   color: $text;
@@ -66,6 +67,21 @@ i {
   cursor: pointer;
 }
 
-section {
-  padding-bottom: 75px;
+// Lists
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+// Forms
+input,
+select,
+textarea {
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+  }
 }

@@ -5,9 +5,6 @@ import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
 import Expertise from "../components/Expertise";
 
-// Resources
-import Container from "@material-ui/core/Container";
-
 export default function ExpertisePage() {
   return (
     <Layout
@@ -15,12 +12,8 @@ export default function ExpertisePage() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <section>
-        <Container maxWidth="md">
-          <SectionHeader text="Expertise" image="/svg/services.svg" />
-          <Expertise />
-        </Container>
-      </section>
+      <SectionHeader text="Expertise" image="/svg/services.svg" />
+      <Expertise />
     </Layout>
   );
 }

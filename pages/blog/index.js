@@ -39,25 +39,21 @@ export default class Blog extends Component {
         description="Insert page description"
         keywords="Insert keywords"
       >
-        <section>
-          <Container maxWidth="md">
-            <SectionHeader text="Blog" image="/svg/blog.svg" />
+        <SectionHeader text="Blog" image="/svg/blog.svg" />
 
-            {postsList.map(post => {
-              return (
-                <Link href={`blog/post/${post.slug}`} key={post.slug}>
-                  <a>
-                    <BlogTile
-                      title={post.attributes.title}
-                      image={post.attributes.image}
-                      summary={post.attributes.summary}
-                    />
-                  </a>
-                </Link>
-              );
-            })}
-          </Container>
-        </section>
+        {postsList.map(post => {
+          return (
+            <Link href={`blog/post/${post.slug}`} key={post.slug}>
+              <a>
+                <BlogTile
+                  title={post.attributes.title}
+                  image={post.attributes.image}
+                  summary={post.attributes.summary}
+                />
+              </a>
+            </Link>
+          );
+        })}
       </Layout>
     );
   }

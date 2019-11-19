@@ -1,6 +1,10 @@
-import Head from "next/head";
+// Components
 import Header from "../Header";
 import Footer from "../Footer";
+
+// Resources
+import Head from "next/head";
+import Container from "@material-ui/core/Container";
 
 // Styles
 import styles from "./styles.scss";
@@ -33,12 +37,14 @@ export default class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
           />
-          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
         <Header />
-        <div className={styles.content}>{children}</div>
+        <section>
+          <Container maxWidth="md">
+            <div className={styles.content}>{children}</div>
+          </Container>
+        </section>
         <Footer />
-        <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );

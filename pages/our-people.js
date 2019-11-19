@@ -5,9 +5,6 @@ import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
 import Team from "../components/Team";
 
-// Resources
-import Container from "@material-ui/core/Container";
-
 export default function OurPeople() {
   return (
     <Layout
@@ -15,10 +12,8 @@ export default function OurPeople() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <Container maxWidth="md">
-        <SectionHeader text="Our People" image="/svg/our-people.svg" />
-        <Team />
-      </Container>
+      <SectionHeader text="Our People" image="/svg/our-people.svg" />
+      <Team />
     </Layout>
   );
 }

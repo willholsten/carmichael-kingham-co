@@ -8,9 +8,6 @@ import AboutTile from "../components/AboutTile";
 import ExpertiseTile from "../components/ExpertiseTile";
 import TeamTile from "../components/TeamTile";
 
-// Resources
-import { Container } from "@material-ui/core";
-
 export default class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -26,20 +23,18 @@ export default class Home extends React.Component {
         <section>
           <HomeBanner />
         </section>
-        <Container maxWidth="md">
-          <section>
-            <SectionHeader text="About us" image="/svg/about-us.svg" />
-            <AboutTile />
-          </section>
-          <section>
-            <SectionHeader text="Expertise" image="/svg/services.svg" />
-            <ExpertiseTile />
-          </section>
-          <section>
-            <SectionHeader text="Our people" image="/svg/our-people.svg" />
-            <TeamTile />
-          </section>
-        </Container>
+        <section>
+          <SectionHeader text="About us" image="/svg/about-us.svg" />
+          <AboutTile />
+        </section>
+        <section>
+          <SectionHeader text="Expertise" image="/svg/services.svg" />
+          <ExpertiseTile />
+        </section>
+        <section>
+          <SectionHeader text="Our people" image="/svg/our-people.svg" />
+          <TeamTile />
+        </section>
       </Layout>
     );
   }

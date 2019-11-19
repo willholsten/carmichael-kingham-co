@@ -5,9 +5,6 @@ import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
 import About from "../components/About";
 
-// Resources
-import Container from "@material-ui/core/Container";
-
 export default function AboutUsPage() {
   return (
     <Layout
@@ -15,12 +12,8 @@ export default function AboutUsPage() {
       description="Insert page description"
       keywords="Insert keywords"
     >
-      <section>
-        <Container maxWidth="md">
-          <SectionHeader text="About us" image="/svg/about-us.svg" />
-          <About />
-        </Container>
-      </section>
+      <SectionHeader text="About us" image="/svg/about-us.svg" />
+      <About />
     </Layout>
   );
 }

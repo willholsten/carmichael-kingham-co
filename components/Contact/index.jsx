@@ -1,3 +1,5 @@
+import { Component } from "react";
+
 // Components
 import Map from "../Map";
 import ContactForm from "../ContactForm";
@@ -12,7 +14,7 @@ import content from "../../content/companyDetails.md";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class Contact extends React.PureComponent {
+export default class Contact extends Component {
   render() {
     let {
       attributes: { address, phone, email }
