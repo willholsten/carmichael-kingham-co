@@ -14,6 +14,9 @@ import styles from "./styles.scss";
 
 export default class Contact extends React.PureComponent {
   render() {
+    let {
+      attributes: { address, phone, email }
+    } = content;
     return (
       <div className={styles.Contact}>
         <Grid container spacing={3}>
@@ -21,18 +24,16 @@ export default class Contact extends React.PureComponent {
             <Map />
             <div>
               <i className="fas fa-home"></i>
-              <span>20-22 Wenlock Rd, Hoxton, London N1 7GU.</span>
+              <span>{address}</span>
             </div>
             <div>
               <span>
                 <i className="fas fa-phone"></i>
-                <a href="">+44 (0) 20 3468 2472</a>
+                <a href="">{phone}</a>
               </span>
               <span>
                 <i className="fas fa-envelope"></i>
-                <a href="mailto:info@carmichaelkingham.com">
-                  info@carmichaelkingham.com
-                </a>
+                <a href="mailto:info@carmichaelkingham.com">{email}</a>
               </span>
             </div>
           </Grid>

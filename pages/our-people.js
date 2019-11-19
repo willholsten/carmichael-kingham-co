@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
+import Team from "../components/Team";
 
 // Resources
 import Container from "@material-ui/core/Container";
@@ -16,6 +17,7 @@ export default function OurPeople() {
     >
       <Container maxWidth="md">
         <SectionHeader text="Our People" image="/svg/our-people.svg" />
+        <Team />
       </Container>
     </Layout>
   );

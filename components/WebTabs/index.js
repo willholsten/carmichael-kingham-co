@@ -2,18 +2,13 @@
 import { Grid } from "@material-ui/core";
 import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 
-// Data
-import content from "../../content/expertise.md";
-
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class ExpertiseTabs extends React.PureComponent {
+export default class WebTabs extends React.PureComponent {
   render() {
-    let {
-      attributes: { expertise }
-    } = content;
+    const { data } = this.props;
     return (
       <Tabs
         defaultTab="vertical-tab-1"
@@ -23,25 +18,25 @@ export default class ExpertiseTabs extends React.PureComponent {
         <Grid container spacing={3}>
           <Grid item sm={4}>
             <TabList className={styles.tabList}>
-              {expertise.map(expertise => (
+              {data.map(data => (
                 <Tab
                   className={styles.tab}
-                  tabFor={`vertical-tab-${expertise.id}`}
-                  key={expertise.id}
+                  tabFor={`vertical-tab-${data.id}`}
+                  key={data.id}
                 >
-                  {expertise.title}
+                  {data.title}
                 </Tab>
               ))}
             </TabList>
           </Grid>
           <Grid item sm={4}>
-            {expertise.map(expertise => (
+            {data.map(data => (
               <TabPanel
                 className={styles.tabPanel}
-                tabId={`vertical-tab-${expertise.id}`}
-                key={expertise.id}
+                tabId={`vertical-tab-${data.id}`}
+                key={data.id}
               >
-                {expertise.content}
+                {data.content}
               </TabPanel>
             ))}
           </Grid>
