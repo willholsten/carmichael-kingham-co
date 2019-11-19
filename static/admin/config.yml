@@ -66,14 +66,14 @@ collections:
             name: team
             widget: list
             fields:
-              - { label: Name, name: name, widget: string, required: true }
+              - { label: Name, name: title, widget: string, required: true }
               - {
                   label: Credentials,
                   name: credentials,
                   widget: string,
                   required: true,
                 }
-              - { label: Bio, name: bio, widget: markdown, required: true }
+              - { label: Bio, name: content, widget: markdown, required: true }
 
   - label: "Blog"
     name: "blog"
