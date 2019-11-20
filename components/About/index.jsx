@@ -20,7 +20,7 @@ export default class About extends React.Component {
     } = content;
     return (
       <div className={styles.About}>
-        <SectionHeader text={pageTitle} image="/svg/about-us.svg" />
+        <SectionHeader text={pageTitle} image="/svg/about.svg" />
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
             <Paper className={styles.quoteTile}>

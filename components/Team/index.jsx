@@ -17,7 +17,7 @@ export default class Team extends React.Component {
     } = content;
     return (
       <div className={styles.Team}>
-        <SectionHeader text={pageTitle} image="/svg/our-people.svg" />
+        <SectionHeader text={pageTitle} image="/svg/team.svg" />
         <div className={styles.expertiseTabs}>
           <WebTabs data={team} />
         </div>

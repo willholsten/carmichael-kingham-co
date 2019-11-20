@@ -10,13 +10,13 @@ import styles from "./styles.scss";
 // Data
 import content from "../../content/home.md";
 
-export default class TeamTile extends React.Component {
+export default class TeamCard extends React.Component {
   render() {
     let {
       attributes: { team }
     } = content;
     return (
-      <Grid container spacing={3} className={styles.TeamTile}>
+      <Grid container spacing={3} className={styles.TeamCard}>
         {team.map(team => (
           <Grid key={team.name} item xs={12} sm={6}>
             <Link href={team.link}>

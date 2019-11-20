@@ -10,9 +10,9 @@ import styles from "./styles.scss";
 // Data
 import expertise from "./../../data/expertise.json";
 
-export default function ExpertiseTile(props) {
+export default function ExpertiseCard(props) {
   return (
-    <Grid container spacing={3} className={styles.ExpertiseTile}>
+    <Grid container spacing={3} className={styles.ExpertiseCard}>
       {expertise.map(service => (
         <Grid key={service.title} item xs={12} sm={6}>
           <Link href={service.href}>

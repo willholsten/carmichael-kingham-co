@@ -2,7 +2,7 @@
 // import Link from "next/link";
 
 // // Components
-// import BlogTile from "../../components/BlogTile";
+// import BlogCard from "../../components/BlogCard";
 
 // // Resources
 // import { Container } from "@material-ui/core";
@@ -35,7 +35,7 @@
 //         {postsList.map(post => (
 //           <Link href={`blog/post/${post.slug}`} key={post.slug}>
 //             <a>
-//               <BlogTile
+//               <BlogCard
 //                 title={post.attributes.title}
 //                 image={post.attributes.image}
 //                 summary={post.attributes.content}

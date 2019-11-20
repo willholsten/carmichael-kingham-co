@@ -41,16 +41,16 @@ export default class Contact extends Component {
                 </span>
               </div>
               <div>
-                <span>
+                <a href={`tel:${phone}`}>
                   <i className="fas fa-phone"></i>
-                  <a href="">{phone}</a>
-                </span>
+                  <span>{phone}</span>
+                </a>
               </div>
               <div>
-                <span>
+                <a href={`tel:${email}`}>
                   <i className="fas fa-envelope"></i>
-                  <a href="mailto:info@carmichaelkingham.com">{email}</a>
-                </span>
+                  <span>{email}</span>
+                </a>
               </div>
             </div>
           </Grid>

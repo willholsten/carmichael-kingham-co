@@ -7,6 +7,7 @@ import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
+import Grid from "@material-ui/core";
 
 // Styles
 import "../../styles/main.scss";

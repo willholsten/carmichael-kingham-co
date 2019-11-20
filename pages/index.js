@@ -4,9 +4,9 @@ import React from "react";
 import Layout from "../components/Layout";
 import HomeBanner from "../components/HomeBanner";
 import SectionHeader from "../components/Common/SectionHeader";
-import AboutTile from "../components/AboutTile";
-import ExpertiseTile from "../components/ExpertiseTile";
-import TeamTile from "../components/TeamTile";
+import AboutCard from "../components/AboutCard";
+import ExpertiseCard from "../components/ExpertiseCard";
+import TeamCard from "../components/TeamCard";
 
 export default class Home extends React.Component {
   constructor(props) {
@@ -25,15 +25,15 @@ export default class Home extends React.Component {
         </section>
         <section>
           <SectionHeader text="About us" image="/svg/about-us.svg" />
-          <AboutTile />
+          <AboutCard />
         </section>
         <section>
           <SectionHeader text="Expertise" image="/svg/services.svg" />
-          <ExpertiseTile />
+          <ExpertiseCard />
         </section>
         <section>
           <SectionHeader text="Our people" image="/svg/our-people.svg" />
-          <TeamTile />
+          <TeamCard />
         </section>
       </Layout>
     );

@@ -1,5 +1,8 @@
 // Comnponents
 import ContactButtons from "../Common/ContactButtons";
+import FooterNav from "../FooterNav";
+import FooterCompany from "../FooterCompany";
+import FooterPartners from "../FooterPartners";
 
 // Resources
 import Link from "next/link";
@@ -11,45 +14,29 @@ import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 // Data
-import site from "./../../data/site.json";
-import company from "./../../data/company.json";
-import partners from "./../../data/partners.json";
 import content from "../../content/companyDetails.md";
+import contentNavigation from "../../content/navigation.md";
 
 export default class Footer extends React.Component {
   render() {
     let {
       attributes: { companyRegistration, companyName }
     } = content;
+    let {
+      attributes: { navigation, company, partners }
+    } = contentNavigation;
     return (
       <footer className={styles.Footer}>
         <Container maxWidth="md" className={styles.FooterLinks}>
           <Grid container spacing={3} className={styles.listContainer}>
             <Grid item xs={3} md={3} className={styles.column}>
-              <h4>Site</h4>
-              {site.map(({ label, href }) => (
-                <Link key={label} href={href}>
-                  <a>{label}</a>
-                </Link>
-              ))}
+              <FooterNav />
             </Grid>
             <Grid item xs={3} md={3} className={styles.column}>
-              <h4>Company</h4>
-              {company.map(({ label, href }) => (
-                <Link key={label} href={href}>
-                  <a>{label}</a>
-                </Link>
-              ))}
+              <FooterCompany />
             </Grid>
             <Grid item xs={3} md={3} className={styles.column}>
-              <h4>Partners</h4>
-              {partners.map(({ src, href }) => (
-                <Link key={src} href={href}>
-                  <a>
-                    <img src={src} />
-                  </a>
-                </Link>
-              ))}
+              <FooterPartners />
             </Grid>
             <Grid item xs={3} md={3} className={styles.column}>
               <h4>Connect</h4>

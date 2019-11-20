@@ -6,13 +6,13 @@ import styles from "./styles.scss";
 
 export default function MyButton({ style, href, text, icon }) {
   return (
-    <div className={styles.Button} type={style}>
+    <button className={styles.Button} type={style}>
       <Link href={href}>
         <a>
           {icon && <i className={`${icon} ${styles.buttonIcon}`}></i>}
           {text}
         </a>
       </Link>
-    </div>
+    </button>
   );
 }

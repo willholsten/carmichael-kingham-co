@@ -14,6 +14,9 @@ export default class ContactForm extends React.Component {
       <div className={styles.ContactForm}>
         <form name="Contact Us" method="POST" data-netlify="true">
           <Grid container spacing={2}>
+            <Grid item xs={12}>
+              <h4>Get in touch</h4>
+            </Grid>
             <Grid item xs={12} md={6}>
               <input
                 type="text"

@@ -25,11 +25,11 @@ const useStyles = makeStyles({
   }
 });
 
-export default function BlogTile({ title, image, summary }) {
+export default function BlogCard({ title, image, summary }) {
   const classes = useStyles();
 
   return (
-    <div className={styles.BlogTile}>
+    <div className={styles.BlogCard}>
       {/* <Card className={classes.card}>
         <Grid container spacing={3}>
           <Grid item xs={12} sm={5} className={styles.imageContainer}>

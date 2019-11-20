@@ -16,7 +16,7 @@ export default class PrivacyPolicy extends React.Component {
     } = content;
     return (
       <div className={styles.PivacyPolicy}>
-        <SectionHeader text={pageTitle} image="/svg/contact.svg" />
+        <SectionHeader text={pageTitle} image="/svg/privacy.svg" />
         <div
           className={styles.markdown}
           dangerouslySetInnerHTML={{ __html: html }}

@@ -1,9 +1,9 @@
 // Components
 import SectionHeader from "../Common/SectionHeader";
+import MyButton from "../Common/MyButton";
 
 // Resources
 import { Container, CardMedia } from "@material-ui/core";
-import Link from "next/link";
 import moment from "moment";
 
 // Styles
@@ -26,11 +26,13 @@ export default function BlogPost({ html, title, image, date }) {
         className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <Link href="/blog">
-        <a className={styles.backToBlogs}>
-          <i className="fas fa-angle-left"></i>Back to Posts
-        </a>
-      </Link>
+      <MyButton
+        style="Secondary"
+        href="/blog"
+        text="Back to posts"
+        icon="fas fa-angle-left"
+        type=""
+      />
     </div>
   );
 }

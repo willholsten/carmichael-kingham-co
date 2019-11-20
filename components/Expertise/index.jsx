@@ -18,7 +18,7 @@ export default class Expertise extends React.Component {
     } = content;
     return (
       <div className={styles.Expertise}>
-        <SectionHeader text={pageTitle} image="/svg/services.svg" />
+        <SectionHeader text={pageTitle} image="/svg/expertise.svg" />
         <IntroText text={pageSummary} />
         <div className={styles.expertiseTabs}>
           <ExpertiseTabs data={expertise} />

@@ -17,7 +17,7 @@ export default class Careers extends React.Component {
     } = content;
     return (
       <div className={styles.Careers}>
-        <SectionHeader text={pageTitle} image="/svg/blog.svg" />
+        <SectionHeader text={pageTitle} image="/svg/careers.svg" />
         <IntroText text={pageSummary} />
         <CareersForm />
       </div>

@@ -1,5 +1,11 @@
 .ContactForm {
   textarea {
-    height: 150px;
+    min-height: 178px;
+    height: 178px;
+  }
+  @include screen-md {
+    h4 {
+      margin-top: 0;
+    }
   }
 }

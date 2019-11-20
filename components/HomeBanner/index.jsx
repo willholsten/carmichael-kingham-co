@@ -3,6 +3,7 @@ import Container from "@material-ui/core/Container";
 
 // Data
 import content from "../../content/home.md";
+import companyDetails from "../../content/companyDetails.md";
 
 // Styles
 import "../../styles/main.scss";
@@ -13,6 +14,9 @@ export default class HomeBanner extends React.Component {
     let {
       attributes: { bannerText }
     } = content;
+    let {
+      attributes: { companyName }
+    } = companyDetails;
 
     return (
       <div className={styles.HomeBanner}>
@@ -22,7 +26,7 @@ export default class HomeBanner extends React.Component {
           src="/homepage-banner-mobile.jpg"
         />
         <div className={styles.content}>
-          <h4>Carmichael Kingham &amp; Co</h4>
+          <h4>{companyName}</h4>
           <h1>{bannerText}</h1>
         </div>
       </div>

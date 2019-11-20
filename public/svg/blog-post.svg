@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="105" height="60" viewBox="0 0 105 60">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="gray" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="gray" stop-opacity="0.122"/>
+      <stop offset="1" stop-color="gray" stop-opacity="0.102"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#b3b3b3" stop-opacity="0.251"/>
+      <stop offset="0.54" stop-color="#b3b3b3" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#b3b3b3" stop-opacity="0.051"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_796" data-name="Group 796" transform="translate(2348 2648)">
+    <rect id="Rectangle_851" data-name="Rectangle 851" width="105" height="60" transform="translate(-2348 -2648)" fill="none"/>
+    <g id="blog-post" transform="translate(-2320 -2648)">
+      <rect id="Rectangle_782" data-name="Rectangle 782" width="49.601" height="60" fill="url(#linear-gradient)"/>
+      <rect id="Rectangle_783" data-name="Rectangle 783" width="48.402" height="58.217" transform="translate(0.599 0.434)" fill="#fff"/>
+      <rect id="Rectangle_784" data-name="Rectangle 784" width="19.031" height="1.559" transform="translate(4.009 4.169)" fill="#64ffda"/>
+      <rect id="Rectangle_785" data-name="Rectangle 785" width="19.031" height="1.559" transform="translate(4.009 40.583)" fill="#64ffda"/>
+      <rect id="Rectangle_786" data-name="Rectangle 786" width="41.583" height="1.559" transform="translate(4.009 7.287)" fill="#e0e0e0"/>
+      <rect id="Rectangle_787" data-name="Rectangle 787" width="41.583" height="1.559" transform="translate(4.009 10.406)" fill="#e0e0e0"/>
+      <rect id="Rectangle_788" data-name="Rectangle 788" width="42.258" height="19.142" transform="translate(3.671 16.845)" fill="url(#linear-gradient-2)"/>
+      <rect id="Rectangle_789" data-name="Rectangle 789" width="41.583" height="18.277" transform="translate(4.046 17.137)" fill="#6adbbd"/>
+      <rect id="Rectangle_790" data-name="Rectangle 790" width="41.583" height="1.559" transform="translate(4.009 50.402)" fill="#e0e0e0"/>
+      <rect id="Rectangle_791" data-name="Rectangle 791" width="41.583" height="1.559" transform="translate(4.009 53.624)" fill="#e0e0e0"/>
+      <rect id="Rectangle_792" data-name="Rectangle 792" width="41.583" height="1.559" transform="translate(4.009 47.198)" fill="#e0e0e0"/>
+      <rect id="Rectangle_793" data-name="Rectangle 793" width="41.583" height="1.559" transform="translate(4.009 43.993)" fill="#e0e0e0"/>
+    </g>
+  </g>
+</svg>

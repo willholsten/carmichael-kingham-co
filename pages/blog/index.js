@@ -3,7 +3,7 @@ import React, { Component } from "react";
 // Components
 import Layout from "../../components/Layout";
 import SectionHeader from "../../components/Common/SectionHeader";
-import BlogTile from "../../components/BlogTile";
+import BlogCard from "../../components/BlogCard";
 import IntroText from "../../components/IntroText";
 
 // Resources
@@ -54,7 +54,7 @@ export default class Blog extends Component {
               <Grid item xs={12} sm={6} md={4} key={post.slug}>
                 <Link href={`blog/post/${post.slug}`}>
                   <a>
-                    <BlogTile
+                    <BlogCard
                       title={post.attributes.title}
                       image={post.attributes.image}
                       summary={post.attributes.summary}

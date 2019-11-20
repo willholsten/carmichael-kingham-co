@@ -10,6 +10,7 @@ const resourcesLoader = {
       "./styles/utils/variables/breakpoints.scss",
       "./styles/utils/variables/fonts.scss",
       "./styles/utils/mixins/breakpoints.scss",
+      "./styles/utils/mixins/card.scss",
       "./styles/utils/mixins/fonts.scss"
     ]
   }

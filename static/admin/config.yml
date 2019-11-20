@@ -191,3 +191,26 @@ collections:
               widget: "string",
               required: true,
             }
+      - label: "Navigation"
+        name: "navigation"
+        file: "content/navigation.md"
+        fields:
+          - label: Navigation
+            name: navigation
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string, required: true }
+              - { label: Icon, name: icon, widget: image, required: true }
+              - { label: href, name: href, widget: hidden }
+          - label: Company
+            name: company
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string, required: true }
+              - { label: href, name: href, widget: hidden }
+          - label: Partners
+            name: partners
+            widget: list
+            fields:
+              - { label: Icon, name: icon, widget: image, required: true }
+              - { label: href, name: href, widget: hidden }

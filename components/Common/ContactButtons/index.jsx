@@ -1,5 +1,5 @@
 // Components
-import MyButton from "../MyButton";
+import ContactButton from "../ContactButton";
 
 // Data
 import content from "../../../content/companyDetails.md";
@@ -13,14 +13,14 @@ export default function ContactButtons() {
   } = content;
   return (
     <div className={styles.contactButtons}>
-      <MyButton
+      <ContactButton
         style="Secondary"
         href={`tel:${phone}`}
         text="Phone"
         icon="fas fa-phone"
         type="submit"
       />
-      <MyButton
+      <ContactButton
         style="Secondary"
         href={`mailto:${email}`}
         text="Email"

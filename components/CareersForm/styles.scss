@@ -1,6 +1,7 @@
 .CareersForm {
-  h4 {
-    margin-top: 0;
-    display: block;
+  @include screen-md {
+    h4 {
+      margin-top: 0;
+    }
   }
 }

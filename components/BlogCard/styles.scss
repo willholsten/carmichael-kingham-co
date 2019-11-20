@@ -1,8 +1,8 @@
-.BlogTile {
+.BlogCard {
   margin: 0 auto 30px;
 
   > div {
-    @include tile;
+    @include card;
     border-radius: $border-radius;
     box-shadow: none;
     // padding: 16px;
