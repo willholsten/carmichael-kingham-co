@@ -1,24 +1,5 @@
 .contactButtons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 16px;
-
-  .button_phone,
-  .button_email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $green;
-    color: $white;
-    border-radius: $border-radius;
-    height: 45px;
-    width: 50%;
-    margin: 10px 0;
-    i {
-      margin-right: 15px;
-    }
-  }
-  .button_phone {
-    margin-right: 16px;
-  }
 }

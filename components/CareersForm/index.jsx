@@ -1,55 +1,27 @@
 // Components
-import PrimaryButton from "../Common/PrimaryButton";
+import MyButton from "../Common/MyButton";
 import DropZone from "../DropZone";
 
 // Resources
 import { Grid } from "@material-ui/core";
-import { useDropzone } from "react-dropzone";
 
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 export default function CareersForm(props) {
-  const { acceptedFiles, getRootProps, getInputProps } = useDropzone();
-
-  const files = acceptedFiles.map(file => (
-    <li key={file.path}>
-      {file.path} - {file.size} bytes
-    </li>
-  ));
-
   return (
     <div className={styles.CareersForm}>
       <form name="Careers" method="POST" data-netlify="true">
         <Grid container spacing={2}>
           <Grid item xs={12} md={6}>
-            <section>
-              <div className={styles.fileContainer}>
-                <DropZone>
-                  <div className={styles.dropzone} {...getRootProps()}>
-                    <input {...getInputProps()} />
-                    <p>Drag 'n' drop your CV here</p>
-                    <p>
-                      <strong>OR</strong>
-                    </p>
-                    <PrimaryButton
-                      href=""
-                      text="Choose file"
-                      icon="fas fa-upload"
-                      type=""
-                    />
-                  </div>
-                </DropZone>
-              </div>
-              <aside>
-                <h4>Files</h4>
-                <ul>{files}</ul>
-              </aside>
-            </section>
+            <DropZone />
           </Grid>
           <Grid item xs={12} md={6}>
             <Grid container spacing={2}>
+              <Grid item xs={12}>
+                <h4>Your Details</h4>
+              </Grid>
               <Grid item xs={12} md={6}>
                 <input
                   type="text"
@@ -88,7 +60,8 @@ export default function CareersForm(props) {
 
               <Grid item xs={12} md={4}>
                 <div>
-                  <PrimaryButton
+                  <MyButton
+                    style="Primary"
                     href=""
                     text="send"
                     icon="fab fa-telegram-plane"

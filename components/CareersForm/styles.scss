@@ -1,33 +1,6 @@
 .CareersForm {
-  .fileContainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-radius: $border-radius;
-    background-color: $lightest-grey;
-    border: 2px dashed $lighter-grey;
-
-    &:hover {
-      border: 2px dashed $grey;
-    }
-
-    a,
-    p {
-      text-align: center;
-      margin: 5px auto;
-    }
-
-    .dropzone {
-      padding: 100px 30px;
-    }
-  }
-  input[type="file"] {
-    width: 0.1px;
-    height: 0.1px;
-    opacity: 0;
-    overflow: hidden;
-    position: absolute;
-    z-index: -1;
+  h4 {
+    margin-top: 0;
+    display: block;
   }
 }

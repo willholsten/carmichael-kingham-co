@@ -136,7 +136,7 @@ collections:
             }
           - { label: "Body", name: "body", widget: "markdown", required: true }
 
-  - label: "Blog"
+  - label: "Blog Posts"
     name: "blog"
     folder: "content/blogPosts"
     create: true

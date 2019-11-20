@@ -6,22 +6,28 @@ import NavMobile from "../NavMobile";
 // Resources
 import Container from "@material-ui/core/Container";
 
+// Data
+import content from "../../content/companyDetails.md";
+
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 export default function Header() {
+  let {
+    attributes: { phone, email }
+  } = content;
   return (
     <header className={styles.Header}>
       <div className={styles.header_snippet}>
         <Container className={styles.snippet_container}>
-          <a href="">
+          <a href={`tel:${phone}`}>
             <i className="fas fa-phone"></i>
-            +44 (0) 20 3468 2472
+            {phone}
           </a>
-          <a href="mailto:info@carmichaelkingham.com">
+          <a href={`mailto:${email}`}>
             <i className="fas fa-envelope"></i>
-            info@carmichaelkingham.com
+            {email}
           </a>
         </Container>
       </div>

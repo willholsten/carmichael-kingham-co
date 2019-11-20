@@ -1,61 +1,88 @@
-// Re-usable DropZone component
-export default class DropZone extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      className: "drop-zone-hide"
-    };
-    this._onDragEnter = this._onDragEnter.bind(this);
-    this._onDragLeave = this._onDragLeave.bind(this);
-    this._onDragOver = this._onDragOver.bind(this);
-  }
+import React, { useMemo } from "react";
 
-  componentDidMount() {
-    window.addEventListener("mouseup", this._onDragLeave);
-    window.addEventListener("dragenter", this._onDragEnter);
-    window.addEventListener("dragover", this._onDragOver);
-    document
-      .getElementById("dragbox")
-      .addEventListener("dragleave", this._onDragLeave);
-    window.addEventListener("drop", this._onDrop);
-  }
+// Components
+import Button from "../Common/MyButton";
 
-  componentWillUnmount() {
-    window.removeEventListener("mouseup", this._onDragLeave);
-    window.removeEventListener("dragenter", this._onDragEnter);
-    window.addEventListener("dragover", this._onDragOver);
-    document
-      .getElementById("dragbox")
-      .removeEventListener("dragleave", this._onDragLeave);
-    window.removeEventListener("drop", this._onDrop);
-  }
+// Resources
+import { useDropzone } from "react-dropzone";
 
-  _onDragEnter(e) {
-    this.setState({ className: "drop-zone-show" });
-    e.stopPropagation();
-    e.preventDefault();
-    return false;
-  }
+// Styles
+import styles from "./styles.scss";
 
-  _onDragOver(e) {
-    e.preventDefault();
-    e.stopPropagation();
-    return false;
-  }
+const baseStyle = {
+  flex: 1,
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+  padding: "86px 20px",
+  borderWidth: 2,
+  borderRadius: 2,
+  borderColor: "#d0d3de",
+  borderStyle: "dashed",
+  borderRadius: "10px",
+  backgroundColor: "#fafafa",
+  color: "#bdbdbd",
+  outline: "none",
+  transition: "border .24s ease-in-out"
+};
 
-  _onDragLeave(e) {
-    this.setState({ className: "drop-zone-hide" });
-    e.stopPropagation();
-    e.preventDefault();
-    return false;
-  }
+const activeStyle = {
+  borderColor: "#939cb9",
+  backgroundColor: "#f2f4f9"
+};
 
-  render() {
-    return (
-      <div>
-        {this.props.children}
-        <div id="dragbox" className={this.state.className}></div>
+const acceptStyle = {
+  borderColor: "#939cb9",
+  backgroundColor: "#f2f4f9"
+};
+
+const rejectStyle = {
+  borderColor: "#939cb9",
+  backgroundColor: "#f2f4f9"
+};
+
+export default function StyledDropzone(props) {
+  const {
+    acceptedFiles,
+    getRootProps,
+    getInputProps,
+    isDragActive,
+    isDragAccept,
+    isDragReject
+  } = useDropzone();
+
+  const style = useMemo(
+    () => ({
+      ...baseStyle,
+      ...(isDragActive ? activeStyle : {}),
+      ...(isDragAccept ? acceptStyle : {}),
+      ...(isDragReject ? rejectStyle : {})
+    }),
+    [isDragActive, isDragReject]
+  );
+
+  return (
+    <div className={`container ${styles.DropZone}`}>
+      <div {...getRootProps({ style })}>
+        <input {...getInputProps()} />
+        <p>Drag 'n' drop your CV here</p>
+        <strong className={styles.or}>OR</strong>
+        <Button
+          style="Secondary"
+          href=""
+          text="Choose file"
+          icon="fas fa-upload"
+          type=""
+        />
       </div>
-    );
-  }
+      {acceptedFiles.map(file => (
+        <div className={styles.file} key={file.path}>
+          <strong>
+            <i class="fas fa-check-circle"></i> File uploaded:
+          </strong>{" "}
+          {file.path}
+        </div>
+      ))}
+    </div>
+  );
 }

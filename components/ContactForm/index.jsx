@@ -1,5 +1,5 @@
 // Components
-import PrimaryButton from "../Common/PrimaryButton";
+import MyButton from "../Common/MyButton";
 
 // Resources
 import { Grid } from "@material-ui/core";
@@ -52,7 +52,8 @@ export default class ContactForm extends React.Component {
 
             <Grid item xs={12} md={4}>
               <div>
-                <PrimaryButton
+                <MyButton
+                  style="Primary"
                   href=""
                   text="send"
                   icon="fab fa-telegram-plane"

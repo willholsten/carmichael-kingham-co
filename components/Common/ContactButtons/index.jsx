@@ -1,24 +1,32 @@
-// Resources
-import Link from "next/link";
+// Components
+import MyButton from "../MyButton";
+
+// Data
+import content from "../../../content/companyDetails.md";
 
 // Styles
 import styles from "./styles.scss";
 
 export default function ContactButtons() {
+  let {
+    attributes: { phone, email }
+  } = content;
   return (
     <div className={styles.contactButtons}>
-      <Link href="/">
-        <a className={styles.button_phone}>
-          <i className="fas fa-phone"></i>
-          Phone
-        </a>
-      </Link>
-      <Link href="/">
-        <a className={styles.button_email}>
-          <i className="fas fa-envelope"></i>
-          Email
-        </a>
-      </Link>
+      <MyButton
+        style="Secondary"
+        href={`tel:${phone}`}
+        text="Phone"
+        icon="fas fa-phone"
+        type="submit"
+      />
+      <MyButton
+        style="Secondary"
+        href={`mailto:${email}`}
+        text="Email"
+        icon="fas fa-envelope"
+        type="submit"
+      />
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function NavList() {
       <Link activeClassName="active" href="/contact">
         <a>
           <img className={styles.NavMobile_icon} src="/svg/contact.svg" />
-          Contact
+          Contact Us
         </a>
       </Link>
     </div>
