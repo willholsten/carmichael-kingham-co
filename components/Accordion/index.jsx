@@ -7,7 +7,7 @@ import Typography from "@material-ui/core/Typography";
 
 // Styles
 import "../../styles/main.scss";
-// import styles from "./styles.scss";
+import styles from "./styles.scss";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -23,21 +23,23 @@ export default function Accordion({ data }) {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      {data.map(data => (
-        <ExpansionPanel key={data.id}>
-          <ExpansionPanelSummary
-            expandIcon={<i className="fas fa-angle-down"></i>}
-            aria-controls="panel1a-content"
-            id="panel1a-header"
-          >
-            <Typography className={classes.heading}>{data.title}</Typography>
-          </ExpansionPanelSummary>
-          <ExpansionPanelDetails>
-            <Typography>{data.content}</Typography>
-          </ExpansionPanelDetails>
-        </ExpansionPanel>
-      ))}
+    <div className={styles.Accordion}>
+      <div className={classes.root}>
+        {data.map(data => (
+          <ExpansionPanel key={data.id}>
+            <ExpansionPanelSummary
+              expandIcon={<i className="fas fa-angle-down"></i>}
+              aria-controls="panel1a-content"
+              id="panel1a-header"
+            >
+              <Typography className={classes.heading}>{data.title}</Typography>
+            </ExpansionPanelSummary>
+            <ExpansionPanelDetails>
+              <Typography>{data.content}</Typography>
+            </ExpansionPanelDetails>
+          </ExpansionPanel>
+        ))}
+      </div>
     </div>
   );
 }

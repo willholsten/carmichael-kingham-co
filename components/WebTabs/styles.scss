@@ -1,4 +1,8 @@
 .VerticalTabs {
+  display: none;
+  @include screen-sm {
+    display: block;
+  }
   .tabList {
     display: flex;
     flex-direction: column;

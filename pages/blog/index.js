@@ -5,6 +5,7 @@ import Layout from "../../components/Layout";
 import SectionHeader from "../../components/Common/SectionHeader";
 import BlogCard from "../../components/BlogCard";
 import IntroText from "../../components/IntroText";
+import BlogPosts from "../../components/BlogPosts";
 
 // Resources
 import Link from "next/link";
@@ -64,6 +65,7 @@ export default class Blog extends Component {
               </Grid>
             );
           })}
+          {/* <BlogPosts /> */}
         </Grid>
       </Layout>
     );

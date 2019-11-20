@@ -1,13 +1,17 @@
 // Components
 import NavList from "../NavList";
 import ContactButtons from "../Common/ContactButtons";
+import ContactButton from "../Common/ContactButton";
 
 // Resources
 import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
-import Grid from "@material-ui/core";
+import { Grid } from "@material-ui/core";
+
+// Data
+import content from "../../content/companyDetails.md";
 
 // Styles
 import "../../styles/main.scss";
@@ -32,6 +36,10 @@ export default function NavMobile() {
     setState({ ...state, [side]: open });
   };
 
+  let {
+    attributes: { phone, email }
+  } = content;
+
   const sideList = side => (
     <div
       className={styles.list}
@@ -46,8 +54,28 @@ export default function NavMobile() {
           </Link>
           <i className="fab fa-linkedin"></i>
         </div>
-        <NavList />
-        <ContactButtons />
+        <Grid container spacing={3}>
+          <Grid item xs={12}>
+            <NavList />
+          </Grid>
+        </Grid>
+        {/* <ContactButtons /> */}
+        <div className={styles.contactButtons}>
+          <ContactButton
+            style="Secondary"
+            href={`tel:${phone}`}
+            text="Phone"
+            icon="fas fa-phone"
+            type="submit"
+          />
+          <ContactButton
+            style="Secondary"
+            href={`mailto:${email}`}
+            text="Email"
+            icon="fas fa-envelope"
+            type="submit"
+          />
+        </div>
       </div>
       <div className={styles.footer}>
         <Divider />

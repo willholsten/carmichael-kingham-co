@@ -24,16 +24,19 @@ export default class Home extends React.Component {
           <HomeBanner />
         </section>
         <section>
-          <SectionHeader text="About us" image="/svg/about-us.svg" />
+          <SectionHeader text="About us" image="/svg/about.svg" />
           <AboutCard />
         </section>
         <section>
-          <SectionHeader text="Expertise" image="/svg/services.svg" />
+          <SectionHeader text="Expertise" image="/svg/expertise.svg" />
           <ExpertiseCard />
         </section>
         <section>
-          <SectionHeader text="Our people" image="/svg/our-people.svg" />
+          <SectionHeader text="Our people" image="/svg/team.svg" />
           <TeamCard />
+        </section>
+        <section>
+          <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />
         </section>
       </Layout>
     );

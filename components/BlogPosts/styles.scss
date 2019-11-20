@@ -1,0 +1,42 @@
+.BlogPost {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+
+    @include screen-sm {
+      flex-direction: row;
+    }
+    .date {
+      color: $dark-grey;
+
+      i {
+        margin-right: 10px;
+        color: $green;
+      }
+    }
+  }
+  .featuredImage {
+    height: 400px;
+    width: 100%;
+    background-position: center;
+    margin-bottom: 30px;
+  }
+
+  .markdown {
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+    h1,
+    h2 {
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 50px;
+      color: $text;
+    }
+  }
+}
