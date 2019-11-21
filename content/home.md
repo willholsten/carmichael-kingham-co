@@ -14,11 +14,11 @@ aboutText: >-
   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.
 team:
-  - credentials: credentials
+  - credentials: ACCA
     image: /annabelle.jpg
     link: '/our-people#annabelle-carmichael'
     name: Annabelle Carmichael
-  - credentials: credentials
+  - credentials: CFA
     image: /alasdair.jpg
     link: '/our-people#alasdair-kingham'
     name: Alasdair Kingham
