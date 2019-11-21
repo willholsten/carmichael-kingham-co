@@ -20,6 +20,4 @@ formatting
 
 _italic_ **bold**
 
-![cat]( "cat")
-
 __
