@@ -1,5 +1,6 @@
 // Components
-import Logo from "../Logo";
+import LogoLarge from "../LogoLarge";
+import LogoSmall from "../LogoSmall";
 import Nav from "../NavWeb";
 import NavMobile from "../NavMobile";
 
@@ -19,21 +20,24 @@ export default function Header() {
   } = content;
   return (
     <header className={styles.Header}>
-      <div className={styles.header_snippet}>
-        <Container className={styles.snippet_container}>
-          <a href={`tel:${phone}`}>
-            <i className="fas fa-phone"></i>
-            {phone}
-          </a>
-          <a href={`mailto:${email}`}>
-            <i className="fas fa-envelope"></i>
-            {email}
-          </a>
+      <div className={styles.headerSnippet}>
+        <Container maxWidth="md" className={styles.snippetContainer}>
+          <LogoLarge />
+          <div>
+            <a href={`tel:${phone}`}>
+              <i className="fas fa-phone"></i>
+              {phone}
+            </a>
+            <a href={`mailto:${email}`}>
+              <i className="fas fa-envelope"></i>
+              {email}
+            </a>
+          </div>
         </Container>
       </div>
-      <div className={styles.header_main}>
-        <Container className={styles.main_container}>
-          <Logo />
+      <div className={styles.headerMain}>
+        <Container maxWidth="md" className={styles.mainContainer}>
+          <LogoSmall />
           <Nav />
           <NavMobile />
         </Container>

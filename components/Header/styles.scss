@@ -1,20 +1,19 @@
 .Header {
   margin-bottom: 50px;
 
-  .header_snippet {
+  .headerSnippet {
     display: none;
 
     @include screen-md {
       display: block;
       background-color: $blue;
-      height: 40px;
     }
 
-    .snippet_container {
+    .snippetContainer {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       align-items: center;
-      height: 40px;
+      height: 65px;
 
       a {
         color: $white;
@@ -31,15 +30,19 @@
     }
   }
 
-  .header_main {
+  .headerMain {
     background-color: $lightest-grey;
     height: 65px;
 
-    .main_container {
+    .mainContainer {
       height: 65px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @include screen-md {
+        justify-content: flex-end;
+      }
     }
   }
 }

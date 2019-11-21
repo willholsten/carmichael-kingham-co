@@ -11,7 +11,8 @@
     a {
       display: flex;
       align-items: center;
-      padding: 10px 20px;
+      padding: 8px 10px;
+      margin: 0 10px;
       color: $dark-grey;
 
       img {
@@ -19,7 +20,7 @@
       }
     }
     :last-child {
-      margin-right: 0;
+      margin-right: 5px;
     }
   }
 }
