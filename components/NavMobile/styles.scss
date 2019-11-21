@@ -69,14 +69,11 @@
     flex-direction: row;
     margin: 0 16px;
 
-    div {
-      width: 50%;
-
-      a {
-        width: 100%;
-      }
+    a {
+      width: 100%;
     }
   }
+
   .footer {
     margin-top: 16px;
     .terms {

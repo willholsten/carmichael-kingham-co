@@ -1,5 +1,5 @@
 // Components
-import MyTabs from "../MyTabs";
+import VerticalTabs from "../VerticalTabs";
 import Accordion from "../Accordion";
 import SectionHeader from "../Common/SectionHeader";
 
@@ -19,7 +19,7 @@ export default class Team extends React.Component {
       <div className={styles.Team}>
         <SectionHeader text={pageTitle} />
         <div className={styles.expertiseTabs}>
-          <MyTabs data={team} />
+          <VerticalTabs data={team} />
         </div>
         <div className={styles.expertiseAccordion}>
           <Accordion data={team} />

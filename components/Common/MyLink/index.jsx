@@ -2,6 +2,7 @@
 import Link from "next/link";
 
 // Styles
+import "../../../styles/main.scss";
 import styles from "./styles.scss";
 
 export default function MyLink({ href }) {

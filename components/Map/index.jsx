@@ -1,5 +1,6 @@
 // Components
 import MapMarker from "../MapMarker";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 // Resources
 import MapGL, {

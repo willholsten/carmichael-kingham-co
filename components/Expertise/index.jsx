@@ -1,5 +1,5 @@
 // Components
-import MyTabs from "../MyTabs";
+import VerticalTabs from "../VerticalTabs";
 import Accordion from "../Accordion";
 import IntroText from "../IntroText";
 import SectionHeader from "../Common/SectionHeader";
@@ -21,7 +21,7 @@ export default class Expertise extends React.Component {
         <SectionHeader text={pageTitle} />
         <IntroText text={pageSummary} />
         <div className={styles.expertiseTabs}>
-          <MyTabs data={expertise.slice(0, -1)} />
+          <VerticalTabs data={expertise.slice(0, -1)} />
         </div>
         <div className={styles.expertiseAccordion}>
           <Accordion data={expertise.slice(0, -1)} />

@@ -14,8 +14,6 @@ import { Grid } from "@material-ui/core";
 // Data
 import content from "../../content/blog.md";
 
-const BLOG_POSTS_PATH = "../../content/blogPosts";
-
 const importBlogPosts = async () => {
   const markdownFiles = require
     .context("../../content/blogPosts", false, /\.md$/)
@@ -31,7 +29,7 @@ const importBlogPosts = async () => {
 
 export default class Blog extends Component {
   static async getInitialProps() {
-    const postsList = await importBlogPosts();
+    let postsList = await importBlogPosts();
 
     return { postsList };
   }
@@ -40,7 +38,7 @@ export default class Blog extends Component {
     let {
       attributes: { pageTitle, pageSummary }
     } = content;
-    const { postsList } = this.props;
+    let { postsList } = this.props;
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co."

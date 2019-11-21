@@ -50,7 +50,7 @@ export default function NavMobile() {
       <div>
         <div className={styles.header}>
           <Link href="/">
-            <img className={styles.logo} src="/svg/logo-web.svg" />
+            <img className={styles.logo} src="/svg/logo-blue.svg" />
           </Link>
           <i className="fab fa-linkedin"></i>
         </div>
@@ -59,22 +59,27 @@ export default function NavMobile() {
             <NavList />
           </Grid>
         </Grid>
-        {/* <ContactButtons /> */}
         <div className={styles.contactButtons}>
-          <ContactButton
-            style="Secondary"
-            href={`tel:${phone}`}
-            text="Phone"
-            icon="fas fa-phone"
-            type="submit"
-          />
-          <ContactButton
-            style="Secondary"
-            href={`mailto:${email}`}
-            text="Email"
-            icon="fas fa-envelope"
-            type="submit"
-          />
+          <Grid container spacing={2}>
+            <Grid item xs={6}>
+              <ContactButton
+                style="Secondary"
+                href={`tel:${phone}`}
+                text="Phone"
+                icon="fas fa-phone"
+                type="submit"
+              />
+            </Grid>
+            <Grid item xs={6}>
+              <ContactButton
+                style="Secondary"
+                href={`mailto:${email}`}
+                text="Email"
+                icon="fas fa-envelope"
+                type="submit"
+              />
+            </Grid>
+          </Grid>
         </div>
       </div>
       <div className={styles.footer}>

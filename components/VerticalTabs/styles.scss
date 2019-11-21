@@ -12,8 +12,10 @@
     // border-right: 1px solid rgba($grey, 0.2);
 
     .tab {
+      font-family: $sans-serif;
       padding: 15px;
       background-color: $white;
+      text-align: left;
       height: 50px;
       line-height: 18px;
       position: relative;
@@ -26,6 +28,13 @@
       border-radius: $border-radius;
       overflow: hidden;
       cursor: pointer;
+      color: $text;
+
+      span {
+        text-transform: capitalize;
+        align-items: flex-start;
+        color: $text;
+      }
 
       &[aria-selected="true"] {
         color: $text;
@@ -39,6 +48,10 @@
 
     .tabPanel {
       color: $text;
+
+      > div {
+        padding: 0 !important;
+      }
     }
   }
 }

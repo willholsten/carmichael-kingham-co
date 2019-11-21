@@ -2,6 +2,7 @@ const fs = require("fs");
 const blogPostsFolder = "./content/blogPosts";
 // const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
+const withCSS = require("@zeit/next-css");
 const resourcesLoader = {
   loader: "sass-resources-loader",
   options: {
@@ -35,39 +36,41 @@ const getPathsForPosts = () => {
     }, {});
 };
 
-module.exports = withSass({
-  cssModules: true,
-  cssLoaderOptions: {
-    importLoaders: 1,
-    localIdentName: "[name]__[local]___[hash:base64:5]"
-  },
-  webpack: (config, { webpack }) => {
-    const env = Object.keys(process.env).reduce((acc, curr) => {
-      acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
-      return acc;
-    }, {});
+module.exports = withCSS(
+  withSass({
+    cssModules: true,
+    cssLoaderOptions: {
+      importLoaders: 1,
+      localIdentName: "[name]__[local]___[hash:base64:5]"
+    },
+    webpack: (config, { webpack }) => {
+      const env = Object.keys(process.env).reduce((acc, curr) => {
+        acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
+        return acc;
+      }, {});
 
-    config.plugins.push(new webpack.DefinePlugin(env));
+      config.plugins.push(new webpack.DefinePlugin(env));
 
-    config.module.rules.map(rule => {
-      if (
-        rule.test.source.includes("scss") ||
-        rule.test.source.includes("sass")
-      ) {
-        rule.use.push(resourcesLoader);
-      }
-    });
-    config.module.rules.push({
-      test: /\.md$/,
-      use: "frontmatter-markdown-loader"
-    });
+      config.module.rules.map(rule => {
+        if (
+          rule.test.source.includes("scss") ||
+          rule.test.source.includes("sass")
+        ) {
+          rule.use.push(resourcesLoader);
+        }
+      });
+      config.module.rules.push({
+        test: /\.md$/,
+        use: "frontmatter-markdown-loader"
+      });
 
-    return config;
-  },
-  async exportPathMap(defaultPathMap) {
-    return {
-      ...defaultPathMap,
-      ...getPathsForPosts()
-    };
-  }
-});
+      return config;
+    },
+    async exportPathMap(defaultPathMap) {
+      return {
+        ...defaultPathMap,
+        ...getPathsForPosts()
+      };
+    }
+  })
+);

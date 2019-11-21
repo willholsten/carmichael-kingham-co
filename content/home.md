@@ -17,11 +17,11 @@ aboutText:
 team:
   - name: "Annabelle Carmichael"
     credentials: "credentials"
-    image: "annabelle.jpg"
+    image: "/annabelle.jpg"
     link: "/our-people#annabelle-carmichael"
   - name: "Alasdair Kingham"
     credentials: "credentials"
-    image: "alasdair.jpg"
+    image: "/alasdair.jpg"
     link: "/our-people#alasdair-kingham"
 ---
 
