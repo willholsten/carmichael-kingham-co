@@ -40,7 +40,7 @@ collections:
                   widget: string,
                   required: true,
                 }
-              - { label: Photo, name: photo, widget: image, required: true }
+              - { label: Image, name: image, widget: image, required: true }
               - { label: Link, name: link, widget: hidden }
       - label: "About Us"
         name: "aboutUs"
