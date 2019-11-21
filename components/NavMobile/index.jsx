@@ -83,7 +83,7 @@ export default function NavMobile() {
           <Link href="/careers">
             <a>Careers</a>
           </Link>
-          <Link href="/careers">
+          <Link href="/privacy-policy">
             <a>Privacy Policy</a>
           </Link>
         </div>

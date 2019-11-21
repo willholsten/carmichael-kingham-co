@@ -7,7 +7,7 @@ import Careers from "../components/Careers";
 export default function CareersPage() {
   return (
     <Layout
-      title="Careers | Carmichael Kingham &amp; Co"
+      title="Careers | Carmichael Kingham &amp; Co."
       description="Insert page description"
       keywords="Insert keywords"
     >

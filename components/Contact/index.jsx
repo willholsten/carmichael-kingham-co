@@ -27,9 +27,9 @@ export default class Contact extends Component {
     } = contactContent;
     return (
       <div className={styles.Contact}>
-        <SectionHeader text={pageTitle} image="/svg/contact.svg" />
+        <SectionHeader text={pageTitle} />
         <IntroText text={pageSummary} />
-        <Grid container spacing={3}>
+        <Grid container spacing={6}>
           <Grid item xs={12} md={6} className={styles.map}>
             <Map />
             <div className={styles.companyInfo}>

@@ -12,7 +12,7 @@
     // border-right: 1px solid rgba($grey, 0.2);
 
     .tab {
-      padding: 15px 10px;
+      padding: 15px;
       background-color: $white;
       height: 50px;
       line-height: 18px;
@@ -28,19 +28,8 @@
       cursor: pointer;
 
       &[aria-selected="true"] {
-        color: $white;
-        background-color: $green;
-
-        &:before {
-          content: "";
-          position: absolute;
-          right: -1px;
-          top: 0;
-          bottom: 0;
-          width: 7px;
-          background-color: $green;
-          height: 50px;
-        }
+        color: $text;
+        background-color: rgba($blue, 0.1);
       }
       &:focus,
       &:active {

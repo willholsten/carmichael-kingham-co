@@ -1,5 +1,5 @@
-// Resources
-import Link from "next/link";
+// Components
+import MyLink from "../Common/MyLink";
 
 // Data
 import content from "../../content/home.md";
@@ -17,9 +17,7 @@ export default class AboutCard extends React.Component {
       <div className={styles.AboutCard}>
         <p className={styles.text}>
           {aboutText}
-          <Link href="/about-us">
-            <a className={styles.link}>Read more</a>
-          </Link>
+          <MyLink href="/about-us" />
         </p>
       </div>
     );

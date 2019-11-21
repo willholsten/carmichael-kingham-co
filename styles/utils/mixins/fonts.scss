@@ -1,14 +1,20 @@
-@mixin tile {
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.075);
-  &:hover {
-    transition: all 0.3s;
-    box-shadow: 0 4px 5px rgba(darken($grey, 0.5), 0.3) !important;
-  }
-}
-
 @mixin link {
-  color: $green;
-  text-transform: uppercase;
-  font-weight: $bold;
-  letter-spacing: $letter-spacing-small;
+  margin-top: 20px;
+  width: auto;
+  a {
+    background-color: rgba($green, 0.2);
+    padding: 8px 15px;
+    border-radius: $border-radius;
+    width: auto;
+    color: $green;
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    letter-spacing: $letter-spacing-small;
+    transition: $transition;
+
+    &:hover {
+      background-color: rgba($green, 0.3);
+    }
+  }
 }

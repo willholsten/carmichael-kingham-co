@@ -6,7 +6,7 @@ import { Tab, TabPanel, Tabs, TabList } from "react-web-tabs";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default class WebTabs extends React.Component {
+export default class MyTabs extends React.Component {
   render() {
     const { data } = this.props;
     return (
@@ -15,7 +15,7 @@ export default class WebTabs extends React.Component {
         vertical
         className={styles.VerticalTabs}
       >
-        <Grid container spacing={3}>
+        <Grid container spacing={6}>
           <Grid item sm={4}>
             <TabList className={styles.tabList}>
               {data.map(data => (
@@ -29,13 +29,15 @@ export default class WebTabs extends React.Component {
               ))}
             </TabList>
           </Grid>
-          <Grid item sm={4}>
+          <Grid item sm={8}>
             {data.map(data => (
               <TabPanel
                 className={styles.tabPanel}
                 tabId={`vertical-tab-${data.id}`}
                 key={data.id}
               >
+                <h2>{data.title}</h2>
+                <h4>{data.credentials}</h4>
                 {data.content}
               </TabPanel>
             ))}

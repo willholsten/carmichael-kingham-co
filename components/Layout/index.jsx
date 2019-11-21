@@ -5,6 +5,7 @@ import Footer from "../Footer";
 // Resources
 import Head from "next/head";
 import Container from "@material-ui/core/Container";
+import CookieConsent, { Cookies } from "react-cookie-consent";
 
 // Styles
 import styles from "./styles.scss";
@@ -37,6 +38,9 @@ export default class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
           />
+          <CookieConsent>
+            This website uses cookies to enhance the user experience.
+          </CookieConsent>
         </Head>
         <Header />
 

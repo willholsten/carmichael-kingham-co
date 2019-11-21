@@ -1,6 +1,6 @@
 const fs = require("fs");
 const blogPostsFolder = "./content/blogPosts";
-const webpack = require("webpack");
+// const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
 const resourcesLoader = {
   loader: "sass-resources-loader",
@@ -41,7 +41,7 @@ module.exports = withSass({
     importLoaders: 1,
     localIdentName: "[name]__[local]___[hash:base64:5]"
   },
-  webpack: (config, options) => {
+  webpack: (config, { webpack }) => {
     const env = Object.keys(process.env).reduce((acc, curr) => {
       acc[`process.env.${curr}`] = JSON.stringify(process.env[curr]);
       return acc;

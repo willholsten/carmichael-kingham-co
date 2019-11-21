@@ -5,7 +5,6 @@ import Layout from "../../components/Layout";
 import SectionHeader from "../../components/Common/SectionHeader";
 import BlogCard from "../../components/BlogCard";
 import IntroText from "../../components/IntroText";
-import BlogPosts from "../../components/BlogPosts";
 
 // Resources
 import Link from "next/link";
@@ -29,7 +28,7 @@ const importBlogPosts = async () => {
   );
 };
 
-export default class Blog extends Component {
+export default class BlogPosts extends Component {
   static async getInitialProps() {
     const postsList = await importBlogPosts();
 
@@ -41,6 +40,7 @@ export default class Blog extends Component {
       attributes: { pageTitle, pageSummary }
     } = content;
     const { postsList } = this.props;
+    // console.log(postsList);
     return (
       <Layout
         title="Blog | Carmichael Kingham &amp; Co."
@@ -59,13 +59,13 @@ export default class Blog extends Component {
                       title={post.attributes.title}
                       image={post.attributes.image}
                       summary={post.attributes.summary}
-                      href={`blog/post/${post.slug}`}
                     />
                   </a>
                 </Link>
               </Grid>
             );
           })}
+          {/* <BlogPosts /> */}
         </Grid>
       </Layout>
     );

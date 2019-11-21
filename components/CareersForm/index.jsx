@@ -13,7 +13,7 @@ export default function CareersForm(props) {
   return (
     <div className={styles.CareersForm}>
       <form name="Careers" method="POST" data-netlify="true">
-        <Grid container spacing={2}>
+        <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
             <DropZone />
           </Grid>

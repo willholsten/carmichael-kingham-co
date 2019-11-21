@@ -1,5 +1,5 @@
 // Components
-import WebTabs from "../WebTabs";
+import MyTabs from "../MyTabs";
 import Accordion from "../Accordion";
 import SectionHeader from "../Common/SectionHeader";
 
@@ -17,9 +17,9 @@ export default class Team extends React.Component {
     } = content;
     return (
       <div className={styles.Team}>
-        <SectionHeader text={pageTitle} image="/svg/team.svg" />
+        <SectionHeader text={pageTitle} />
         <div className={styles.expertiseTabs}>
-          <WebTabs data={team} />
+          <MyTabs data={team} />
         </div>
         <div className={styles.expertiseAccordion}>
           <Accordion data={team} />

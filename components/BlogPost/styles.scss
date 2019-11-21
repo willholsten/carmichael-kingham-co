@@ -9,7 +9,12 @@
       flex-direction: row;
     }
     .date {
-      color: $dark-grey;
+      color: $grey;
+      margin-bottom: 20px;
+
+      @include screen-sm {
+        margin-bottom: 0;
+      }
 
       i {
         margin-right: 10px;
@@ -17,17 +22,20 @@
       }
     }
   }
+
   .featuredImage {
     height: 400px;
     width: 100%;
     background-position: center;
     margin-bottom: 30px;
+    border-radius: $border-radius;
   }
 
   .markdown {
     img {
       width: 100%;
       max-width: 100%;
+      border-radius: $border-radius;
     }
     h1,
     h2 {

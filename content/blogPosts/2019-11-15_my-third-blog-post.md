@@ -2,22 +2,21 @@
 title: My Third Blog Post
 date: 2019-11-15T10:37:36.623Z
 image: /static/img/blog3.jpg
-summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ---
+
 # Heading
 
 ## Sub Heading
 
 List
 
-* one
-* two
-* three
+- one
+- two
+- three
 
 formatting
 
 _italic_ **bold**
 
 ![cat](/static/img/cat.jpg "cat")
-
-__

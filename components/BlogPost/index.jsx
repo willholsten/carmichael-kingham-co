@@ -21,7 +21,6 @@ export default function BlogPost({ html, title, image, date }) {
         </div>
       </div>
       <CardMedia className={styles.featuredImage} image={image} />
-      {/* <img className={styles.image} src={image} /> */}
       <div
         className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}

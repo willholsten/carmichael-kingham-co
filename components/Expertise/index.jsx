@@ -1,6 +1,6 @@
 // Components
-import ExpertiseTabs from "../WebTabs";
-import ExpertiseAccordion from "../Accordion";
+import MyTabs from "../MyTabs";
+import Accordion from "../Accordion";
 import IntroText from "../IntroText";
 import SectionHeader from "../Common/SectionHeader";
 
@@ -18,13 +18,13 @@ export default class Expertise extends React.Component {
     } = content;
     return (
       <div className={styles.Expertise}>
-        <SectionHeader text={pageTitle} image="/svg/expertise.svg" />
+        <SectionHeader text={pageTitle} />
         <IntroText text={pageSummary} />
         <div className={styles.expertiseTabs}>
-          <ExpertiseTabs data={expertise} />
+          <MyTabs data={expertise.slice(0, -1)} />
         </div>
         <div className={styles.expertiseAccordion}>
-          <ExpertiseAccordion data={expertise} />
+          <Accordion data={expertise.slice(0, -1)} />
         </div>
       </div>
     );

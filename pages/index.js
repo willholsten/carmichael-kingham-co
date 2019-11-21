@@ -16,7 +16,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <Layout
-        title="Carmichael Kingham &amp; Co"
+        title="Carmichael Kingham &amp; Co."
         description="Insert page description"
         keywords="Insert keywords"
       >
