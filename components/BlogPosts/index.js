@@ -28,12 +28,13 @@ export default class BlogPosts extends Component {
     this.setState(state => ({ ...state, posts }));
   }
 
-  render() {
+  render(props) {
     const { posts } = this.state;
+    const { numOfPosts } = this.props;
     return (
       <div>
         <Grid container spacing={3}>
-          {posts.map((post, idx) => {
+          {posts.slice(0, numOfPosts).map((post, idx) => {
             return (
               <Grid item xs={12} sm={6} md={4} key={idx}>
                 <Link href={`blog/post/${post.slug}`}>

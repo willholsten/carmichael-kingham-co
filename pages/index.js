@@ -54,7 +54,7 @@ export default class Home extends React.Component {
         </section>
         <section>
           <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />
-          <BlogPosts />
+          <BlogPosts numOfPosts="3" />
         </section>
       </Layout>
     );

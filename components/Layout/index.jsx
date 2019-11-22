@@ -87,7 +87,6 @@ export default class Layout extends React.Component {
 
         <Footer />
         <script src="https://kit.fontawesome.com/d54483515e.js" />
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </div>
     );
   }

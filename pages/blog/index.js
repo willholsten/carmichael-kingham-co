@@ -23,7 +23,7 @@ export default class Blog extends Component {
       >
         <SectionHeader text={pageTitle} image="/svg/blog.svg" />
         <IntroText text={pageSummary} />
-        <BlogPosts />
+        <BlogPosts numberOfPosts="99" />
       </Layout>
     );
   }
