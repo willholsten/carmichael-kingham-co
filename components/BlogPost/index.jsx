@@ -1,6 +1,6 @@
 // Components
 import SectionHeader from "../Common/SectionHeader";
-import MyButton from "../Common/MyButton";
+import MyLink from "../Common/MyLink";
 
 // Resources
 import { Container, CardMedia } from "@material-ui/core";
@@ -25,13 +25,7 @@ export default function BlogPost({ html, title, image, date }) {
         className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
       />
-      <MyButton
-        style="Secondary"
-        href="/blog"
-        text="Back to posts"
-        icon="fas fa-angle-left"
-        type=""
-      />
+      <MyLink href="/blog" text="Back to posts" />
     </div>
   );
 }

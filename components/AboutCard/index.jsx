@@ -17,7 +17,7 @@ export default class AboutCard extends React.Component {
       <div className={styles.AboutCard}>
         <p className={styles.text}>
           {aboutText}
-          <MyLink href="/about-us" />
+          <MyLink href="/about-us" text="Read more" />
         </p>
       </div>
     );

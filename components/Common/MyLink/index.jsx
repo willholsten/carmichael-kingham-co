@@ -5,11 +5,11 @@ import Link from "next/link";
 import "../../../styles/main.scss";
 import styles from "./styles.scss";
 
-export default function MyLink({ href }) {
+export default function MyLink({ href, text }) {
   return (
     <div className={styles.link}>
       <Link href={href}>
-        <a>Read more</a>
+        <a>{text}</a>
       </Link>
     </div>
   );

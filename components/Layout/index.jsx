@@ -41,28 +41,40 @@ export default class Layout extends React.Component {
           />
         </Head>
         <CookieConsent
-          location="top"
-          buttonText="Okay got it!"
+          location="bottom"
+          buttonText="Okay!"
           style={{
             background: "#F2F4F9",
             color: "#7e88ab",
-            position: "relative"
+            padding: "0 50px",
+            // position: "relative",
+            justifyContent: "space-around;"
           }}
           buttonStyle={{
-            color: "#6adbbd",
+            color: "#fff",
             textTransform: "uppercase",
+            letterSpacing: "1px",
             fontWeight: "bold",
             fontSize: "12px",
             fontSize: "13px",
             borderRadius: "10px",
             padding: "8px 12px",
-            backgroundColor: "rgba(106, 219, 189, 0.2)"
+            backgroundColor: "#6adbbd"
           }}
           expires={150}
         >
           This website uses cookies to enhance the user experience. View our
           <Link href="privacy-policy">
-            <a> Privacy Policy</a>
+            <a
+              style={{
+                color: "#041C69",
+                fontWeight: "700",
+                marginLeft: "5px"
+                // textDecoration: "underline"
+              }}
+            >
+              Privacy Policy.
+            </a>
           </Link>
         </CookieConsent>
         <Header />
@@ -75,6 +87,7 @@ export default class Layout extends React.Component {
 
         <Footer />
         <script src="https://kit.fontawesome.com/d54483515e.js" />
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </div>
     );
   }

@@ -43,11 +43,11 @@ export default function BlogCard({ title, image, summary, href }) {
           <CardMedia className={styles.image} image={image} />
           <CardContent>
             <h4 className={styles.title}>{title}</h4>
-            <p>{`${summary.substring(0, 150)}...`}</p>
+            <p>{summary}</p>
           </CardContent>
         </CardActionArea>
         <CardActions className={styles.cardActions}>
-          <MyLink href={href} />
+          <MyLink href={href} text="Read more" />
         </CardActions>
       </Card>
     </div>
