@@ -2,35 +2,17 @@ import React, { Component } from "react";
 
 // Components
 import BlogCard from "../../components/BlogCard";
+import BlogFilter from "../../components/BlogFilter";
 
 // Resources
 import Link from "next/link";
 import { Grid } from "@material-ui/core";
 
 // console.log(markdownFiles);
-const markdownFiles = require
-  .context("../../content/blogPosts", false, /\.md$/)
-  .keys()
-  .map(relativePath => relativePath.substring(2));
 
 export default class BlogPosts extends Component {
-  state = {
-    posts: []
-  };
-
-  async componentDidMount() {
-    const posts = await Promise.all(
-      markdownFiles.map(async path => {
-        const markdown = await import(`../../content/blogPosts/${path}`);
-        return { ...markdown, slug: path.substring(0, path.length - 3) };
-      })
-    );
-    this.setState(state => ({ ...state, posts }));
-  }
-
-  render(props) {
-    const { posts } = this.state;
-    const { numOfPosts } = this.props;
+  render() {
+    const { posts, numOfPosts } = this.props;
     return (
       <div>
         <Grid container spacing={3}>
@@ -43,6 +25,7 @@ export default class BlogPosts extends Component {
                       title={post.attributes.title}
                       image={post.attributes.image}
                       summary={post.attributes.summary}
+                      date={post.attributes.date}
                       href={`blog/post/${post.slug}`}
                     />
                   </a>

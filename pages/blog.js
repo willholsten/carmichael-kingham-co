@@ -1,20 +1,21 @@
 import React, { Component } from "react";
 
 // Components
-import Layout from "../../components/Layout";
-import SectionHeader from "../../components/Common/SectionHeader";
-import BlogCard from "../../components/BlogCard";
-import IntroText from "../../components/IntroText";
-import BlogPosts from "../../components/BlogPosts";
+import Layout from "../components/Layout";
+import SectionHeader from "../components/Common/SectionHeader";
+import Blog from "../components/Blog";
+import IntroText from "../components/IntroText";
 
 // Data
-import content from "../../content/blog.md";
+import content from "../content/blog.md";
 
-export default class Blog extends Component {
+export default class BlogPage extends Component {
   render() {
     let {
       attributes: { pageTitle, pageSummary }
     } = content;
+    const { posts, sortPosts } = this.props;
+
     return (
       <Layout
         title={`${pageTitle} | Carmichael Kingham &amp; Co.`}
@@ -23,7 +24,7 @@ export default class Blog extends Component {
       >
         <SectionHeader text={pageTitle} image="/svg/blog.svg" />
         <IntroText text={pageSummary} />
-        <BlogPosts numberOfPosts="99" />
+        <Blog posts={posts} sortPosts={sortPosts} />
       </Layout>
     );
   }

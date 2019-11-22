@@ -1,49 +1,77 @@
-// import React, { Component } from "react";
-// import Link from "next/link";
+import React, { Component } from "react";
+import Link from "next/link";
 
-// // Components
-// import BlogCard from "../../components/BlogCard";
+// Components
+import BlogPosts from "../BlogPosts";
+import BlogFilter from "../BlogFilter";
 
-// // Resources
-// import { Container } from "@material-ui/core";
+// Styles
+import "../../styles/main.scss";
+import styles from "./styles.scss";
 
-// const BLOG_POSTS_PATH = "../../content/blogPosts";
+export default class Blog extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      posts: this.props.posts,
+      sortPosts: this.props.sortPosts
+    };
 
-// const importBlogPosts = async () => {
-//   const markdownFiles = require
-//     .context("../../content/blogPosts", false, /\.md$/)
-//     .keys()
-//     .map(relativePath => relativePath.substring(2));
-//   return Promise.all(
-//     markdownFiles.map(async path => {
-//       const markdown = await import(`../../content/blogPosts/${path}`);
-//       return { ...markdown, slug: path.substring(0, path.length - 3) };
-//     })
-//   );
-// };
+    this.handleSortPosts = this.handleSortPosts.bind(this);
+    this.renderPosts = this.renderPosts.bind(this);
 
-// export default class Blog extends Component {
-//   static async getInitialProps() {
-//     const postsList = await importBlogPosts();
-//     return { postsList };
-//   }
-//   // console.log(postsList);
-//   render() {
-//     const { postsList } = this.props;
-//     return (
-//       <Container maxWidth="md">
-//         {postsList.map(post => (
-//           <Link href={`blog/post/${post.slug}`} key={post.slug}>
-//             <a>
-//               <BlogCard
-//                 title={post.attributes.title}
-//                 image={post.attributes.image}
-//                 summary={post.attributes.content}
-//               />
-//             </a>
-//           </Link>
-//         ))}
-//       </Container>
-//     );
-//   }
-// }
+    this.renderPosts(this.state.sortPosts);
+  }
+  handleSortPosts(arg) {
+    this.setState({ sortPosts: arg });
+    this.renderPosts(arg);
+  }
+
+  renderPosts(sortBy) {
+    const posts = this.state.posts;
+    let state = this.state;
+    let expr = sortBy;
+    switch (expr) {
+      case "A-Z":
+        return {
+          ...state,
+          posts: posts.sort((a, b) =>
+            a.attributes.title.localeCompare(b.attributes.title)
+          )
+        };
+      case "Z-A":
+        return {
+          ...state,
+          posts: posts.sort((a, b) =>
+            b.attributes.title.localeCompare(a.attributes.title)
+          )
+        };
+      case "newest":
+        return {
+          ...state,
+          posts: posts.sort(function(a, b) {
+            return new Date(b.attributes.date) - new Date(a.attributes.date);
+          })
+        };
+      case "oldest":
+        return {
+          ...state,
+          posts: posts.sort(function(a, b) {
+            return new Date(a.attributes.date) - new Date(b.attributes.date);
+          })
+        };
+      default:
+        console.log(`${expr} doesn't exist`);
+    }
+  }
+
+  render() {
+    let { posts } = this.props;
+    return (
+      <div>
+        <BlogFilter handleSortPosts={this.handleSortPosts} />
+        <BlogPosts posts={posts} numOfPosts="999" />
+      </div>
+    );
+  }
+}

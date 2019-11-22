@@ -7,10 +7,10 @@ import {
   CardMedia,
   CardContent,
   CardActions,
-  CardActionArea,
-  Typography
+  CardActionArea
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
+import moment from "moment";
 
 // Styles
 import "../../styles/main.scss";
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
   focusHighlight: {}
 });
 
-export default function BlogCard({ title, image, summary, href }) {
+export default function BlogCard({ title, image, summary, href, date }) {
   const classes = useStyles();
 
   return (
@@ -43,6 +43,10 @@ export default function BlogCard({ title, image, summary, href }) {
           <CardMedia className={styles.image} image={image} />
           <CardContent>
             <h4 className={styles.title}>{title}</h4>
+            <div className={styles.date}>
+              <i className="fas fa-clock"></i>
+              {moment(date).format("Do MMMM YYYY")}
+            </div>
             <p>{summary}</p>
           </CardContent>
         </CardActionArea>

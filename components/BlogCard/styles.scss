@@ -12,7 +12,21 @@
   .image {
     height: 200px;
   }
+  .date {
+    margin-bottom: 20px;
+    color: $text;
+    font-style: italic;
+    i {
+      color: $grey;
+      margin-right: 10px;
+    }
+  }
+  p {
+    margin-bottom: 0;
+  }
   .cardActions {
     padding-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }

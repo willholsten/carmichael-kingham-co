@@ -1,6 +1,6 @@
 ---
 title: "My first blog post"
-date: 2019-09-06T08:28:44.549Z
+date: 2019-09-01T08:28:44.549Z
 image: "/blog1.jpg"
 summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 ---
