@@ -1,32 +1,47 @@
 ---
 pageTitle: Expertise
-pageSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+pageSummary: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+  incididunt ut labore et dolore magna aliqua.
 expertise:
-  - id: 0
+  - content: |-
+      # Heading 1
+
+      ## Heading 2
+
+      _italic_
+
+      **bold**
+
+      List
+
+      * One
+      * Two
+      * Three
+    id: 0
+    summary: Bookkeeping Summary
     title: Bookkeeping
-    summary: "Bookkeeping Summary"
-    content: Bookkeeping Content
-    href: /expertise#bookkeeping
-  - id: 1
+  - content: Management & Financial Analytics Content
+    id: 1
+    summary: Management & Financial Analytics Summary
     title: Management & Financial Analytics
-    summary: "Management & Financial Analytics Summary"
-    content: Management & Financial Analytics Content
-    href: /expertise#management-financial-analytics
-  - id: 2
+  - content: VAT & Corporation Tax Content
+    id: 2
+    summary: VAT & Corporation Tax Summary
     title: VAT & Corporation Tax
-    summary: "VAT & Corporation Tax Summary"
-    content: VAT & Corporation Tax Content
-    href: /expertise#vat-corporation-tax
-  - id: 3
+  - content: Budget & Forecasting Content
+    id: 3
+    summary: Budget & Forecasting Summary
     title: Budget & Forecasting
-    summary: "Budget & Forecasting Summary"
-    content: Budget & Forecasting Content
-    href: /expertise#bookkeeping
-  - id: 4
+  - content: AD HOC Projects and Analysis Content
+    id: 4
+    summary: AD HOC Projects and Analysis Summary
     title: AD HOC Projects and Analysis
-    summary: "AD HOC Projects and Analysis Summary"
-    content: AD HOC Projects and Analysis Content
-    href: /expertise#ad-hoc-projects-and-analysis
-  - title: View all
-    href: /expertise
+  - content: This text won't be visible
+    id: 9999
+    summary: This text won't be visible
+    title: View all
 ---
+
