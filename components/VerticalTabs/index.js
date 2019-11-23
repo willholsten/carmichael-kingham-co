@@ -98,7 +98,7 @@ export default function VerticalTabs({ data }) {
             >
               <h2>{data.title}</h2>
               <h4>{data.credentials}</h4>
-              {data.content}
+              <div dangerouslySetInnerHTML={{ __html: data.content }} />
             </TabPanel>
           ))}
         </Grid>
