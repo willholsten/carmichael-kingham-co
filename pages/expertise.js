@@ -4,6 +4,7 @@ import React, { Component } from "react";
 import Layout from "../components/Layout";
 import SectionHeader from "../components/Common/SectionHeader";
 import Expertise from "../components/Expertise";
+import IntroText from "../components/IntroText";
 
 // Resources
 import Container from "@material-ui/core/Container";
@@ -19,6 +20,7 @@ export default class ExpertisePage extends Component {
       >
         <Container maxWidth="md">
           <SectionHeader text={expertise.attributes.pageTitle} />
+          <IntroText text={expertise.attributes.pageSummary} />
           <Expertise expertise={expertise.attributes} />
         </Container>
       </Layout>

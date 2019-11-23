@@ -7,24 +7,19 @@ import Paper from "@material-ui/core/Paper";
 import "../../styles/main.scss";
 import styles from "./styles.scss";
 
-// Data
-import content from "../../content/home.md";
-
 export default class TeamCard extends React.Component {
   render() {
-    let {
-      attributes: { team }
-    } = content;
+    const { team } = this.props;
     return (
       <Grid container spacing={3} className={styles.TeamCard}>
-        {team.map(team => (
+        {team.team.map(team => (
           <Grid key={team.name} item xs={12} sm={6}>
             <Link href={team.link}>
               <a>
                 <Paper className={styles.tile}>
                   <img className={styles.avatar} src={team.image} />
                   <div className={styles.text}>
-                    <h2>{team.name}</h2>
+                    <h2>{team.title}</h2>
                     <h4>{team.credentials}</h4>
                   </div>
                 </Paper>

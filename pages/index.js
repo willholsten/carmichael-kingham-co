@@ -14,7 +14,7 @@ import { Container } from "@material-ui/core";
 
 export default class Home extends React.Component {
   render() {
-    const { posts, sortPosts } = this.props;
+    const { posts, expertise, team } = this.props;
     return (
       <Layout
         title="Carmichael Kingham &amp; Co."
@@ -33,11 +33,11 @@ export default class Home extends React.Component {
           </section>
           <section>
             <SectionHeader text="Expertise" image="/svg/expertise.svg" />
-            <ExpertiseCard />
+            <ExpertiseCard expertise={expertise.attributes} />
           </section>
           <section>
             <SectionHeader text="Our people" image="/svg/team.svg" />
-            <TeamCard />
+            <TeamCard team={team.attributes} />
           </section>
           <section>
             <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />

@@ -1,7 +1,6 @@
 // Components
 import VerticalTabs from "../VerticalTabs";
 import Accordion from "../Accordion";
-import IntroText from "../IntroText";
 
 // Styles
 import "../../styles/main.scss";
@@ -12,7 +11,6 @@ export default class Expertise extends React.Component {
     const { expertise } = this.props;
     return (
       <div className={styles.Expertise}>
-        <IntroText text={expertise.pageSummary} />
         <div className={styles.expertiseTabs}>
           <VerticalTabs data={expertise.expertise.slice(0, -1)} />
         </div>

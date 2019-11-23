@@ -12,7 +12,7 @@ import styles from "./styles.scss";
 export default class HomeBanner extends React.Component {
   render() {
     let {
-      attributes: { bannerText }
+      attributes: { bannerText, bannerImageMobile, bannerImageWeb }
     } = content;
     let {
       attributes: { companyName }
@@ -20,11 +20,8 @@ export default class HomeBanner extends React.Component {
 
     return (
       <div className={styles.HomeBanner}>
-        <img className={styles.banner_web} src="/homepage-banner-web.jpg" />
-        <img
-          className={styles.banner_mobile}
-          src="/homepage-banner-mobile.jpg"
-        />
+        <img className={styles.banner_web} src={bannerImageWeb} />
+        <img className={styles.banner_mobile} src={bannerImageMobile} />
         <div className={styles.content}>
           <h4>{companyName}</h4>
           <h1>{bannerText}</h1>

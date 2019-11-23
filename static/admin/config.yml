@@ -24,6 +24,18 @@ collections:
               required: true,
             }
           - {
+              label: "Banner Image Mobile",
+              name: "bannerImageMobile",
+              widget: "image",
+              required: true,
+            }
+          - {
+              label: "Banner Image Web",
+              name: "bannerImageWeb",
+              widget: "image",
+              required: true,
+            }
+          - {
               label: "About Text",
               name: "aboutText",
               widget: "markdown",
