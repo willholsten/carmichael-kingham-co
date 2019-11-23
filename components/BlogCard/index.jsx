@@ -42,12 +42,18 @@ export default function BlogCard({ title, image, summary, href, date }) {
         >
           <CardMedia className={styles.image} image={image} />
           <CardContent>
-            <h4 className={styles.title}>{title}</h4>
             <div className={styles.date}>
               <i className="fas fa-clock"></i>
               {moment(date).format("Do MMMM YYYY")}
             </div>
-            <p>{summary}</p>
+            <h4 className={styles.title}>
+              {`${title.substring(0, 50)}`}
+              {title.length > 50 && "..."}
+            </h4>
+            <p>
+              {`${summary.substring(0, 60)}`}
+              {summary.length > 60 && "..."}
+            </p>
           </CardContent>
         </CardActionArea>
         <CardActions className={styles.cardActions}>

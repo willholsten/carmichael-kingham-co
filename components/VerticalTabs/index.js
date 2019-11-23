@@ -6,6 +6,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
+import Sticky from "react-sticky-el";
 
 // Styles
 import "../../styles/main.scss";
@@ -66,24 +67,26 @@ export default function VerticalTabs({ data }) {
     <div className={styles.VerticalTabs}>
       <Grid container spacing={6}>
         <Grid item sm={4}>
-          <Tabs
-            orientation="vertical"
-            variant="scrollable"
-            value={value}
-            onChange={handleChange}
-            aria-label="Vertical tabs example"
-            className={styles.tabList}
-            classes={{ indicator: classes.bigIndicator }}
-          >
-            {data.map(data => (
-              <Tab
-                label={data.title}
-                className={styles.tab}
-                key={data.id}
-                {...a11yProps(data.id)}
-              />
-            ))}
-          </Tabs>
+          <Sticky style={{}}>
+            <Tabs
+              orientation="vertical"
+              variant="scrollable"
+              value={value}
+              onChange={handleChange}
+              aria-label="Vertical tabs example"
+              className={styles.tabList}
+              classes={{ indicator: classes.bigIndicator }}
+            >
+              {data.map(data => (
+                <Tab
+                  label={data.title}
+                  className={styles.tab}
+                  key={data.id}
+                  {...a11yProps(data.id)}
+                />
+              ))}
+            </Tabs>
+          </Sticky>
         </Grid>
         <Grid item sm={8}>
           {data.map(data => (

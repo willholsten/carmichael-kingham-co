@@ -1,12 +1,23 @@
 .BlogCard {
-  margin: 0 auto 30px;
+  margin: 0 auto 16px;
 
   > div {
     @include card;
   }
 
   .title {
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: none;
     margin-bottom: 20px;
+    margin-top: 5px;
+    color: $dark-grey;
+    letter-spacing: 0;
+
+    @include screen-md {
+      font-size: 20px;
+      height: 50px;
+    }
   }
 
   .image {
@@ -23,6 +34,10 @@
   }
   p {
     margin-bottom: 0;
+
+    @include screen-md {
+      height: 50px;
+    }
   }
   .cardActions {
     padding-bottom: 20px;

@@ -15,16 +15,12 @@ import styles from "./styles.scss";
 
 // Data
 import content from "../../content/companyDetails.md";
-import contentNavigation from "../../content/navigation.md";
 
 export default class Footer extends React.Component {
   render() {
     let {
       attributes: { companyRegistration, companyName }
     } = content;
-    let {
-      attributes: { navigation, company, partners }
-    } = contentNavigation;
     return (
       <footer className={styles.Footer}>
         <Container maxWidth="md" className={styles.FooterLinks}>

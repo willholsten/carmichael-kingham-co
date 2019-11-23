@@ -54,10 +54,44 @@ collections:
             }
           - { label: "Quote", name: "quote", widget: "string", required: true }
           - { label: "Body", name: "body", widget: "markdown", required: true }
+      - label: "Our People"
+        name: "ourPeople"
+        file: "content/ourPeople.md"
+        fields:
+          - {
+              label: "Page Title",
+              name: "pageTitle",
+              widget: "string",
+              required: true,
+            }
+          - label: Team
+            name: team
+            widget: list
+            fields:
+              - { label: Name, name: title, widget: string, required: true }
+              - {
+                  label: Credentials,
+                  name: credentials,
+                  widget: string,
+                  required: true,
+                }
+              - { label: Bio, name: content, widget: markdown, required: true }
       - label: "Expertise"
         name: "expertise"
         file: "content/expertise.md"
         fields:
+          - {
+              label: "Page Title",
+              name: "pageTitle",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "Page Summary",
+              name: "pageSummary",
+              widget: "string",
+              required: true,
+            }
           - label: Expertise
             name: expertise
             widget: list
@@ -76,22 +110,22 @@ collections:
                   required: true,
                 }
               - { label: Id, name: id, widget: number, required: true }
-      - label: "Our People"
-        name: "ourPeople"
-        file: "content/ourPeople.md"
+      - label: "Blog"
+        name: "blog"
+        file: "content/blog.md"
         fields:
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: title, widget: string, required: true }
-              - {
-                  label: Credentials,
-                  name: credentials,
-                  widget: string,
-                  required: true,
-                }
-              - { label: Bio, name: content, widget: markdown, required: true }
+          - {
+              label: "Page Title",
+              name: "pageTitle",
+              widget: "string",
+              required: true,
+            }
+          - {
+              label: "Page Summary",
+              name: "pageSummary",
+              widget: "string",
+              required: true,
+            }
       - label: "Contact Us"
         name: "contactUs"
         file: "content/contactUs.md"

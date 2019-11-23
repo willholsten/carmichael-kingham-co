@@ -9,6 +9,9 @@ import ExpertiseCard from "../components/ExpertiseCard";
 import TeamCard from "../components/TeamCard";
 import BlogPosts from "../components/BlogPosts";
 
+// Resources
+import { Container } from "@material-ui/core";
+
 export default class Home extends React.Component {
   render() {
     const { posts, sortPosts } = this.props;
@@ -18,25 +21,29 @@ export default class Home extends React.Component {
         description="Insert page description"
         keywords="Insert keywords"
       >
-        <section>
-          <HomeBanner />
-        </section>
-        <section>
-          <SectionHeader text="About us" image="/svg/about.svg" />
-          <AboutCard />
-        </section>
-        <section>
-          <SectionHeader text="Expertise" image="/svg/expertise.svg" />
-          <ExpertiseCard />
-        </section>
-        <section>
-          <SectionHeader text="Our people" image="/svg/team.svg" />
-          <TeamCard />
-        </section>
-        <section>
-          <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />
-          <BlogPosts posts={posts} numOfPosts="3" />
-        </section>
+        <Container maxWidth="lg">
+          <section>
+            <HomeBanner />
+          </section>
+        </Container>
+        <Container maxWidth="md">
+          <section>
+            <SectionHeader text="About us" image="/svg/about.svg" />
+            <AboutCard />
+          </section>
+          <section>
+            <SectionHeader text="Expertise" image="/svg/expertise.svg" />
+            <ExpertiseCard />
+          </section>
+          <section>
+            <SectionHeader text="Our people" image="/svg/team.svg" />
+            <TeamCard />
+          </section>
+          <section>
+            <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />
+            <BlogPosts posts={posts} numOfPosts="3" />
+          </section>
+        </Container>
       </Layout>
     );
   }

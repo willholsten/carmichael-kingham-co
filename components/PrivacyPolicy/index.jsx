@@ -1,6 +1,3 @@
-// Components
-import SectionHeader from "../Common/SectionHeader";
-
 // Data
 import content from "../../content/privacyPolicy.md";
 
@@ -10,16 +7,12 @@ import styles from "./styles.scss";
 
 export default class PrivacyPolicy extends React.Component {
   render() {
-    let {
-      html,
-      attributes: { pageTitle }
-    } = content;
+    const { privacy } = this.props;
     return (
       <div className={styles.PivacyPolicy}>
-        <SectionHeader text={pageTitle} />
         <div
           className={styles.markdown}
-          dangerouslySetInnerHTML={{ __html: html }}
+          dangerouslySetInnerHTML={{ __html: privacy.html }}
         />
       </div>
     );

@@ -4,11 +4,8 @@
   justify-content: flex-start;
   width: 100%;
   position: relative;
-  margin: 20px 0;
-
-  @include screen-sm {
-    width: 500px;
-  }
+  padding: 15px 0;
+  border-bottom: 1px solid rgba($lighter-grey, 0.5);
 
   li {
     display: flex;

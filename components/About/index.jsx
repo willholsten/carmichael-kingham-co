@@ -1,12 +1,6 @@
-// Components
-import SectionHeader from "../Common/SectionHeader";
-
 // Resources
 import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
-
-// Data
-import content from "../../content/about.md";
 
 // Styles
 import "../../styles/main.scss";
@@ -14,19 +8,15 @@ import styles from "./styles.scss";
 
 export default class About extends React.Component {
   render() {
-    let {
-      html,
-      attributes: { pageTitle, quote }
-    } = content;
+    const { about } = this.props;
     return (
       <div className={styles.About}>
-        <SectionHeader text={pageTitle} />
         <Grid container spacing={3}>
           <Grid item xs={12} sm={4}>
             <Paper className={styles.quoteTile}>
               <h1 className={styles.quote}>
                 <span>"</span>
-                {quote}
+                {about.attributes.quote}
                 <span>"</span>
               </h1>
             </Paper>
@@ -35,7 +25,7 @@ export default class About extends React.Component {
             <Paper className={styles.textTile}>
               <div
                 className={styles.markdown}
-                dangerouslySetInnerHTML={{ __html: html }}
+                dangerouslySetInnerHTML={{ __html: about.html }}
               />
             </Paper>
           </Grid>

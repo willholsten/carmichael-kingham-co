@@ -1,10 +1,6 @@
 // Components
-import SectionHeader from "../Common/SectionHeader";
 import IntroText from "../IntroText";
 import CareersForm from "../CareersForm";
-
-// Data
-import content from "../../content/careers.md";
 
 // Styles
 import "../../styles/main.scss";
@@ -12,13 +8,10 @@ import styles from "./styles.scss";
 
 export default class Careers extends React.Component {
   render() {
-    let {
-      attributes: { pageTitle, pageSummary }
-    } = content;
+    const { careers } = this.props;
     return (
       <div className={styles.Careers}>
-        <SectionHeader text={pageTitle} />
-        <IntroText text={pageSummary} />
+        <IntroText text={careers.attributes.pageSummary} />
         <CareersForm />
       </div>
     );

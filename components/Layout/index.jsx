@@ -5,7 +5,6 @@ import Footer from "../Footer";
 // Resources
 import Head from "next/head";
 import Link from "next/link";
-import Container from "@material-ui/core/Container";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 
 // Styles
@@ -81,7 +80,8 @@ export default class Layout extends React.Component {
 
         <div className={styles.content}>
           <section>
-            <Container maxWidth="md">{children}</Container>
+            {/* <Container maxWidth="md">{children}</Container> */}
+            {children}
           </section>
         </div>
 

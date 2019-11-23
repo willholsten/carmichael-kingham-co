@@ -1,8 +1,8 @@
 ---
-title: "My first blog post"
+title: "This is the title of my first blog posts, it's about the"
 date: 2019-09-01T08:28:44.549Z
 image: "/blog1.jpg"
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

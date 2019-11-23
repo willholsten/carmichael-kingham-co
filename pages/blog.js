@@ -6,24 +6,23 @@ import SectionHeader from "../components/Common/SectionHeader";
 import Blog from "../components/Blog";
 import IntroText from "../components/IntroText";
 
-// Data
-import content from "../content/blog.md";
+// Resources
+import Container from "@material-ui/core/Container";
 
 export default class BlogPage extends Component {
   render() {
-    let {
-      attributes: { pageTitle, pageSummary }
-    } = content;
-    const { posts, sortPosts } = this.props;
+    const { blog, posts, sortPosts } = this.props;
 
     return (
       <Layout
-        title={`${pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${blog.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >
-        <SectionHeader text={pageTitle} image="/svg/blog.svg" />
-        <IntroText text={pageSummary} />
+        <Container maxWidth="md">
+          <SectionHeader text={blog.attributes.pageTitle} />
+          <IntroText text={blog.attributes.pageSummary} />
+        </Container>
         <Blog posts={posts} sortPosts={sortPosts} />
       </Layout>
     );

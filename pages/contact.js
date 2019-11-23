@@ -1,17 +1,30 @@
-import React from "react";
+import React, { Component } from "react";
 
 // Components
 import Layout from "../components/Layout";
+import SectionHeader from "../components/Common/SectionHeader";
 import Contact from "../components/Contact";
+import IntroText from "../components/IntroText";
 
-export default function ContactPage() {
-  return (
-    <Layout
-      title="Contact | Carmichael Kingham &amp; Co."
-      description="Insert page description"
-      keywords="Insert keywords"
-    >
-      <Contact />
-    </Layout>
-  );
+// Resources
+import Container from "@material-ui/core/Container";
+
+export default class ContactPage extends Component {
+  render() {
+    const { contact, companyDetails } = this.props;
+
+    return (
+      <Layout
+        title={`${contact.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        description="Insert page description"
+        keywords="Insert keywords"
+      >
+        <Container maxWidth="md">
+          <SectionHeader text={contact.attributes.pageTitle} />
+          <IntroText text={contact.attributes.pageSummary} />
+          <Contact companyDetails={companyDetails} />
+        </Container>
+      </Layout>
+    );
+  }
 }

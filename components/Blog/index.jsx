@@ -1,9 +1,12 @@
 import React, { Component } from "react";
-import Link from "next/link";
 
 // Components
 import BlogPosts from "../BlogPosts";
 import BlogFilter from "../BlogFilter";
+
+// Resources
+import Sticky from "react-sticky-el";
+import Container from "@material-ui/core/Container";
 
 // Styles
 import "../../styles/main.scss";
@@ -69,8 +72,21 @@ export default class Blog extends Component {
     let { posts } = this.props;
     return (
       <div>
-        <BlogFilter handleSortPosts={this.handleSortPosts} />
-        <BlogPosts posts={posts} numOfPosts="999" />
+        <div className={styles.filterContainer}>
+          <Sticky
+            style={{
+              backgroundColor: "#f9f9fa",
+              zIndex: "999"
+            }}
+          >
+            <Container maxWidth="md">
+              <BlogFilter handleSortPosts={this.handleSortPosts} />
+            </Container>
+          </Sticky>
+        </div>
+        <Container maxWidth="md">
+          <BlogPosts posts={posts} numOfPosts="999" />
+        </Container>
       </div>
     );
   }

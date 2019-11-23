@@ -1,6 +1,16 @@
 import React from "react";
 import App from "next/app";
 
+// Data
+import about from "../content/about.md";
+import team from "../content/ourPeople.md";
+import expertise from "../content/expertise.md";
+import blog from "../content/blog.md";
+import contact from "../content/contactUs.md";
+import privacy from "../content/privacyPolicy.md";
+import careers from "../content/careers.md";
+import companyDetails from "../content/companyDetails.md";
+
 const importBlogPosts = async () => {
   const markdownFiles = require
     .context("../content/blogPosts", false, /\.md$/)
@@ -23,8 +33,16 @@ export default class MyApp extends App {
   }
 
   state = {
+    about,
+    team,
+    expertise,
+    blog,
     posts: this.props.postsList,
-    sortPosts: "newest"
+    sortPosts: "newest",
+    contact,
+    privacy,
+    careers,
+    companyDetails
   };
 
   render() {
