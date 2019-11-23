@@ -98,8 +98,8 @@ collections:
             fields:
               - { label: Title, name: title, widget: string, required: true }
               - {
-                  label: Page Summary,
-                  name: pageSummary,
+                  label: Summary,
+                  name: summary,
                   widget: string,
                   required: true,
                 }
