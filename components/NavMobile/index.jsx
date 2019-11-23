@@ -54,10 +54,8 @@ export default function NavMobile() {
           </Link>
           <i className="fab fa-linkedin"></i>
         </div>
-        <Grid container spacing={3}>
-          <Grid item xs={12}>
-            <NavList />
-          </Grid>
+        <Grid item xs={12}>
+          <NavList />
         </Grid>
         <div className={styles.contactButtons}>
           <Grid container spacing={2}>

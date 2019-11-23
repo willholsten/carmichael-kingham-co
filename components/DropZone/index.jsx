@@ -78,7 +78,7 @@ export default function StyledDropzone(props) {
       {acceptedFiles.map(file => (
         <div className={styles.file} key={file.path}>
           <strong>
-            <i class="fas fa-check-circle"></i> File uploaded:
+            <i className="fas fa-check-circle"></i> File uploaded:
           </strong>{" "}
           {file.path}
         </div>

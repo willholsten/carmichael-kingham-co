@@ -2,9 +2,13 @@
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: 500px;
+  width: 100%;
   position: relative;
   margin: 20px 0;
+
+  @include screen-sm {
+    width: 500px;
+  }
 
   li {
     display: flex;
