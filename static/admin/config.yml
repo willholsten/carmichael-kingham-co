@@ -41,19 +41,6 @@ collections:
               widget: "markdown",
               required: true,
             }
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: name, widget: string, required: true }
-              - {
-                  label: Credentials,
-                  name: credentials,
-                  widget: string,
-                  required: true,
-                }
-              - { label: Image, name: image, widget: image, required: true }
-              - { label: Link, name: link, widget: hidden }
       - label: "About Us"
         name: "aboutUs"
         file: "content/about.md"

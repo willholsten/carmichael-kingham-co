@@ -13,8 +13,8 @@ export default class TeamCard extends React.Component {
     return (
       <Grid container spacing={3} className={styles.TeamCard}>
         {team.team.map(team => (
-          <Grid key={team.name} item xs={12} sm={6}>
-            <Link href={team.link}>
+          <Grid key={team.title} item xs={12} sm={6}>
+            <Link href={team.href}>
               <a>
                 <Paper className={styles.tile}>
                   <img className={styles.avatar} src={team.image} />

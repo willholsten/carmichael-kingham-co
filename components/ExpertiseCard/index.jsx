@@ -15,7 +15,6 @@ import styles from "./styles.scss";
 export default class ExpertiseCard extends Component {
   render() {
     const { expertise } = this.props;
-    console.log(expertise);
     return (
       <Grid container spacing={3} className={styles.ExpertiseCard}>
         {expertise.expertise.map(expertise => (
