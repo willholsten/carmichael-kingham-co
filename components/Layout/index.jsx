@@ -1,11 +1,10 @@
 // Components
 import Header from "../Header";
 import Footer from "../Footer";
+import Cookies from "../Cookies";
 
 // Resources
 import Head from "next/head";
-import Link from "next/link";
-import CookieConsent, { Cookies } from "react-cookie-consent";
 
 // Styles
 import styles from "./styles.scss";
@@ -38,54 +37,17 @@ export default class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
           />
+          <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         </Head>
-        <CookieConsent
-          location="bottom"
-          buttonText="Okay!"
-          style={{
-            background: "#F2F4F9",
-            color: "#7e88ab",
-            padding: "0 50px",
-            // position: "relative",
-            justifyContent: "space-around;"
-          }}
-          buttonStyle={{
-            color: "#fff",
-            textTransform: "uppercase",
-            letterSpacing: "1px",
-            fontWeight: "bold",
-            fontSize: "12px",
-            fontSize: "13px",
-            borderRadius: "10px",
-            padding: "8px 12px",
-            backgroundColor: "#6adbbd"
-          }}
-          expires={150}
-        >
-          This website uses cookies to enhance the user experience. View our
-          <Link href="privacy-policy">
-            <a
-              style={{
-                color: "#041C69",
-                fontWeight: "700",
-                marginLeft: "5px"
-                // textDecoration: "underline"
-              }}
-            >
-              Privacy Policy.
-            </a>
-          </Link>
-        </CookieConsent>
+        <Cookies />
         <Header />
 
         <div className={styles.content}>
-          <section>
-            {/* <Container maxWidth="md">{children}</Container> */}
-            {children}
-          </section>
+          <section>{children}</section>
         </div>
 
         <Footer />
+        <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );
