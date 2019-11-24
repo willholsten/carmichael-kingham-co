@@ -37,7 +37,6 @@ export default class Layout extends React.Component {
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
             rel="stylesheet"
           />
-          {/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
         </Head>
         <Cookies />
         <Header />
@@ -47,10 +46,6 @@ export default class Layout extends React.Component {
         </div>
 
         <Footer />
-        {/* <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script> */}
-        <script>
-          CMS.registerPreviewStyle("/_next/static/css/styles.chunk.css");
-        </script>
         <script src="https://kit.fontawesome.com/d54483515e.js" />
       </div>
     );

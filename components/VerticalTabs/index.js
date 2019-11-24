@@ -82,6 +82,7 @@ export default function VerticalTabs({ data }) {
                   className={styles.tab}
                   key={data.id}
                   {...a11yProps(data.id)}
+                  // id={data.title.toLowerCase().replace(/ /g, "-")}
                 />
               ))}
             </Tabs>
