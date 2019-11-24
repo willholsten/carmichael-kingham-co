@@ -6,20 +6,14 @@ pageSummary: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua.
 expertise:
-  - content:
-      # Heading 1
-
-      ## Heading 2
-
-      _italic_
-
-      **bold**
+  - content: |-
+      This is a text block
 
       List
-
       * One
       * Two
       * Three
+      # Main Header
     id: 0
     summary: Bookkeeping Summary
     title: Bookkeeping
@@ -41,6 +35,7 @@ expertise:
     title: AD HOC Projects and Analysis
   - content: This text won't be visible
     id: 9999
-    summary: This text won't be visible
+    summary: ''
     title: View all
 ---
+
