@@ -2,7 +2,8 @@ backend:
   name: git-gateway
   branch: dev
 
-media_folder: static/cms
+media_folder: public/cms
+logo_url: https://dev.carmichaelkingham.co.uk/svg/logo-blue.svg
 
 slug:
   encoding: "ascii"
