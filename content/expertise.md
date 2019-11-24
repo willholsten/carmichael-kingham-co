@@ -6,7 +6,7 @@ pageSummary: >-
   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
   incididunt ut labore et dolore magna aliqua.
 expertise:
-  - content: |-
+  - content:
       # Heading 1
 
       ## Heading 2
@@ -44,4 +44,3 @@ expertise:
     summary: This text won't be visible
     title: View all
 ---
-

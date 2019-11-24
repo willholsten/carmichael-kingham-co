@@ -48,7 +48,6 @@ const useStyles = makeStyles(theme => ({
     display: "flex"
   },
   bigIndicator: {
-    // backgroundColor: "transparent"
     borderRadius: "0 10px 10px 0",
     width: "5px",
     marginRight: "3px",
