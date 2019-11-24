@@ -96,7 +96,12 @@ collections:
             widget: list
             fields:
               - { label: Title, name: title, widget: string, required: true }
-              - { label: Summary, name: summary, widget: string }
+              - {
+                  label: Summary,
+                  name: summary,
+                  widget: string,
+                  required: false,
+                }
               - {
                   label: Content,
                   name: content,
