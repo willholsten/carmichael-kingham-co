@@ -35,7 +35,7 @@ expertise:
     title: AD HOC Projects and Analysis
   - content: This text won't be visible
     id: 9999
-    summary: This text won't be visible
+    summary: ''
     title: View all
 ---
 
