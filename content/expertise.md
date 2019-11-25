@@ -1,39 +1,49 @@
 ---
 pageTitle: Expertise
 pageSummary: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis.
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua.
+  We provide corporate accounting and advisory services to help businesses grow.
+  Here are some of the services we provide. If you need something that's listed
+  below please get in touch as are more than happy to provide ad hoc solutions.
 expertise:
-  - content: |-
-      This is a text block
-
-      List
-      * One
-      * Two
-      * Three
-      # Main Header
+  - body: >-
+      Let us take the stress out of bookkeeping, we take care of all your
+      bookkeeping needs and provide you with software to takeaway the need for
+      paper.
     id: 0
-    summary: Bookkeeping Summary
+    summary: ''
     title: Bookkeeping
-  - content: Management & Financial Analytics Content
+  - body: >-
+      To achieve the best growth and profitability levels a business needs
+      timely information about their performance and current position. We
+      provide detailed management accounts, financial analysis and KPI reporting
+      to ensure you have up-to-date and relevant information for
+      decision-making.
     id: 1
-    summary: Management & Financial Analytics Summary
-    title: Management & Financial Analytics
-  - content: VAT & Corporation Tax Content
+    summary: ''
+    title: Management Information
+  - body: >-
+      Part of running a successful business means dealing with tax compliance,
+      we assist you with your obligation to file returns with HMRC.
     id: 2
-    summary: VAT & Corporation Tax Summary
+    summary: ''
     title: VAT & Corporation Tax
-  - content: Budget & Forecasting Content
+  - body: >-
+      A successful business sets a plan and keeps a close eye on the future, a
+      successful business measures their success and areas for improvement on a
+      regular basis - in the finance world this means creating a budget to
+      measure against and forecasting the future. With your help we create a
+      budget and then use this as a benchmark to measure your actual results.
+      This helps improve your business' profitability and growth.
     id: 3
-    summary: Budget & Forecasting Summary
+    summary: ''
     title: Budget & Forecasting
-  - content: AD HOC Projects and Analysis Content
+  - body: >-
+      If your business requires a service which has not been listed above please
+      get in touch so that we can offer an ad hoc solution for your business.
     id: 4
-    summary: AD HOC Projects and Analysis Summary
+    summary: ''
     title: AD HOC Projects and Analysis
-  - content: This text won't be visible
+  - body: What should go here?
     id: 9999
     summary: ''
     title: View all
