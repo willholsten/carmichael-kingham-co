@@ -69,7 +69,9 @@ collections:
             name: team
             widget: list
             fields:
+              - { label: Id, name: id, widget: number, required: true }
               - { label: Name, name: title, widget: string, required: true }
+              - { label: Image, name: image, widget: image, required: true }
               - { label: Bio, name: content, widget: markdown, required: true }
       - label: "Expertise"
         name: "expertise"
