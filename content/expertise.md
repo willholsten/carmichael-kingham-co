@@ -2,8 +2,8 @@
 pageTitle: Expertise
 pageSummary: >-
   We provide corporate accounting and advisory services to help businesses grow.
-  Here are some of the services we provide. If you need something that's listed
-  below please get in touch as are more than happy to provide ad hoc solutions.
+  We are more than happy to provide ad hoc solutions not listed below, please
+  contact us to discuss further.
 expertise:
   - body: >-
       Let us take the stress out of bookkeeping, we take care of all your
