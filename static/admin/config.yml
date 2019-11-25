@@ -100,7 +100,12 @@ collections:
                   widget: string,
                   required: false,
                 }
-              - { label: Content, name: body, widget: markdown, required: true }
+              - {
+                  label: Content,
+                  name: content,
+                  widget: markdown,
+                  required: true,
+                }
               - { label: Id, name: id, widget: number, required: true }
       - label: "Blog"
         name: "blog"

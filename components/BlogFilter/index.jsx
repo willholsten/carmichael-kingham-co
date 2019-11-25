@@ -13,7 +13,7 @@ export default class BlogFilter extends Component {
           <i className="fas fa-sort-alpha-down"></i>
         </li>
         <li onClick={() => handleSortPosts("Z-A")}>
-          <i class="fas fa-sort-alpha-up"></i>
+          <i class="fas fa-sort-alpha-down-alt"></i>
         </li>
         <li onClick={() => handleSortPosts("newest")}>Latest</li>
         <li onClick={() => handleSortPosts("oldest")}>Oldest</li>
