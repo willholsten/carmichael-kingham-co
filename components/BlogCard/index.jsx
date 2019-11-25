@@ -30,7 +30,6 @@ const useStyles = makeStyles({
 
 export default function BlogCard({ title, image, summary, href, date }) {
   const classes = useStyles();
-
   return (
     <div className={styles.BlogCard}>
       <Card className={classes.card}>

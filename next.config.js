@@ -1,6 +1,6 @@
 const fs = require("fs");
 const blogPostsFolder = "./content/blogPosts";
-// const webpack = require("webpack");
+const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
 const resourcesLoader = {
@@ -17,24 +17,24 @@ const resourcesLoader = {
   }
 };
 
-// const getPathsForPosts = () => {
-//   return fs
-//     .readdirSync(blogPostsFolder)
-//     .map(blogName => {
-//       const trimmedName = blogName.substring(0, blogName.length - 3);
-//       return {
-//         [`/blog/post/${trimmedName}`]: {
-//           page: "/blog/post/[slug]",
-//           query: {
-//             slug: trimmedName
-//           }
-//         }
-//       };
-//     })
-//     .reduce((acc, curr) => {
-//       return { ...acc, ...curr };
-//     }, {});
-// };
+const getPathsForPosts = () => {
+  return fs
+    .readdirSync(blogPostsFolder)
+    .map(blogName => {
+      const trimmedName = blogName.substring(0, blogName.length - 3);
+      return {
+        [`/blog/post/${trimmedName}`]: {
+          page: "/blog/post/[slug]",
+          query: {
+            slug: trimmedName
+          }
+        }
+      };
+    })
+    .reduce((acc, curr) => {
+      return { ...acc, ...curr };
+    }, {});
+};
 
 module.exports = withCSS(
   withSass({
@@ -65,12 +65,12 @@ module.exports = withCSS(
       });
 
       return config;
+    },
+    async exportPathMap(defaultPathMap) {
+      return {
+        ...defaultPathMap,
+        ...getPathsForPosts()
+      };
     }
-    // async exportPathMap(defaultPathMap) {
-    //   return {
-    //     ...defaultPathMap,
-    //     ...getPathsForPosts()
-    //   };
-    // }
   })
 );

@@ -28,19 +28,19 @@ export default class Home extends React.Component {
         </Container>
         <Container maxWidth="md">
           <section>
-            <SectionHeader text="About us" image="/svg/about.svg" />
+            <SectionHeader text="About us" />
             <AboutCard />
           </section>
           <section>
-            <SectionHeader text="Expertise" image="/svg/expertise.svg" />
+            <SectionHeader text="Expertise" />
             <ExpertiseCard expertise={expertise.attributes} />
           </section>
           <section>
-            <SectionHeader text="Our people" image="/svg/team.svg" />
+            <SectionHeader text="Our people" />
             <TeamCard team={team.attributes} />
           </section>
           <section>
-            <SectionHeader text="Latest from the blog" image="/svg/blog.svg" />
+            <SectionHeader text="Latest from the blog" />
             <BlogPosts posts={posts} numOfPosts="3" />
           </section>
         </Container>
