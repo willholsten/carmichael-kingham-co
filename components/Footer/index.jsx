@@ -36,11 +36,18 @@ export default class Footer extends React.Component {
             </Grid>
             <Grid item xs={3} md={3} className={styles.column}>
               <h4>Connect</h4>
-              <Link href="">
-                <a>
-                  <i className="fab fa-linkedin"></i>
-                </a>
-              </Link>
+              <div>
+                <Link href="">
+                  <a>
+                    <i className="fab fa-linkedin"></i>
+                  </a>
+                </Link>
+                <Link href="">
+                  <a>
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                </Link>
+              </div>
             </Grid>
           </Grid>
         </Container>

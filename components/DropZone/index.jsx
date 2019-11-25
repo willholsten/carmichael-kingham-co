@@ -65,7 +65,8 @@ export default function StyledDropzone(props) {
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
         <input {...getInputProps()} />
-        <p>Drag 'n' drop your CV here</p>
+        <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
+        <p>Drag and drop your CV here</p>
         <strong className={styles.or}>OR</strong>
         <Button
           style="Secondary"
@@ -79,7 +80,7 @@ export default function StyledDropzone(props) {
         <div className={styles.file} key={file.path}>
           <strong>
             <i className="fas fa-check-circle"></i> File uploaded:
-          </strong>{" "}
+          </strong>
           {file.path}
         </div>
       ))}

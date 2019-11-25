@@ -38,7 +38,7 @@ export default class MyApp extends App {
     expertise,
     blog,
     posts: this.props.postsList,
-    sortPosts: "newest",
+    sortPosts: "latest",
     contact,
     privacy,
     careers,

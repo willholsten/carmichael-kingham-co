@@ -49,7 +49,7 @@ export default class Blog extends Component {
             b.attributes.title.localeCompare(a.attributes.title)
           )
         };
-      case "newest":
+      case "latest":
         return {
           ...state,
           posts: posts.sort(function(a, b) {
@@ -80,7 +80,10 @@ export default class Blog extends Component {
             }}
           >
             <Container maxWidth="md">
-              <BlogFilter handleSortPosts={this.handleSortPosts} />
+              <BlogFilter
+                handleSortPosts={this.handleSortPosts}
+                sortPosts={this.state.sortPosts}
+              />
             </Container>
           </Sticky>
         </div>

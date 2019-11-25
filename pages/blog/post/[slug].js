@@ -30,7 +30,9 @@ class Post extends Component {
         description="Insert page description"
         keywords="Insert keywords"
       >
-        <BlogPost title={title} image={image} html={html} date={date} />
+        <Container maxWidth="md">
+          <BlogPost title={title} image={image} html={html} date={date} />
+        </Container>
       </Layout>
     );
   }

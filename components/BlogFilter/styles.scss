@@ -22,8 +22,13 @@
     letter-spacing: $letter-spacing-small;
     line-height: 12px;
     font-size: 12px;
+    transition: $transition;
     i {
       font-size: 16px;
+    }
+    &.active {
+      background-color: $grey;
+      color: $white;
     }
   }
 }

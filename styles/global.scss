@@ -91,11 +91,14 @@ form {
     padding: 15px;
     border: 0;
     background-color: rgba($white, 0.8);
-    // background-color: transparent;
     border-radius: $border-radius;
-    // border: 1px solid $lighter-grey;
     transition: $transition;
+    color: $text;
     outline: 0;
+
+    &::placeholder {
+      color: $text;
+    }
 
     &:hover,
     &:focus {

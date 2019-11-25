@@ -2,13 +2,10 @@ import React, { Component } from "react";
 
 // Components
 import BlogCard from "../../components/BlogCard";
-import BlogFilter from "../../components/BlogFilter";
 
 // Resources
 import Link from "next/link";
 import { Grid } from "@material-ui/core";
-
-// console.log(markdownFiles);
 
 export default class BlogPosts extends Component {
   render() {
