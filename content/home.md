@@ -1,5 +1,5 @@
 ---
-bannerText: Corporate accounting + Advisory services
+bannerText: Corporate Accounting + Advisory Services
 bannerImageMobile: /homepage-banner-mobile.jpg
 bannerImageWeb: /homepage-banner-web.jpg
 aboutText: >-
@@ -16,3 +16,4 @@ aboutText: >-
   fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
   culpa qui officia deserunt mollit anim id est laborum.
 ---
+
