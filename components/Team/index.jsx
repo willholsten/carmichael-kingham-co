@@ -2,9 +2,6 @@
 import VerticalTabs from "../VerticalTabs";
 import Accordion from "../Accordion";
 
-// Data
-import content from "../../content/ourPeople.md";
-
 // Styles
 import "../../styles/main.scss";
 import styles from "./styles.scss";

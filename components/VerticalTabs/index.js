@@ -78,19 +78,19 @@ export default function VerticalTabs({ data }) {
               classes={{ indicator: classes.bigIndicator }}
             >
               {data.map(data => (
-                <Link
-                  href={`/expertise ${data.title
-                    .toLowerCase()
-                    .replace(/ /g, "-")}`}
-                >
-                  <Tab
-                    label={data.title}
-                    className={styles.tab}
-                    key={data.id}
-                    {...a11yProps(data.id)}
-                    to={data.title.toLowerCase().replace(/ /g, "-")}
-                  />
-                </Link>
+                // <Link
+                //   href={`/expertise ${data.title
+                //     .toLowerCase()
+                //     .replace(/ /g, "-")}`}
+                // >
+                <Tab
+                  label={data.title}
+                  className={styles.tab}
+                  key={data.id}
+                  {...a11yProps(data.id)}
+                  to={data.title.toLowerCase().replace(/ /g, "-")}
+                />
+                // </Link>
               ))}
             </Tabs>
           </Sticky>
@@ -104,7 +104,7 @@ export default function VerticalTabs({ data }) {
               index={data.id}
             >
               <h2>{data.title}</h2>
-              <div dangerouslySetInnerHTML={{ __html: data.content }} />
+              <p dangerouslySetInnerHTML={{ __html: data.content }} />
             </TabPanel>
           ))}
         </Grid>

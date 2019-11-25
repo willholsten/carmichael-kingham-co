@@ -13,7 +13,8 @@ team:
       Certified Accountants.
     title: Annabelle Carmichael
     image: /annabelle.jpg
-  - content: >-
+  - id: 1
+    content: >-
       Alasdair is a founding Director and Consultant to Carmichael Kingham & Co.
       Alasdair previously worked for a multi-strategy hedge fund in London and
       has also spent time in investment banking. He holds a B. Commerce and B.
