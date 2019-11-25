@@ -70,12 +70,6 @@ collections:
             widget: list
             fields:
               - { label: Name, name: title, widget: string, required: true }
-              - {
-                  label: Credentials,
-                  name: credentials,
-                  widget: string,
-                  required: true,
-                }
               - { label: Bio, name: content, widget: markdown, required: true }
       - label: "Expertise"
         name: "expertise"

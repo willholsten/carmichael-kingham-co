@@ -20,7 +20,6 @@ export default class TeamCard extends React.Component {
                   <img className={styles.avatar} src={team.image} />
                   <div className={styles.text}>
                     <h2>{team.title}</h2>
-                    <h4>{team.credentials}</h4>
                   </div>
                 </Paper>
               </a>

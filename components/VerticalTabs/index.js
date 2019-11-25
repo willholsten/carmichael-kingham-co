@@ -7,6 +7,7 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Box from "@material-ui/core/Box";
 import Sticky from "react-sticky-el";
+import Link from "next/link";
 
 // Styles
 import "../../styles/main.scss";
@@ -77,13 +78,19 @@ export default function VerticalTabs({ data }) {
               classes={{ indicator: classes.bigIndicator }}
             >
               {data.map(data => (
-                <Tab
-                  label={data.title}
-                  className={styles.tab}
-                  key={data.id}
-                  {...a11yProps(data.id)}
-                  // id={data.title.toLowerCase().replace(/ /g, "-")}
-                />
+                <Link
+                  href={`/expertise ${data.title
+                    .toLowerCase()
+                    .replace(/ /g, "-")}`}
+                >
+                  <Tab
+                    label={data.title}
+                    className={styles.tab}
+                    key={data.id}
+                    {...a11yProps(data.id)}
+                    to={data.title.toLowerCase().replace(/ /g, "-")}
+                  />
+                </Link>
               ))}
             </Tabs>
           </Sticky>
@@ -97,7 +104,6 @@ export default function VerticalTabs({ data }) {
               index={data.id}
             >
               <h2>{data.title}</h2>
-              <h4>{data.credentials}</h4>
               <div dangerouslySetInnerHTML={{ __html: data.content }} />
             </TabPanel>
           ))}

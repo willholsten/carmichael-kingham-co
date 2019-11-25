@@ -1,7 +1,8 @@
 ---
 pageTitle: Our People
 team:
-  - content: >-
+  - id: 0
+    content: >-
       Annabelle is the Principal of Carmichael Kingham & Co. she has worked in
       practice and industry for over 10 years both in Australia and the United
       Kingdom. She began her career in private practice in Adelaide before
@@ -10,15 +11,14 @@ team:
       telecommunications. Annabelle has a B. Commerce and a B. Economics from
       the University of Adelaide and is a member of the Association of Chartered
       Certified Accountants.
-    credentials: Could we please remove this field
     title: Annabelle Carmichael
+    image: /annabelle.jpg
   - content: >-
       Alasdair is a founding Director and Consultant to Carmichael Kingham & Co.
       Alasdair previously worked for a multi-strategy hedge fund in London and
       has also spent time in investment banking. He holds a B. Commerce and B.
       International Studies from the University of Adelaide and an MSc. in
       Finance from London Business School. Alasdair is a CFA charter holder.
-    credentials: 'Could we please remove this field? '
     title: Alasdair Kingham
+    image: /alasdair.jpg
 ---
-
