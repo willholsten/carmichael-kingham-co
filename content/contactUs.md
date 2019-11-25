@@ -1,4 +1,7 @@
 ---
 pageTitle: Contact Us
-pageSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+pageSummary: >-
+  If you would like to learn more about how we can help your business please get
+  in touch for a no obligation free chat.
 ---
+
