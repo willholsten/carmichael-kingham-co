@@ -52,7 +52,12 @@ export default function NavMobile() {
           <Link href="/">
             <img className={styles.logo} src="/svg/logo-blue.svg" />
           </Link>
-          <i className="fab fa-linkedin"></i>
+          <Button
+            className={styles.buttonClose}
+            onClick={toggleDrawer("right", true)}
+          >
+            <i className="fas fa-times"></i>
+          </Button>
         </div>
         <Grid item xs={12}>
           <NavList />
@@ -82,13 +87,16 @@ export default function NavMobile() {
       </div>
       <div className={styles.footer}>
         <Divider />
-        <div className={styles.terms}>
-          <Link href="/careers">
-            <a>Careers</a>
-          </Link>
-          <Link href="/privacy-policy">
-            <a>Privacy Policy</a>
-          </Link>
+        <div className={styles.connect}>
+          <a
+            href="https://www.linkedin.com/company/carmichael-kingham-co/about/ "
+            target="_blank"
+          >
+            <i className="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/CarmiKingham" target="_blank">
+            <i className="fab fa-twitter"></i>
+          </a>
         </div>
         <div className={styles.copyright}>
           &copy; {new Date().getFullYear()}. Carmichael Kingham &amp; Co
@@ -100,7 +108,7 @@ export default function NavMobile() {
   return (
     <div className={styles.NavMobile}>
       <Button
-        className={styles.button_bars}
+        className={styles.buttonBars}
         onClick={toggleDrawer("right", true)}
       >
         <i className="fas fa-bars"></i>

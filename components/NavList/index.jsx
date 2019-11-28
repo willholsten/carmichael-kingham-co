@@ -5,7 +5,6 @@ import Link from "next/link";
 import content from "../../content/navigation.md";
 
 // Styles
-
 import styles from "./styles.scss";
 
 export default function NavList() {

@@ -1,6 +1,9 @@
 // Components
 import ContactButton from "../ContactButton";
 
+// Resources
+import { Grid } from "@material-ui/core";
+
 // Data
 import content from "../../../content/companyDetails.md";
 
@@ -13,20 +16,26 @@ export default function ContactButtons() {
   } = content;
   return (
     <div className={styles.contactButtons}>
-      <ContactButton
-        style="Secondary"
-        href={`tel:${phone}`}
-        text="Phone"
-        icon="fas fa-phone"
-        type="submit"
-      />
-      <ContactButton
-        style="Secondary"
-        href={`mailto:${email}`}
-        text="Email"
-        icon="fas fa-envelope"
-        type="submit"
-      />
+      <Grid container spacing="3">
+        <Grid item xs="6">
+          <ContactButton
+            style="Secondary"
+            href={`tel:${phone}`}
+            text="Phone"
+            icon="fas fa-phone"
+            type="submit"
+          />
+        </Grid>
+        <Grid item xs="6">
+          <ContactButton
+            style="Secondary"
+            href={`mailto:${email}`}
+            text="Email"
+            icon="fas fa-envelope"
+            type="submit"
+          />
+        </Grid>
+      </Grid>
     </div>
   );
 }
