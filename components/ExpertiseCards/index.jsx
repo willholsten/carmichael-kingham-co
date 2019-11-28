@@ -26,10 +26,9 @@ export default class ExpertiseCards extends Component {
                     `${expertise.summary.substring(0, 150)}`}
                 </p>
                 <MyLink
-                  href={`expertise/${expertise.attributes.title
-                    .toLowerCase()
-                    .replace(/ /g, "-")}`}
+                  href={`expertise/${expertise.slug}`}
                   text="Read more"
+                  type="Secondary"
                 />
               </Paper>
             </Grid>

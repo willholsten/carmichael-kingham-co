@@ -16,11 +16,7 @@ export default class teamCards extends Component {
           .reverse()
           .map(team => (
             <Grid key={team.attributes.name} item xs={12} sm={6}>
-              <Link
-                href={`team/${team.attributes.name
-                  .toLowerCase()
-                  .replace(/ /g, "-")}`}
-              >
+              <Link href={`team/${team.slug}`}>
                 <a>
                   <Card className={styles.card}>
                     <CardMedia

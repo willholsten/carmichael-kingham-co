@@ -1,3 +1,14 @@
 .link {
   @include link;
+
+  &[type="Secondary"] {
+    a {
+      background-color: $lightest-grey;
+      color: $grey;
+
+      &:hover {
+        background-color: darken($lightest-grey, 5%);
+      }
+    }
+  }
 }
