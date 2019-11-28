@@ -13,10 +13,10 @@
     margin-top: 5px;
     color: $header-color;
     letter-spacing: 0;
+    height: 50px;
 
     @include screen-md {
       font-size: 20px;
-      height: 50px;
     }
   }
 
@@ -34,10 +34,7 @@
   }
   p {
     margin-bottom: 0;
-
-    @include screen-md {
-      height: 50px;
-    }
+    height: 50px;
   }
   .cardActions {
     padding-bottom: 20px;

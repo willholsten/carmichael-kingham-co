@@ -16,7 +16,7 @@ export default class ExpertiseCards extends Component {
       <div className={styles.ExpertiseCards}>
         <Grid container spacing={3}>
           {expertise.map(expertise => (
-            <Grid key={expertise.title} item xs={12} sm={4}>
+            <Grid key={expertise.attributes.title} item xs={12} sm={4}>
               <Link
                 href={`expertise/${expertise.attributes.title
                   .toLowerCase()

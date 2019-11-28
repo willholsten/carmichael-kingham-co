@@ -16,17 +16,13 @@ export default class BlogPosts extends Component {
           {posts.slice(0, numOfPosts).map((post, idx) => {
             return (
               <Grid item xs={12} sm={6} md={4} key={idx}>
-                <Link href={`blog/post/${post.slug}`}>
-                  <a>
-                    <BlogCard
-                      title={post.attributes.title}
-                      image={post.attributes.image}
-                      summary={post.attributes.summary}
-                      date={post.attributes.date}
-                      href={`blog/post/${post.slug}`}
-                    />
-                  </a>
-                </Link>
+                <BlogCard
+                  title={post.attributes.title}
+                  image={post.attributes.image}
+                  summary={post.attributes.summary}
+                  date={post.attributes.date}
+                  href={`blog/post/${post.slug}`}
+                />
               </Grid>
             );
           })}

@@ -1,5 +1,7 @@
 const fs = require("fs");
 const blogPostsFolder = "./content/blogPosts";
+const expertiseFolder = "./content/expertise";
+const teamFolder = "./content/team";
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
 const resourcesLoader = {
@@ -24,6 +26,44 @@ const getPathsForPosts = () => {
       return {
         [`/blog/post/${trimmedName}`]: {
           page: "/blog/post/[slug]",
+          query: {
+            slug: trimmedName
+          }
+        }
+      };
+    })
+    .reduce((acc, curr) => {
+      return { ...acc, ...curr };
+    }, {});
+};
+
+const getPathsForExpertise = () => {
+  return fs
+    .readdirSync(expertiseFolder)
+    .map(expertiseName => {
+      const trimmedName = expertiseName.substring(0, expertiseName.length - 3);
+      return {
+        [`/expertise/${trimmedName}`]: {
+          page: "/expertise/[slug]",
+          query: {
+            slug: trimmedName
+          }
+        }
+      };
+    })
+    .reduce((acc, curr) => {
+      return { ...acc, ...curr };
+    }, {});
+};
+
+const getPathsForTeam = () => {
+  return fs
+    .readdirSync(teamFolder)
+    .map(teamName => {
+      const trimmedName = teamName.substring(0, teamName.length - 3);
+      return {
+        [`/team/${trimmedName}`]: {
+          page: "/team/[slug]",
           query: {
             slug: trimmedName
           }
@@ -69,7 +109,9 @@ module.exports = withCSS(
     async exportPathMap(defaultPathMap) {
       return {
         ...defaultPathMap,
-        ...getPathsForPosts()
+        ...getPathsForPosts(),
+        ...getPathsForExpertise(),
+        ...getPathsForTeam()
       };
     }
   })
