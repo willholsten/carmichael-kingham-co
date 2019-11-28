@@ -45,7 +45,7 @@ export default class Home extends React.Component {
             <Container maxWidth="md">
               <SectionHeader text={expertise.attributes.pageTitle} />
               <ExpertiseCards expertise={expertiseCards} />
-              <MyLink href="/expertise" text="View all" />
+              {/* <MyLink href="/expertise" text="View all" /> */}
             </Container>
           </section>
           <section>

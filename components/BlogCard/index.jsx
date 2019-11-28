@@ -21,11 +21,13 @@ const useStyles = makeStyles({
     flex: "1 0 auto"
   },
   actionArea: {
+    pointerEvents: "none",
+    cursor: "auto",
     "&:hover $focusHighlight": {
       opacity: 0
     }
   },
-  focusHighlight: {}
+  focusHighlight: { opacity: 0 }
 });
 
 export default function BlogCard({ title, image, summary, href, date }) {
