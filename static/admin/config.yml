@@ -40,7 +40,7 @@ collections:
           - {
               label: "About Text",
               name: "aboutText",
-              widget: "markdown",
+              widget: "text",
               required: true,
             }
       - label: "About Us"
@@ -78,7 +78,7 @@ collections:
           - {
               label: "Page Summary",
               name: "pageSummary",
-              widget: "string",
+              widget: "text",
               required: true,
             }
       - label: "Blog"
@@ -94,7 +94,7 @@ collections:
           - {
               label: "Page Summary",
               name: "pageSummary",
-              widget: "string",
+              widget: "text",
               required: true,
             }
       - label: "Contact Us"
@@ -110,7 +110,7 @@ collections:
           - {
               label: Page Summary,
               name: pageSummary,
-              widget: string,
+              widget: text,
               required: true,
             }
       - label: "Careers"
@@ -126,7 +126,7 @@ collections:
           - {
               label: Page Summary,
               name: pageSummary,
-              widget: string,
+              widget: text,
               required: true,
             }
       - label: "Privacy Policy"
@@ -157,7 +157,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Name", name: "name", widget: "string", required: true }
       - { label: "Summary", name: "summary", widget: "string", required: false }
       - { label: "Image", name: "image", widget: "image", required: true }
       - { label: "Body", name: "body", widget: "markdown", required: true }
