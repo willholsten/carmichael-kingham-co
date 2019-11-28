@@ -1,12 +1,13 @@
 import React from "react";
 
 // Components
+import MyLink from "../components/Common/MyLink";
 import Layout from "../components/Layout";
 import HomeBanner from "../components/HomeBanner";
 import SectionHeader from "../components/Common/SectionHeader";
 import AboutCard from "../components/AboutCard";
-import ExpertiseCard from "../components/ExpertiseCard";
-import TeamCard from "../components/TeamCard";
+import ExpertiseCards from "../components/ExpertiseCards";
+import TeamCards from "../components/TeamCards";
 import BlogPosts from "../components/BlogPosts";
 
 // Resources
@@ -14,36 +15,54 @@ import { Container } from "@material-ui/core";
 
 export default class Home extends React.Component {
   render() {
-    const { posts, expertise, team } = this.props;
+    const {
+      about,
+      blog,
+      posts,
+      expertise,
+      expertiseCards,
+      team,
+      teamMembers
+    } = this.props;
     return (
       <Layout
         title="Carmichael Kingham &amp; Co."
         description="Insert page description"
         keywords="Insert keywords"
       >
-        <Container maxWidth="lg">
-          <section>
+        <div className="Home">
+          <Container maxWidth="lg">
             <HomeBanner />
-          </section>
-        </Container>
-        <Container maxWidth="md">
+          </Container>
           <section>
-            <SectionHeader text="About us" />
-            <AboutCard />
-          </section>
-          <section>
-            <SectionHeader text="Expertise" />
-            <ExpertiseCard expertise={expertise.attributes} />
+            <Container maxWidth="md">
+              <SectionHeader text={about.attributes.pageTitle} />
+              <AboutCard />
+              <MyLink href="/about-us" text="Read more" />
+            </Container>
           </section>
           <section>
-            <SectionHeader text="Our people" />
-            <TeamCard team={team.attributes} />
+            <Container maxWidth="md">
+              <SectionHeader text={expertise.attributes.pageTitle} />
+              <ExpertiseCards expertise={expertiseCards} />
+              <MyLink href="/expertise" text="View all" />
+            </Container>
           </section>
           <section>
-            <SectionHeader text="Latest from the blog" />
-            <BlogPosts posts={posts} numOfPosts="3" />
+            <Container maxWidth="md">
+              <SectionHeader text={team.attributes.pageTitle} />
+              <TeamCards team={teamMembers} />
+            </Container>
           </section>
-        </Container>
+          <section>
+            <Container maxWidth="md">
+              <SectionHeader
+                text={`Latest from the ${blog.attributes.pageTitle}`}
+              />
+              <BlogPosts posts={posts} numOfPosts="3" />
+            </Container>
+          </section>
+        </div>
       </Layout>
     );
   }

@@ -3,7 +3,6 @@ import Grid from "@material-ui/core/Grid";
 import Paper from "@material-ui/core/Paper";
 
 // Styles
-import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 export default class About extends React.Component {

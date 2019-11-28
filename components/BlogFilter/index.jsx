@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default class BlogFilter extends Component {
@@ -31,7 +31,7 @@ export default class BlogFilter extends Component {
           onClick={() => handleSortPosts("Z-A")}
           className={"Z-A" === sortPosts ? styles.active : null}
         >
-          <i class="fas fa-sort-alpha-down-alt"></i>
+          <i className="fas fa-sort-alpha-down-alt"></i>
         </li>
       </ul>
     );

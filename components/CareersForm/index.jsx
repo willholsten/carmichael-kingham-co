@@ -6,7 +6,7 @@ import DropZone from "../DropZone";
 import { Grid } from "@material-ui/core";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default function CareersForm(props) {

@@ -13,7 +13,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import moment from "moment";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 const useStyles = makeStyles({
@@ -43,7 +43,7 @@ export default function BlogCard({ title, image, summary, href, date }) {
           <CardContent>
             <div className={styles.date}>
               <i className="fas fa-clock"></i>
-              {moment(date).format("Do MMMM YYYY")}
+              {moment(date).format("D MMMM, YYYY")}
             </div>
             <h4 className={styles.title}>
               {`${title.substring(0, 50)}`}

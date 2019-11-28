@@ -3,7 +3,7 @@ import Link from "next/link";
 import Grid from "@material-ui/core/Grid";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 // Data

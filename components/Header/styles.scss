@@ -1,6 +1,4 @@
 .Header {
-  margin-bottom: 50px;
-
   .headerSnippet {
     display: none;
 
@@ -17,11 +15,9 @@
 
       a {
         color: $white;
-        font-size: $font-size-small;
         i {
           color: $green;
           margin-right: 15px;
-          font-size: $font-size-small;
         }
         &:last-child {
           margin: 0 20px;

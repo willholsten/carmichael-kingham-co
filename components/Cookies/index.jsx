@@ -5,8 +5,8 @@ import CookieConsent from "react-cookie-consent";
 import Link from "next/link";
 
 // Styles
-import "../../styles/main.scss";
-import styles from "./styles.scss";
+
+// import styles from "./styles.scss";
 
 export default class Cookies extends React.Component {
   render() {

@@ -35,7 +35,7 @@
 .Button[type="secondary"] {
   a {
     background-color: $lighter-grey;
-    color: $text;
+    color: $text-color;
 
     &:hover {
       background-color: darken($lighter-grey, 10%);

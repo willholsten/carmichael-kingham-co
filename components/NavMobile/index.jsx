@@ -14,7 +14,7 @@ import { Grid } from "@material-ui/core";
 import content from "../../content/companyDetails.md";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default function NavMobile() {

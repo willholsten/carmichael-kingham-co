@@ -11,7 +11,7 @@ import MapGL, {
 } from "react-map-gl";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 const fullscreenControlStyle = {

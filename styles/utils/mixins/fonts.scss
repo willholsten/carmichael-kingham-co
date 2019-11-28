@@ -1,5 +1,4 @@
 @mixin link {
-  margin-top: 20px;
   width: auto;
   a {
     background-color: rgba($green, 0.2);
@@ -9,12 +8,13 @@
     color: $green;
     font-weight: $bold;
     text-transform: uppercase;
-    font-size: $font-size-small;
+    font-size: $font-size-normal;
     letter-spacing: $letter-spacing-small;
     transition: $transition;
 
     &:hover {
-      background-color: rgba($green, 0.3);
+      background-color: rgba($green, 0.8);
+      color: $white;
     }
   }
 }

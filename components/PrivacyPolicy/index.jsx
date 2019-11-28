@@ -2,7 +2,7 @@
 import content from "../../content/privacyPolicy.md";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default class PrivacyPolicy extends React.Component {

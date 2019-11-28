@@ -7,9 +7,6 @@
     display: flex;
     flex-direction: column;
     background: transparent;
-    // border-radius: $border-radius;
-
-    // border-right: 1px solid rgba($grey, 0.2);
 
     .tab {
       font-family: $sans-serif;
@@ -19,7 +16,7 @@
       height: 50px;
       line-height: 18px;
       position: relative;
-      color: $text;
+      color: $text-color;
       box-shadow: none;
       border: none;
       text-align: left;
@@ -28,16 +25,16 @@
       border-radius: $border-radius;
       overflow: hidden;
       cursor: pointer;
-      color: $text;
+      color: $text-color;
 
       span {
         text-transform: capitalize;
         align-items: flex-start;
-        color: $text;
+        color: $text-color;
       }
 
       &[aria-selected="true"] {
-        color: $text;
+        color: $text-color;
         background-color: rgba($blue, 0.1);
       }
       &:focus,
@@ -47,7 +44,7 @@
     }
 
     .tabPanel {
-      color: $text;
+      color: $text-color;
 
       > div {
         padding: 0 !important;

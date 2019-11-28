@@ -11,7 +11,7 @@ import Container from "@material-ui/core/Container";
 import content from "../../content/companyDetails.md";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default function Header() {
@@ -21,7 +21,7 @@ export default function Header() {
   return (
     <header className={styles.Header}>
       <div className={styles.headerSnippet}>
-        <Container maxWidth="md" className={styles.snippetContainer}>
+        <Container maxWidth="lg" className={styles.snippetContainer}>
           <LogoLarge />
           <div>
             <a href={`tel:${phone}`}>
@@ -36,7 +36,7 @@ export default function Header() {
         </Container>
       </div>
       <div className={styles.headerMain}>
-        <Container maxWidth="md" className={styles.mainContainer}>
+        <Container maxWidth="lg" className={styles.mainContainer}>
           <LogoSmall />
           <Nav />
           <NavMobile />

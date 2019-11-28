@@ -9,7 +9,7 @@ import Sticky from "react-sticky-el";
 import Container from "@material-ui/core/Container";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default class Blog extends Component {

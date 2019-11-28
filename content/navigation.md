@@ -4,7 +4,7 @@ navigation:
     href: /about-us
     icon: /svg/about.svg
   - label: Our People
-    href: /our-people
+    href: /team
     icon: /svg/team.svg
   - label: Expertise
     href: /expertise

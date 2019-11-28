@@ -1,0 +1,37 @@
+.ExpertiseCards {
+  margin-bottom: 30px;
+  .tile {
+    @include card;
+    background-color: $white;
+    border-radius: $border-radius;
+    padding: 32px 16px;
+    // box-shadow: none;
+    height: 100%;
+
+    h4 {
+      margin-top: 0;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  // > div:last-child {
+  //   .tile {
+  //     background-color: $green;
+  //     height: 100%;
+  //     display: flex;
+  //     justify-content: center;
+  //     align-items: center;
+
+  //     h4,
+  //     p {
+  //       color: $white;
+  //       margin: 0;
+  //     }
+  //   }
+  // }
+}

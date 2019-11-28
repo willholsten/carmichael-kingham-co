@@ -6,7 +6,7 @@ import content from "../../content/home.md";
 import companyDetails from "../../content/companyDetails.md";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default class HomeBanner extends React.Component {

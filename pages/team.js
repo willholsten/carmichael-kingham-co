@@ -8,9 +8,9 @@ import SectionHeader from "../components/Common/SectionHeader";
 // Resources
 import { Container } from "@material-ui/core";
 
-export default class OurPeople extends Component {
+export default class TeamPage extends Component {
   render() {
-    const { team } = this.props;
+    const { team, teamMembers } = this.props;
     return (
       <Layout
         title={`${team.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
@@ -19,7 +19,7 @@ export default class OurPeople extends Component {
       >
         <Container maxWidth="md">
           <SectionHeader text={team.attributes.pageTitle} />
-          <Team team={team.attributes} />
+          <Team team={teamMembers} />
         </Container>
       </Layout>
     );

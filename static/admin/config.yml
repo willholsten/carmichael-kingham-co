@@ -65,14 +65,6 @@ collections:
               widget: "string",
               required: true,
             }
-          - label: Team
-            name: team
-            widget: list
-            fields:
-              - { label: Name, name: title, widget: string, required: true }
-              - { label: Image, name: image, widget: image, required: true }
-              - { label: Bio, name: content, widget: markdown, required: true }
-              - { label: Id, name: id, widget: number, required: true }
       - label: "Expertise"
         name: "expertise"
         file: "content/expertise.md"
@@ -89,24 +81,6 @@ collections:
               widget: "string",
               required: true,
             }
-          - label: Expertise
-            name: expertise
-            widget: list
-            fields:
-              - { label: Title, name: title, widget: string, required: true }
-              - {
-                  label: Summary,
-                  name: summary,
-                  widget: string,
-                  required: false,
-                }
-              - {
-                  label: Content,
-                  name: content,
-                  widget: markdown,
-                  required: true,
-                }
-              - { label: Id, name: id, widget: number, required: true }
       - label: "Blog"
         name: "blog"
         file: "content/blog.md"
@@ -167,6 +141,27 @@ collections:
             }
           - { label: "Body", name: "body", widget: "markdown", required: true }
 
+  - label: "Expertise Cards"
+    name: "expertiseCards"
+    folder: "content/expertise"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+
+  - label: "Team Members"
+    name: "teamMembers"
+    folder: "content/team"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "string", required: false }
+      - { label: "Image", name: "image", widget: "image", required: true }
+      - { label: "Body", name: "body", widget: "markdown", required: true }
+
   - label: "Blog Posts"
     name: "blog"
     folder: "content/blogPosts"
@@ -190,8 +185,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown", required: true }
       - { label: "Tags", name: "tags", widget: "list", required: false }
 
-  - name: "general"
-    label: "General"
+  - label: "General"
+    name: "general"
     files:
       - label: "Company Details"
         name: "companyDetails"

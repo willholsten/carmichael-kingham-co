@@ -11,7 +11,7 @@ import Container from "@material-ui/core/Container";
 
 export default class ExpertisePage extends Component {
   render() {
-    const { expertise } = this.props;
+    const { expertise, expertiseCards } = this.props;
     return (
       <Layout
         title={`${expertise.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
@@ -21,7 +21,7 @@ export default class ExpertisePage extends Component {
         <Container maxWidth="md">
           <SectionHeader text={expertise.attributes.pageTitle} />
           <IntroText text={expertise.attributes.pageSummary} />
-          <Expertise expertise={expertise.attributes} />
+          <Expertise expertise={expertiseCards} />
         </Container>
       </Layout>
     );

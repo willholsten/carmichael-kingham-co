@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // Components
-import BlogCard from "../../components/BlogCard";
+import BlogCard from "../BlogCard";
 
 // Resources
 import Link from "next/link";

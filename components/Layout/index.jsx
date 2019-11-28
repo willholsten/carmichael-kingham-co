@@ -7,6 +7,7 @@ import Cookies from "../Cookies";
 import Head from "next/head";
 
 // Styles
+import "../../styles/main.scss";
 import styles from "./styles.scss";
 
 export default class Layout extends React.Component {

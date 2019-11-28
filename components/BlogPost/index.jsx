@@ -3,11 +3,11 @@ import SectionHeader from "../Common/SectionHeader";
 import MyLink from "../Common/MyLink";
 
 // Resources
-import { Container, CardMedia } from "@material-ui/core";
+import { CardMedia, Divider } from "@material-ui/core";
 import moment from "moment";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default function BlogPost({ html, title, image, date }) {
@@ -17,7 +17,7 @@ export default function BlogPost({ html, title, image, date }) {
         <SectionHeader text={title} image="" />
         <div className={styles.date}>
           <i className="fas fa-clock"></i>
-          {moment(date).format("Do MMMM YYYY")}
+          {moment(date).format("D MMMM, YYYY")}
         </div>
       </div>
       <CardMedia className={styles.featuredImage} image={image} />
@@ -25,6 +25,7 @@ export default function BlogPost({ html, title, image, date }) {
         className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
       />
+      <Divider className={styles.divider} />
       <MyLink href="/blog" text="Back to posts" />
     </div>
   );

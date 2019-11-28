@@ -1,5 +1,5 @@
 // Styles
-import "../../../styles/main.scss";
+
 import styles from "./styles.scss";
 
 export default class SectionHeader extends React.Component {

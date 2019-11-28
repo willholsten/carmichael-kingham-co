@@ -1,6 +1,5 @@
 const fs = require("fs");
 const blogPostsFolder = "./content/blogPosts";
-const webpack = require("webpack");
 const withSass = require("@zeit/next-sass");
 const withCSS = require("@zeit/next-css");
 const resourcesLoader = {
@@ -49,8 +48,6 @@ module.exports = withCSS(
         return acc;
       }, {});
 
-      config.plugins.push(new webpack.DefinePlugin(env));
-
       config.module.rules.map(rule => {
         if (
           rule.test.source.includes("scss") ||
@@ -59,6 +56,9 @@ module.exports = withCSS(
           rule.use.push(resourcesLoader);
         }
       });
+
+      config.plugins.push(new webpack.DefinePlugin(env));
+
       config.module.rules.push({
         test: /\.md$/,
         use: "frontmatter-markdown-loader"
