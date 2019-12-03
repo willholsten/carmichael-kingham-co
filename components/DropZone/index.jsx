@@ -64,7 +64,7 @@ export default function StyledDropzone(props) {
   return (
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
-        <input {...getInputProps()} />
+        <input {...getInputProps()} required />
         <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
         <p>Drag and drop your CV here</p>
         <strong className={styles.or}>OR</strong>

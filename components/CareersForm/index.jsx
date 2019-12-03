@@ -1,5 +1,5 @@
 // Components
-import MyButton from "../Common/MyButton";
+import SubmitButton from "../Common/SubmitButton";
 import DropZone from "../DropZone";
 
 // Resources
@@ -13,6 +13,7 @@ export default function CareersForm(props) {
   return (
     <div className={styles.CareersForm}>
       <form name="Careers" method="POST" data-netlify="true">
+        <input type="hidden" name="form-name" value="Careers" />
         <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
             <DropZone />
@@ -25,19 +26,21 @@ export default function CareersForm(props) {
               <Grid item xs={12} md={6}>
                 <input
                   type="text"
-                  name="name"
+                  name="fname"
                   placeholder="First Name"
                   onFocus={e => (e.target.placeholder = "")}
                   onBlur={e => (e.target.placeholder = "First name")}
+                  required
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <input
                   type="text"
-                  name="name"
+                  name="lname"
                   placeholder="Last Name"
                   onFocus={e => (e.target.placeholder = "")}
                   onBlur={e => (e.target.placeholder = "Last name")}
+                  required
                 />
               </Grid>
               <Grid item xs={12}>
@@ -47,6 +50,7 @@ export default function CareersForm(props) {
                   placeholder="Email"
                   onFocus={e => (e.target.placeholder = "")}
                   onBlur={e => (e.target.placeholder = "Email")}
+                  required
                 />
               </Grid>
               <Grid item xs={12}>
@@ -55,12 +59,13 @@ export default function CareersForm(props) {
                   placeholder="Cover letter..."
                   onFocus={e => (e.target.placeholder = "")}
                   onBlur={e => (e.target.placeholder = "Message...")}
+                  required
                 ></textarea>
               </Grid>
 
               <Grid item xs={12} md={4}>
                 <div>
-                  <MyButton
+                  <SubmitButton
                     buttonType="primary"
                     href=""
                     text="send"
