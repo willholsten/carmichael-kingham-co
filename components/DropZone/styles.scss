@@ -9,4 +9,15 @@
     color: $text-color;
     opacity: 0.5;
   }
+
+  .file {
+    i {
+      color: $green;
+      margin-right: 5px;
+    }
+
+    strong {
+      margin-right: 5px;
+    }
+  }
 }

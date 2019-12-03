@@ -23,7 +23,8 @@ const baseStyle = {
   backgroundColor: "#fafafa",
   color: "#bdbdbd",
   outline: "none",
-  transition: "border .24s ease-in-out"
+  transition: "border .24s ease-in-out",
+  marginBottom: "15px"
 };
 
 const activeStyle = {
@@ -64,7 +65,7 @@ export default function StyledDropzone(props) {
   return (
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
-        <input {...getInputProps()} required />
+        <input {...getInputProps()} type="file" required />
         <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
         <p>Drag and drop your CV here</p>
         <strong className={styles.or}>OR</strong>
