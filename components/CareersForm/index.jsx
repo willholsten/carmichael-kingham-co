@@ -61,7 +61,7 @@ export default function CareersForm(props) {
               <Grid item xs={12} md={4}>
                 <div>
                   <MyButton
-                    style="Primary"
+                    buttonType="primary"
                     href=""
                     text="send"
                     icon="fab fa-telegram-plane"

@@ -13,7 +13,7 @@ export default class TeamPage extends Component {
     const { team, teamMembers } = this.props;
     return (
       <Layout
-        title={`${team.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${team.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >

@@ -15,7 +15,7 @@ export default class BlogPage extends Component {
 
     return (
       <Layout
-        title={`${blog.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${blog.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >

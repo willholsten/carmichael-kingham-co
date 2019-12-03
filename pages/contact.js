@@ -15,7 +15,7 @@ export default class ContactPage extends Component {
 
     return (
       <Layout
-        title={`${contact.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${contact.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >

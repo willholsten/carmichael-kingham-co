@@ -1,0 +1,35 @@
+:global {
+  .cookieConsent {
+    background-color: #f2f4f9 !important;
+    color: #7e88ab !important;
+    padding: 0 24px;
+    justify-content: space-around;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2) !important;
+
+    @include screen-md {
+      padding: 0 73px;
+    }
+
+    div {
+      padding: 20px 16px 20px 0px !important;
+      margin: 0 !important;
+    }
+
+    button {
+      margin: 0 !important;
+      margin-bottom: 15px !important;
+      color: #fff !important;
+      letter-spacing: 1px !important;
+      font-weight: bold !important;
+      font-size: 12px !important;
+      font-size: 13px !important;
+      border-radius: 10px !important;
+      padding: 8px 12px !important;
+      background-color: #6adbbd !important;
+
+      @include screen-md {
+        margin-right: 0 !important;
+      }
+    }
+  }
+}

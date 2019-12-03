@@ -5,7 +5,6 @@ import MyButton from "../Common/MyButton";
 import { Grid } from "@material-ui/core";
 
 // Styles
-
 import styles from "./styles.scss";
 
 export default class ContactForm extends React.Component {
@@ -13,6 +12,7 @@ export default class ContactForm extends React.Component {
     return (
       <div className={styles.ContactForm}>
         <form name="Contact Us" method="POST" data-netlify="true">
+          <input type="hidden" name="Contact Us" value="Contact Us" />
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <h4>Get in touch</h4>
@@ -20,7 +20,7 @@ export default class ContactForm extends React.Component {
             <Grid item xs={12} md={6}>
               <input
                 type="text"
-                name="name"
+                name="fname"
                 placeholder="First Name"
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "First name")}
@@ -29,7 +29,7 @@ export default class ContactForm extends React.Component {
             <Grid item xs={12} md={6}>
               <input
                 type="text"
-                name="name"
+                name="lname"
                 placeholder="Last Name"
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "Last name")}
@@ -56,7 +56,7 @@ export default class ContactForm extends React.Component {
             <Grid item xs={12} md={4}>
               <div>
                 <MyButton
-                  style="Primary"
+                  buttonType="primary"
                   href=""
                   text="send"
                   icon="fab fa-telegram-plane"

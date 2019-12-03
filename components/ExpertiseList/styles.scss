@@ -1,0 +1,9 @@
+.ExpertiseList {
+  ul {
+    border-left: 1px solid lighten($lighter-grey, 5%);
+    padding-left: 32px;
+  }
+  li {
+    padding: 15px 0;
+  }
+}

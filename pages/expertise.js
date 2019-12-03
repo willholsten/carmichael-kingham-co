@@ -14,7 +14,7 @@ export default class ExpertisePage extends Component {
     const { expertise, expertiseCards } = this.props;
     return (
       <Layout
-        title={`${expertise.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${expertise.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >

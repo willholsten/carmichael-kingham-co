@@ -26,7 +26,7 @@ export default class Home extends React.Component {
     } = this.props;
     return (
       <Layout
-        title="Carmichael Kingham &amp; Co."
+        title="Carmichael Kingham & Co."
         description="Insert page description"
         keywords="Insert keywords"
       >
@@ -44,8 +44,8 @@ export default class Home extends React.Component {
           <section>
             <Container maxWidth="md">
               <SectionHeader text={expertise.attributes.pageTitle} />
-              <ExpertiseCards expertise={expertiseCards} />
-              {/* <MyLink href="/expertise" text="View all" /> */}
+              <ExpertiseCards expertise={expertiseCards} numOfServices="3" />
+              <MyLink href="/expertise" text="View all" />
             </Container>
           </section>
           <section>

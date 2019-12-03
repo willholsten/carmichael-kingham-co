@@ -24,6 +24,8 @@ export default class Service extends Component {
       attributes: { title }
     } = this.props.service.default;
 
+    const { expertiseCards } = this.props;
+
     return (
       <Layout
         title={`${title} | Carmichael Kingham &amp; Co`}
@@ -31,7 +33,11 @@ export default class Service extends Component {
         keywords="Insert keywords"
       >
         <Container maxWidth="md">
-          <ExpertiseSingle title={title} html={html} />
+          <ExpertiseSingle
+            title={title}
+            html={html}
+            expertise={expertiseCards}
+          />
         </Container>
       </Layout>
     );

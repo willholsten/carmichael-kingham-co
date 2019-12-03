@@ -13,11 +13,11 @@ import styles from "./styles.scss";
 
 export default class ExpertiseCards extends Component {
   render() {
-    const { expertise } = this.props;
+    const { expertise, numOfServices } = this.props;
     return (
       <div className={styles.ExpertiseCards}>
         <Grid container spacing={3}>
-          {expertise.map(expertise => (
+          {expertise.slice(0, numOfServices).map(expertise => (
             <Grid key={expertise.attributes.title} item xs={12} sm={4}>
               <Paper className={styles.tile}>
                 <h4>{expertise.attributes.title}</h4>
@@ -28,7 +28,7 @@ export default class ExpertiseCards extends Component {
                 <MyLink
                   href={`expertise/${expertise.slug}`}
                   text="Read more"
-                  type="Secondary"
+                  buttonType="secondary"
                 />
               </Paper>
             </Grid>

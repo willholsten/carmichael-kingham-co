@@ -13,7 +13,7 @@ export default class CareersPage extends Component {
     const { careers } = this.props;
     return (
       <Layout
-        title={`${careers.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${careers.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >

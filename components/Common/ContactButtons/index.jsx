@@ -19,7 +19,7 @@ export default function ContactButtons() {
       <Grid container spacing="3">
         <Grid item xs="6">
           <ContactButton
-            style="Secondary"
+            buttonType="secondary"
             href={`tel:${phone}`}
             text="Phone"
             icon="fas fa-phone"
@@ -28,7 +28,7 @@ export default function ContactButtons() {
         </Grid>
         <Grid item xs="6">
           <ContactButton
-            style="Secondary"
+            buttonType="secondary"
             href={`mailto:${email}`}
             text="Email"
             icon="fas fa-envelope"

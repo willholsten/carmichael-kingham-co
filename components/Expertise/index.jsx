@@ -10,7 +10,7 @@ export default class Expertise extends React.Component {
     const { expertise } = this.props;
     return (
       <div className={styles.Expertise}>
-        <ExpertiseCards expertise={expertise} />
+        <ExpertiseCards expertise={expertise} numOfServices="99" />
       </div>
     );
   }

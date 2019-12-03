@@ -66,7 +66,7 @@ export default function NavMobile() {
           <Grid container spacing={2}>
             <Grid item xs={6}>
               <ContactButton
-                style="Secondary"
+                buttonType="primary"
                 href={`tel:${phone}`}
                 text="Phone"
                 icon="fas fa-phone"
@@ -75,7 +75,7 @@ export default function NavMobile() {
             </Grid>
             <Grid item xs={6}>
               <ContactButton
-                style="Secondary"
+                buttonType="primary"
                 href={`mailto:${email}`}
                 text="Email"
                 icon="fas fa-envelope"

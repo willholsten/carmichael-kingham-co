@@ -69,7 +69,7 @@ export default function StyledDropzone(props) {
         <p>Drag and drop your CV here</p>
         <strong className={styles.or}>OR</strong>
         <Button
-          style="Secondary"
+          buttonType="secondary"
           href=""
           text="Choose file"
           icon="fas fa-upload"

@@ -13,7 +13,7 @@ export default class Terms extends Component {
     const { privacy } = this.props;
     return (
       <Layout
-        title={`${privacy.attributes.pageTitle} | Carmichael Kingham &amp; Co.`}
+        title={`${privacy.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description="Insert page description"
         keywords="Insert keywords"
       >
