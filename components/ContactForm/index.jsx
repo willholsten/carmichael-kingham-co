@@ -1,5 +1,5 @@
 // Components
-import MyButton from "../Common/MyButton";
+import SubmitButton from "../Common/SubmitButton";
 
 // Resources
 import { Grid } from "@material-ui/core";
@@ -12,7 +12,7 @@ export default class ContactForm extends React.Component {
     return (
       <div className={styles.ContactForm}>
         <form name="Contact" method="POST" data-netlify="true">
-          <input type="hidden" name="Contact" value="Contact" />
+          <input type="hidden" name="form-name" value="Contact" />
           <Grid container spacing={2}>
             <Grid item xs={12}>
               <h4>Get in touch</h4>
@@ -24,6 +24,7 @@ export default class ContactForm extends React.Component {
                 placeholder="First Name"
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "First name")}
+                required
               />
             </Grid>
             <Grid item xs={12} md={6}>
@@ -33,6 +34,7 @@ export default class ContactForm extends React.Component {
                 placeholder="Last Name"
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "Last name")}
+                required
               />
             </Grid>
             <Grid item xs={12}>
@@ -42,6 +44,7 @@ export default class ContactForm extends React.Component {
                 placeholder="Email"
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "Email")}
+                required
               />
             </Grid>
             <Grid item xs={12}>
@@ -50,12 +53,13 @@ export default class ContactForm extends React.Component {
                 placeholder="Message..."
                 onFocus={e => (e.target.placeholder = "")}
                 onBlur={e => (e.target.placeholder = "Message...")}
+                required
               ></textarea>
             </Grid>
 
             <Grid item xs={12} md={4}>
               <div>
-                <MyButton
+                <SubmitButton
                   buttonType="primary"
                   href=""
                   text="send"
