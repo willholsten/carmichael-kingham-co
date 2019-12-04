@@ -40,6 +40,11 @@
 
   .contactButtons {
     background-color: $footer-bg;
+    padding: 0 16px;
+
+    @include screen-sm {
+      padding: 0 24px;
+    }
 
     @include screen-md {
       display: none;

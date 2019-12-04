@@ -1,47 +1,45 @@
 .Button[buttonType="primary"],
 .Button[buttonType="secondary"] {
   display: flex;
-  border: none;
-  padding: 0;
-  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  border-radius: $border-radius;
+  height: 45px;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: $semi-bold;
+  letter-spacing: $letter-spacing-small;
 
-  a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 16px;
-    border-radius: $border-radius;
-    height: 45px;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-weight: $semi-bold;
-    letter-spacing: $letter-spacing-small;
+  transition: $transition;
+  width: 100%;
+  border: none;
+
+  @include screen-md {
+    width: auto;
     min-width: 180px;
-    transition: $transition;
   }
+
   .buttonIcon {
     margin-right: 16px;
   }
 }
 
 .Button[buttonType="primary"] {
-  a {
-    background-color: $green;
-    color: $white;
+  background-color: $green;
+  color: $white;
 
-    &:hover {
-      background-color: darken($green, 10%);
-    }
+  &:hover {
+    background-color: darken($green, 10%);
   }
 }
 
 .Button[buttonType="secondary"] {
-  a {
-    background-color: $lighter-grey;
-    color: $text-color;
+  background-color: $lighter-grey;
+  color: $text-color;
 
-    &:hover {
-      background-color: darken($lighter-grey, 10%);
-    }
+  &:hover {
+    background-color: darken($lighter-grey, 10%);
   }
 }

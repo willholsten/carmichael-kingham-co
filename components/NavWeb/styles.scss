@@ -4,25 +4,6 @@
   @include screen-md {
     display: block;
   }
-  div {
-    display: flex;
-    flex-direction: row;
-
-    a {
-      display: flex;
-      align-items: center;
-      padding: 8px 10px;
-      margin: 0 10px;
-      color: $dark-grey;
-
-      img {
-        display: none;
-      }
-    }
-    :last-child {
-      margin-right: 5px;
-    }
-  }
 }
 
 :global {

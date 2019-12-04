@@ -51,7 +51,7 @@ export default class Footer extends React.Component {
           </Grid>
         </Container>
         <div className={styles.contactButtons}>
-          <ContactButtons />
+          <ContactButtons buttonType="secondary" />
         </div>
         <div className={styles.FooterSnippet}>
           <Container maxWidth="md">

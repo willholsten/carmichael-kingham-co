@@ -5,6 +5,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  @include screen-md {
+    overflow: visible !important;
+  }
+}
+
 body {
   margin: 0;
   font-family: $sans-serif;
@@ -33,6 +39,12 @@ section {
 
     section:last-of-type {
       margin-bottom: -100px;
+    }
+  }
+
+  .MuiBackdrop-root {
+    @include screen-md {
+      display: none !important;
     }
   }
 }

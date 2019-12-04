@@ -25,14 +25,17 @@
   height: 100vh;
   padding: 0;
 
+  @include screen-md {
+    display: none;
+  }
+
   .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 24px;
+    padding: 15px 24px 0;
     margin-bottom: 16px;
-    height: 65px;
 
     .logo {
       width: 120px;
@@ -46,27 +49,6 @@
       i {
         font-size: 22px;
         color: $grey;
-      }
-    }
-  }
-
-  > div {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      background-color: $white;
-      display: flex;
-      align-items: center;
-      height: 60px;
-      margin: 10px 24px;
-      border-radius: $border-radius;
-      padding: 16px;
-      color: $darker-grey;
-      cursor: pointer;
-
-      a {
-        font-weight: $semi-bold;
       }
     }
   }

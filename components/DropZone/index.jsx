@@ -71,10 +71,8 @@ export default function StyledDropzone(props) {
         <strong className={styles.or}>OR</strong>
         <Button
           buttonType="secondary"
-          href=""
           text="Choose file"
           icon="fas fa-upload"
-          type=""
         />
       </div>
       {acceptedFiles.map(file => (

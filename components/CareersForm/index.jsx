@@ -1,5 +1,5 @@
 // Components
-import SubmitButton from "../Common/SubmitButton";
+import Button from "../Common/MyButton";
 import DropZone from "../DropZone";
 
 // Resources
@@ -55,7 +55,7 @@ export default function CareersForm(props) {
               </Grid>
               <Grid item xs={12}>
                 <textarea
-                  name="message"
+                  name="coverLetter"
                   placeholder="Cover letter..."
                   onFocus={e => (e.target.placeholder = "")}
                   onBlur={e => (e.target.placeholder = "Message...")}
@@ -65,9 +65,8 @@ export default function CareersForm(props) {
 
               <Grid item xs={12} md={4}>
                 <div>
-                  <SubmitButton
+                  <Button
                     buttonType="primary"
-                    href=""
                     text="send"
                     icon="fab fa-telegram-plane"
                     type="submit"

@@ -1,7 +1,6 @@
 // Components
 import NavList from "../NavList";
 import ContactButtons from "../Common/ContactButtons";
-import ContactButton from "../Common/ContactButton";
 
 // Resources
 import Link from "next/link";
@@ -50,7 +49,9 @@ export default function NavMobile() {
       <div>
         <div className={styles.header}>
           <Link href="/">
-            <img className={styles.logo} src="/svg/logo-blue.svg" />
+            <a>
+              <img className={styles.logo} src="/svg/logo-blue.svg" />
+            </a>
           </Link>
           <Button
             className={styles.buttonClose}
@@ -63,26 +64,7 @@ export default function NavMobile() {
           <NavList />
         </Grid>
         <div className={styles.contactButtons}>
-          <Grid container spacing={2}>
-            <Grid item xs={6}>
-              <ContactButton
-                buttonType="primary"
-                href={`tel:${phone}`}
-                text="Phone"
-                icon="fas fa-phone"
-                type="submit"
-              />
-            </Grid>
-            <Grid item xs={6}>
-              <ContactButton
-                buttonType="primary"
-                href={`mailto:${email}`}
-                text="Email"
-                icon="fas fa-envelope"
-                type="submit"
-              />
-            </Grid>
-          </Grid>
+          <ContactButtons buttonType="primary" />
         </div>
       </div>
       <div className={styles.footer}>

@@ -1,5 +1,5 @@
 // Components
-import SubmitButton from "../Common/SubmitButton";
+import Button from "../Common/MyButton";
 
 // Resources
 import { Grid } from "@material-ui/core";
@@ -59,9 +59,8 @@ export default class ContactForm extends React.Component {
 
             <Grid item xs={12} md={4}>
               <div>
-                <SubmitButton
+                <Button
                   buttonType="primary"
-                  href=""
                   text="send"
                   icon="fab fa-telegram-plane"
                   type="submit"
