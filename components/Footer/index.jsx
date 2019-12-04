@@ -51,12 +51,13 @@ export default class Footer extends React.Component {
           </Grid>
         </Container>
         <div className={styles.contactButtons}>
-          <ContactButtons buttonType="secondary" />
+          <ContactButtons buttontype="secondary" />
         </div>
         <div className={styles.FooterSnippet}>
           <Container maxWidth="md">
             <span>
-              &copy; {new Date().getFullYear()}. {companyName}
+              &copy; {new Date().getFullYear()}. {companyName} All Rights
+              Reserved.
             </span>
             <span className={styles.companyInfo}>{companyRegistration}</span>
           </Container>

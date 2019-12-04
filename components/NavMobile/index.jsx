@@ -64,11 +64,10 @@ export default function NavMobile() {
           <NavList />
         </Grid>
         <div className={styles.contactButtons}>
-          <ContactButtons buttonType="primary" />
+          <ContactButtons buttontype="primary" />
         </div>
       </div>
       <div className={styles.footer}>
-        <Divider />
         <div className={styles.connect}>
           <a
             href="https://www.linkedin.com/company/carmichael-kingham-co/about/ "
@@ -80,8 +79,14 @@ export default function NavMobile() {
             <i className="fab fa-twitter"></i>
           </a>
         </div>
-        <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()}. Carmichael Kingham &amp; Co
+        <div className={styles.links}>
+          <Link href="/careers">
+            <a>Careers</a>
+          </Link>
+          |
+          <Link href="privacy-policy">
+            <a>Privacy Policy</a>
+          </Link>
         </div>
       </div>
     </div>

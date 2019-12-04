@@ -1,5 +1,5 @@
-.Button[buttonType="primary"],
-.Button[buttonType="secondary"] {
+.Button[buttontype="primary"],
+.Button[buttontype="secondary"] {
   display: flex;
   display: flex;
   align-items: center;
@@ -26,7 +26,7 @@
   }
 }
 
-.Button[buttonType="primary"] {
+.Button[buttontype="primary"] {
   background-color: $green;
   color: $white;
 
@@ -35,7 +35,7 @@
   }
 }
 
-.Button[buttonType="secondary"] {
+.Button[buttontype="secondary"] {
   background-color: $lighter-grey;
   color: $text-color;
 

@@ -58,7 +58,7 @@ export default function BlogCard({ title, image, summary, href, date }) {
           </CardContent>
         </CardActionArea>
         <CardActions className={styles.cardActions}>
-          <MyLink href={href} text="Read more" buttonType="secondary" />
+          <MyLink href={href} text="Read more" buttontype="secondary" />
         </CardActions>
       </Card>
     </div>

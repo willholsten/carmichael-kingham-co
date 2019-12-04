@@ -60,7 +60,7 @@ export default class ContactForm extends React.Component {
             <Grid item xs={12} md={4}>
               <div>
                 <Button
-                  buttonType="primary"
+                  buttontype="primary"
                   text="send"
                   icon="fab fa-telegram-plane"
                   type="submit"

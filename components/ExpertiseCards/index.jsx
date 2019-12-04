@@ -28,7 +28,7 @@ export default class ExpertiseCards extends Component {
                 <MyLink
                   href={`expertise/${expertise.slug}`}
                   text="Read more"
-                  buttonType="secondary"
+                  buttontype="secondary"
                 />
               </Paper>
             </Grid>

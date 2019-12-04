@@ -14,7 +14,7 @@ export default function ExpertiseSingle({ html, title, expertise }) {
     <div className={styles.TeamMember}>
       <SectionHeader text={title} image="" />
       <Grid container spacing={10}>
-        <Grid item xs={12} sm={8}>
+        <Grid item sm={12} md={8}>
           <div
             className={styles.markdown}
             dangerouslySetInnerHTML={{ __html: html }}
@@ -22,7 +22,7 @@ export default function ExpertiseSingle({ html, title, expertise }) {
           <Divider className={styles.divider} />
           <MyLink href="/expertise" text="Back to expertise" />
         </Grid>
-        <Grid item sm={4}>
+        <Grid item sm={12} md={4}>
           <ExpertiseList expertise={expertise} />
         </Grid>
       </Grid>

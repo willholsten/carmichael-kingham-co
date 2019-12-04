@@ -18,7 +18,7 @@ export default class ExpertiseList extends Component {
               <MyLink
                 href={`/expertise/${expertise.slug}`}
                 text={expertise.attributes.title}
-                buttonType="secondary"
+                buttontype="secondary"
               />
             </li>
           ))}

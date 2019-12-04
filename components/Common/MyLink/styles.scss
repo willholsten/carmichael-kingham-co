@@ -1,7 +1,7 @@
 .link {
   @include link;
 
-  &[buttonType="secondary"] {
+  &[buttontype="secondary"] {
     a {
       background-color: $lightest-grey;
       color: $grey;
