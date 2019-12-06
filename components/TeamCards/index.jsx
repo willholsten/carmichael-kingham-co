@@ -23,6 +23,7 @@ export default class teamCards extends Component {
                       className={styles.image}
                       image={team.attributes.image}
                       src={team.attributes.name}
+                      alt={team.attributes.name}
                     />
                     <CardContent className={styles.content}>
                       <h4>{team.attributes.name}</h4>

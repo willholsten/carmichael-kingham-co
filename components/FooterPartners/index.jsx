@@ -19,7 +19,7 @@ export default class FooterPartners extends React.Component {
         {partners.map(partner => (
           <Link key={partner.icon} href={partner.href}>
             <a>
-              <img src={partner.icon} />
+              <img src={partner.icon} alt={partner.label} />
             </a>
           </Link>
         ))}

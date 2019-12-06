@@ -38,8 +38,28 @@
     }
   }
 
+  .socialButtons {
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+
+    @include screen-sm {
+      padding: 0 24px;
+    }
+
+    @include screen-md {
+      display: none;
+    }
+
+    i {
+      color: $lighter-grey;
+      font-size: 24px;
+      padding: 5px;
+      margin: 5px 15px;
+    }
+  }
+
   .contactButtons {
-    background-color: $footer-bg;
     padding: 0 16px;
 
     @include screen-sm {
@@ -56,13 +76,15 @@
 
     > div {
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 48px;
       color: $white;
       font-size: $font-size-small;
+      padding: 15px 0;
 
       @include screen-md {
+        flex-direction: row;
         justify-content: space-between;
       }
     }

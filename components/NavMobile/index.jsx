@@ -15,6 +15,7 @@ import content from "../../content/companyDetails.md";
 // Styles
 
 import styles from "./styles.scss";
+import SocialButtons from "../Common/SocialButtons";
 
 export default function NavMobile() {
   const [state, setState] = React.useState({
@@ -50,7 +51,11 @@ export default function NavMobile() {
         <div className={styles.header}>
           <Link href="/">
             <a>
-              <img className={styles.logo} src="/svg/logo-blue.svg" />
+              <img
+                className={styles.logo}
+                src="/svg/logo-blue.svg"
+                alt="logo"
+              />
             </a>
           </Link>
           <Button
@@ -69,15 +74,7 @@ export default function NavMobile() {
       </div>
       <div className={styles.footer}>
         <div className={styles.connect}>
-          <a
-            href="https://www.linkedin.com/company/carmichael-kingham-co/about/ "
-            target="_blank"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a href="https://twitter.com/CarmiKingham" target="_blank">
-            <i className="fab fa-twitter"></i>
-          </a>
+          <SocialButtons />
         </div>
         <div className={styles.links}>
           <Link href="/careers">

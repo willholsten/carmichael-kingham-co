@@ -16,7 +16,11 @@ export default function NavList() {
       {navigation.map(nav => (
         <Link href={nav.href} key={nav.href}>
           <a>
-            <img className={styles.NavMobileIcon} src={nav.icon} />
+            <img
+              className={styles.NavMobileIcon}
+              src={nav.icon}
+              alt={nav.label}
+            />
             {nav.label}
           </a>
         </Link>

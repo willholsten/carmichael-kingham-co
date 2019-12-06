@@ -41,7 +41,7 @@ export default function BlogCard({ title, image, summary, href, date }) {
             focusHighlight: classes.focusHighlight
           }}
         >
-          <CardMedia className={styles.image} image={image} />
+          <CardMedia className={styles.image} image={image} alt={title} />
           <CardContent>
             <div className={styles.date}>
               <i className="fas fa-clock"></i>

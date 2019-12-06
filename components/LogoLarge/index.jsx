@@ -8,7 +8,7 @@ export default function LogoLarge() {
   return (
     <Link href="/">
       <a className={styles.logoLarge}>
-        <img src="/svg/logo-web.svg" />
+        <img src="/svg/logo-web.svg" alt="Web Logo" />
       </a>
     </Link>
   );

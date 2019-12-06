@@ -23,8 +23,18 @@ company:
     href: /careers
 
 partners:
-  - icon: /svg/xero.svg
+  - label: Xero
+    icon: /svg/xero.svg
     href: ""
-  - icon: /svg/acca.svg
+  - label: ACCA
+    icon: /svg/acca.svg
     href: ""
+
+connect:
+  - label: LinkedIn
+    icon: "fab fa-linkedin"
+    href: "https://www.linkedin.com/company/carmichael-kingham-co/about/"
+  - label: Twitter
+    icon: "fab fa-twitter"
+    href: "https://twitter.com/CarmiKingham"
 ---

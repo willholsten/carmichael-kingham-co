@@ -3,6 +3,7 @@ import ContactButtons from "../Common/ContactButtons";
 import FooterNav from "../FooterNav";
 import FooterCompany from "../FooterCompany";
 import FooterPartners from "../FooterPartners";
+import SocialButtons from "../Common/SocialButtons";
 
 // Resources
 import Link from "next/link";
@@ -50,11 +51,15 @@ export default class Footer extends React.Component {
             </Grid>
           </Grid>
         </Container>
+
         <div className={styles.contactButtons}>
           <ContactButtons buttontype="secondary" />
         </div>
         <div className={styles.FooterSnippet}>
           <Container maxWidth="md">
+            <div className={styles.socialButtons}>
+              <SocialButtons />
+            </div>
             <span>
               &copy; {new Date().getFullYear()}. {companyName} All Rights
               Reserved.

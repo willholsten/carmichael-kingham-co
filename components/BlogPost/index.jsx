@@ -20,7 +20,7 @@ export default function BlogPost({ html, title, image, date }) {
           {moment(date).format("D MMMM, YYYY")}
         </div>
       </div>
-      <CardMedia className={styles.featuredImage} image={image} />
+      <CardMedia className={styles.featuredImage} image={image} alt={title} />
       <div
         className={styles.markdown}
         dangerouslySetInnerHTML={{ __html: html }}
