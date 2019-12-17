@@ -1,4 +1,8 @@
 ---
 pageTitle: Careers
-pageSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+pageSummary: >-
+  Whilst we are not currently recruiting we are always happy to hear from anyone
+  interested in working in practice. When we are looking for talented
+  individuals details will be posted here.
 ---
+
