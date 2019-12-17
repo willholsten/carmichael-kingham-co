@@ -3,8 +3,8 @@ backend:
   branch: dev
 
 media_folder: public/cms
-logo_url: https://dev.carmichaelkingham.co.uk/svg/logo-blue.svg
-display_url: https://dev.carmichaelkingham.co.uk
+logo_url: https://dev.carmichaelkingham.com/svg/logo-blue.svg
+display_url: https://dev.carmichaelkingham.com
 
 slug:
   encoding: "ascii"
