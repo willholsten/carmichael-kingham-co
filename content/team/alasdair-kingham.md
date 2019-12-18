@@ -1,7 +1,7 @@
 ---
 name: Alasdair Kingham
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-image: /alasdair.jpg
+summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+image: /public/cms/download_2_.png
 ---
 
 Alasdair is a founding Director and Consultant to Carmichael Kingham & Co.
