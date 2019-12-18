@@ -1,7 +1,7 @@
 ---
 name: Annabelle Carmichael
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-image: /annabelle.jpg
+summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+image: /public/cms/annabelle_photos.jpg
 ---
 
 Annabelle is the Principal of Carmichael Kingham & Co. she has worked in
