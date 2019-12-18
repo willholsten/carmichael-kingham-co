@@ -1,8 +1,10 @@
 ---
-title: "This is the title of my first blog posts, it's about the"
-date: 2019-09-01T08:28:44.549Z
-image: "/blog1.jpg"
-summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+title: 'We are open for business! '
+date: 2019-11-16T09:28:44.549Z
+image: /blog1.jpg
+summary: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+  amet, consectetur adipiscing elit
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
