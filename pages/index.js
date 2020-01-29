@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react';
 
 // Components
-import MyLink from "../components/Common/MyLink";
-import Layout from "../components/Layout";
-import HomeBanner from "../components/HomeBanner";
-import SectionHeader from "../components/Common/SectionHeader";
-import AboutCard from "../components/AboutCard";
-import ExpertiseCards from "../components/ExpertiseCards";
-import TeamCards from "../components/TeamCards";
-import BlogPosts from "../components/BlogPosts";
+import MyLink from '../components/Common/MyLink';
+import Layout from '../components/Layout';
+import HomeBanner from '../components/HomeBanner';
+import SectionHeader from '../components/Common/SectionHeader';
+import AboutCard from '../components/AboutCard';
+import ExpertiseCards from '../components/ExpertiseCards';
+import TeamCards from '../components/TeamCards';
+import BlogPosts from '../components/BlogPosts';
 
 // Resources
-import { Container } from "@material-ui/core";
+import { Container } from '@material-ui/core';
 
 export default class Home extends React.Component {
   render() {
@@ -54,14 +54,14 @@ export default class Home extends React.Component {
               <TeamCards team={teamMembers} />
             </Container>
           </section>
-          <section>
+          {/* <section>
             <Container maxWidth="md">
               <SectionHeader
                 text={`Latest from the ${blog.attributes.pageTitle}`}
               />
               <BlogPosts posts={posts} numOfPosts="3" />
             </Container>
-          </section>
+          </section> */}
         </div>
       </Layout>
     );

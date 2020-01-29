@@ -9,9 +9,9 @@ navigation:
   - label: Expertise
     href: /expertise
     icon: /svg/expertise.svg
-  - label: Blog
-    href: /blog
-    icon: /svg/blog.svg
+  # - label: Blog
+  #   href: /blog
+  #   icon: /svg/blog.svg
   - label: Contact Us
     href: /contact
     icon: /svg/contact.svg
@@ -25,16 +25,16 @@ company:
 partners:
   - label: Xero
     icon: /svg/xero.svg
-    href: ""
+    href: ''
   - label: ACCA
     icon: /svg/acca.svg
-    href: ""
+    href: ''
 
 connect:
   - label: LinkedIn
-    icon: "fab fa-linkedin"
-    href: "https://www.linkedin.com/company/carmichael-kingham-co/about/"
+    icon: 'fab fa-linkedin'
+    href: 'https://www.linkedin.com/company/carmichael-kingham-co/about/'
   - label: Twitter
-    icon: "fab fa-twitter"
-    href: "https://twitter.com/CarmiKingham"
+    icon: 'fab fa-twitter'
+    href: 'https://twitter.com/CarmiKingham'
 ---
