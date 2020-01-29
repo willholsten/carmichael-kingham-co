@@ -27,8 +27,7 @@ export default class Home extends React.Component {
     return (
       <Layout
         title="Carmichael Kingham & Co."
-        description="Insert page description"
-        keywords="Insert keywords"
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
       >
         <div className="Home">
           <Container maxWidth="lg">

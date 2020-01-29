@@ -1,12 +1,12 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
-import Careers from "../components/Careers";
+import Layout from '../components/Layout';
+import SectionHeader from '../components/Common/SectionHeader';
+import Careers from '../components/Careers';
 
 // Resources
-import { Container } from "@material-ui/core";
+import { Container } from '@material-ui/core';
 
 export default class CareersPage extends Component {
   render() {
@@ -14,8 +14,7 @@ export default class CareersPage extends Component {
     return (
       <Layout
         title={`${careers.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Insert page description"
-        keywords="Insert keywords"
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
       >
         <Container maxWidth="md">
           <SectionHeader text={careers.attributes.pageTitle} />

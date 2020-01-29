@@ -1,19 +1,19 @@
 // Components
-import Header from "../Header";
-import Footer from "../Footer";
-import Cookies from "../Cookies";
+import Header from '../Header';
+import Footer from '../Footer';
+import Cookies from '../Cookies';
 
 // Resources
-import Head from "next/head";
-import { NextSeo } from "next-seo";
+import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 // Styles
-import "../../styles/main.scss";
-import styles from "./styles.scss";
+import '../../styles/main.scss';
+import styles from './styles.scss';
 
 export default class Layout extends React.Component {
   render() {
-    const { children, title, description, keywords } = this.props;
+    const { children, title, description } = this.props;
     return (
       <div className={styles.site}>
         <Head>
@@ -33,15 +33,15 @@ export default class Layout extends React.Component {
           description={description}
           canonical="https://www.carmichaelkingham.com"
           openGraph={{
-            type: "website",
-            locale: "en_GB",
-            url: "https://www.carmichaelkingham.com",
+            type: 'website',
+            locale: 'en_GB',
+            url: 'https://www.carmichaelkingham.com',
             title: title,
-            description: "Corporate Accounting + Advisory Services",
+            description: 'Corporate Accounting + Advisory Services',
             site_name: title,
             images: [
               {
-                url: "https://www.carmichaelkingham.com/logo-blue.svg",
+                url: 'https://www.carmichaelkingham.com/logo-blue.svg',
                 width: 136,
                 height: 34,
                 alt: title
@@ -49,9 +49,9 @@ export default class Layout extends React.Component {
             ]
           }}
           twitter={{
-            handle: "@CarmiKingham",
-            site: "@CarmiKingham",
-            cardType: "summary_large_image"
+            handle: '@CarmiKingham',
+            site: '@CarmiKingham',
+            cardType: 'summary_large_image'
           }}
         />
         <Cookies />

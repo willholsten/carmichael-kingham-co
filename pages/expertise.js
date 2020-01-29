@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
-import Expertise from "../components/Expertise";
-import IntroText from "../components/IntroText";
+import Layout from '../components/Layout';
+import SectionHeader from '../components/Common/SectionHeader';
+import Expertise from '../components/Expertise';
+import IntroText from '../components/IntroText';
 
 // Resources
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 
 export default class ExpertisePage extends Component {
   render() {
@@ -15,8 +15,7 @@ export default class ExpertisePage extends Component {
     return (
       <Layout
         title={`${expertise.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Insert page description"
-        keywords="Insert keywords"
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
       >
         <Container maxWidth="md">
           <SectionHeader text={expertise.attributes.pageTitle} />

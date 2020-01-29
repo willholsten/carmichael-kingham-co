@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
-import Blog from "../components/Blog";
-import IntroText from "../components/IntroText";
+import Layout from '../components/Layout';
+import SectionHeader from '../components/Common/SectionHeader';
+import Blog from '../components/Blog';
+import IntroText from '../components/IntroText';
 
 // Resources
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 
 export default class BlogPage extends Component {
   render() {
@@ -16,8 +16,7 @@ export default class BlogPage extends Component {
     return (
       <Layout
         title={`${blog.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Insert page description"
-        keywords="Insert keywords"
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
       >
         <Container maxWidth="md">
           <SectionHeader text={blog.attributes.pageTitle} />
