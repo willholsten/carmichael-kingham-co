@@ -1,22 +1,29 @@
-import React from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
+import Layout from '../components/Layout';
+import SectionHeader from '../components/Common/SectionHeader';
+import Blog from '../components/Blog';
+import IntroText from '../components/IntroText';
 
 // Resources
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 
-export default function Blog() {
-  return (
-    <Layout
-      title="Blog | Carmichael Kingham &amp; Co"
-      description="Insert page description"
-      keywords="Insert keywords"
-    >
-      <Container maxWidth="md">
-        <SectionHeader text="Blog" image="/svg/blog.svg" />
-      </Container>
-    </Layout>
-  );
+export default class BlogPage extends Component {
+  render() {
+    const { blog, posts, sortPosts } = this.props;
+
+    return (
+      <Layout
+        title={`${blog.attributes.pageTitle} | Carmichael Kingham & Co.`}
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+      >
+        <Container maxWidth="md">
+          <SectionHeader text={blog.attributes.pageTitle} />
+          <IntroText text={blog.attributes.pageSummary} />
+        </Container>
+        <Blog posts={posts} sortPosts={sortPosts} />
+      </Layout>
+    );
+  }
 }

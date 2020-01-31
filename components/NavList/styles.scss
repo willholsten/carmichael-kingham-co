@@ -1,5 +1,45 @@
 .NavList {
-  .NavMobile_icon {
+  display: flex;
+  flex-direction: column;
+
+  @include screen-md {
+    flex-direction: row;
+  }
+
+  a {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    margin: 10px 24px;
+    border-radius: $border-radius;
+    padding: 16px;
+    color: $darker-grey;
+    cursor: pointer;
+
+    a {
+      font-weight: $semi-bold;
+    }
+
+    @include screen-md {
+      background-color: transparent;
+      padding: 8px 10px;
+      margin: 0 10px;
+      color: $text-color;
+
+      &:hover {
+        color: $darker-grey;
+      }
+
+      img {
+        display: none;
+      }
+      :last-child {
+        margin-right: 5px;
+      }
+    }
+  }
+  .NavMobileIcon {
     width: 70px;
     margin-right: 20px;
   }

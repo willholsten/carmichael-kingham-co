@@ -1,0 +1,8 @@
+.Map {
+  > div {
+    width: 100% !important;
+    border-radius: $border-radius;
+    overflow: hidden;
+    height: 350px !important;
+  }
+}

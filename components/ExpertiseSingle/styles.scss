@@ -1,0 +1,12 @@
+.TeamMember {
+  .featuredImage {
+    width: 100%;
+    max-width: 100%;
+    border-radius: $border-radius;
+  }
+
+  .divider {
+    margin: 40px 0;
+    background-color: lighten($lighter-grey, 5%);
+  }
+}

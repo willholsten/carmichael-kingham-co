@@ -1,0 +1,54 @@
+.VerticalTabs {
+  display: none;
+  @include screen-sm {
+    display: block;
+  }
+  .tabList {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+
+    .tab {
+      font-family: $sans-serif;
+      padding: 15px;
+      background-color: $white;
+      text-align: left;
+      height: 50px;
+      line-height: 18px;
+      position: relative;
+      color: $text-color;
+      box-shadow: none;
+      border: none;
+      text-align: left;
+      font-weight: $semi-bold;
+      margin-bottom: 15px;
+      border-radius: $border-radius;
+      overflow: hidden;
+      cursor: pointer;
+      color: $text-color;
+
+      span {
+        text-transform: capitalize;
+        align-items: flex-start;
+        color: $text-color;
+      }
+
+      &[aria-selected="true"] {
+        color: $text-color;
+        background-color: rgba($blue, 0.1);
+      }
+      &:focus,
+      &:active {
+        outline: 0;
+      }
+    }
+
+    .tabPanel {
+      color: $text-color;
+
+      > div {
+        padding: 0 !important;
+      }
+    }
+  }
+}

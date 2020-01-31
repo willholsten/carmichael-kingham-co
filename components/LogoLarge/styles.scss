@@ -1,0 +1,8 @@
+.LogoLarge {
+  display: none;
+  @include screen-md {
+    display: block;
+    width: 120px;
+    cursor: pointer;
+  }
+}

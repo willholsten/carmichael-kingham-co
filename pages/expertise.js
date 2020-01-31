@@ -1,22 +1,28 @@
-import React from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../components/Layout";
-import SectionHeader from "../components/Common/SectionHeader";
+import Layout from '../components/Layout';
+import SectionHeader from '../components/Common/SectionHeader';
+import Expertise from '../components/Expertise';
+import IntroText from '../components/IntroText';
 
 // Resources
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 
-export default function Expertise() {
-  return (
-    <Layout
-      title="Expertise | Carmichael Kingham &amp; Co"
-      description="Insert page description"
-      keywords="Insert keywords"
-    >
-      <Container maxWidth="md">
-        <SectionHeader text="Expertise" image="/svg/services.svg" />
-      </Container>
-    </Layout>
-  );
+export default class ExpertisePage extends Component {
+  render() {
+    const { expertise, expertiseCards } = this.props;
+    return (
+      <Layout
+        title={`${expertise.attributes.pageTitle} | Carmichael Kingham & Co.`}
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+      >
+        <Container maxWidth="md">
+          <SectionHeader text={expertise.attributes.pageTitle} />
+          <IntroText text={expertise.attributes.pageSummary} />
+          <Expertise expertise={expertiseCards} />
+        </Container>
+      </Layout>
+    );
+  }
 }

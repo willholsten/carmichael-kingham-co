@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Constantia";
-  src: url("/public/fonts/Constantia.ttf");
+  src: url("/fonts/Constantia.ttf");
 }
 
 $serif: "Constantia", serif;
@@ -22,4 +22,6 @@ $regular: 400;
 $semi-bold: 600;
 $bold: 800;
 
-$border-radius: 10px;
+$border-radius: 7px;
+
+$transition: all 0.3s;

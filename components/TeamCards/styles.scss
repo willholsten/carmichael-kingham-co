@@ -1,0 +1,17 @@
+.teamCards {
+  .image {
+    height: 125px;
+    width: 225px;
+  }
+  .card {
+    @include card;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    width: 100%;
+  }
+}

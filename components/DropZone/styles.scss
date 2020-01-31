@@ -1,0 +1,23 @@
+.DropZone {
+  .or {
+    margin-bottom: 10px;
+    color: $text-color;
+  }
+
+  .uploadIcon {
+    font-size: 80px;
+    color: $text-color;
+    opacity: 0.5;
+  }
+
+  .file {
+    i {
+      color: $green;
+      margin-right: 5px;
+    }
+
+    strong {
+      margin-right: 5px;
+    }
+  }
+}

@@ -3,8 +3,14 @@
     position: relative;
     background: rgba($green, 0.2);
     box-shadow: none;
-    height: 200px;
-    width: 85%;
+    height: 140px;
+    width: 80%;
+    margin-bottom: 30px;
+
+    @include screen-md {
+      height: 200px;
+      margin-bottom: 60px;
+    }
 
     .quote {
       width: 110%;
@@ -22,5 +28,10 @@
   }
   .text {
     margin: 0 0 20px;
+  }
+  .markdown {
+    p {
+      margin: 0 0 20px;
+    }
   }
 }

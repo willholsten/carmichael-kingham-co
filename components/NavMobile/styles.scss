@@ -1,11 +1,11 @@
 .NavMobile {
-  display: block;
+  display: flex;
 
   @include screen-md {
     display: none;
   }
 
-  .button_bars {
+  button {
     min-width: auto;
 
     i {
@@ -23,70 +23,70 @@
   background-color: $lightest-grey;
   width: 320px;
   height: 100vh;
-  padding: 32px 0 0;
+  padding: 0;
+
+  @include screen-md {
+    display: none;
+  }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 16px;
+    padding: 15px 24px 0;
     margin-bottom: 16px;
 
     .logo {
       width: 120px;
     }
 
-    i {
-      font-size: 32px;
-      color: $grey;
+    .buttonClose {
+      display: flex;
+      justify-content: flex-end;
+      min-width: auto;
+
+      i {
+        font-size: 22px;
+        color: $grey;
+      }
     }
   }
 
-  > div {
-    display: flex;
-    flex-direction: column;
-
-    a {
-      background-color: $white;
-      display: flex;
-      align-items: center;
-      height: 70px;
-      margin: 10px 16px;
-      border-radius: $border-radius;
-      padding: 16px;
-      color: $darker-grey;
-      cursor: pointer;
-
-      a {
-        font-weight: $semi-bold;
-      }
-    }
+  .contactButtons {
+    padding: 0 24px;
   }
 
   .footer {
+    padding: 16px 24px;
     margin-top: 16px;
-    .terms {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $lighter-grey;
+    .connect {
       display: flex;
-      justify-content: space-between;
-      padding: 16px;
-      background-color: $lightest-grey;
+      justify-content: flex-start;
 
-      a {
-        color: $dark-grey;
-        padding: 5px 0;
-        background-color: transparent;
-        height: auto;
-        margin: 0;
+      i {
+        color: $text-color;
+        font-size: 20px;
+        margin-right: 16px;
       }
     }
-    .copyright {
-      background-color: $darker-grey;
-      color: $white;
-      font-weight: $light;
-      height: 48px;
+    .links {
       display: flex;
-      justify-content: center;
-      align-items: center;
+      color: $text-color;
+
+      a {
+        color: $text-color;
+      }
+
+      a:first-of-type {
+        padding-right: 7px;
+      }
+      a:last-of-type {
+        padding-left: 7px;
+      }
     }
   }
 }

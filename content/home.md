@@ -1,5 +1,9 @@
 ---
-title: Website coming soon...
-date: 2019-11-14T14:39:52.597Z
+bannerText: Corporate Accounting + Advisory Services
+bannerImageMobile: /homepage-banner-mobile.jpg
+bannerImageWeb: /homepage-banner-web.jpg
+aboutText: >-
+  Carmichael Kingham & Co. provides corporate accounting and advisory services
+  to help businesses grow.
 ---
 

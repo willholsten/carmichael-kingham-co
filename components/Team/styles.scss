@@ -1,0 +1,15 @@
+.Expertise {
+  .expertiseTabs {
+    display: none;
+
+    @include screen-sm {
+      display: block;
+    }
+  }
+  .expertiseAccordion {
+    display: block;
+    @include screen-sm {
+      display: none;
+    }
+  }
+}

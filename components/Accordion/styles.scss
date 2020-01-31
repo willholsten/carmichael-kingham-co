@@ -1,0 +1,7 @@
+.Accordion {
+  display: block;
+
+  @include screen-sm {
+    display: none;
+  }
+}

@@ -7,10 +7,15 @@ import Link from "next/link";
 import Button from "@material-ui/core/Button";
 import Drawer from "@material-ui/core/Drawer";
 import Divider from "@material-ui/core/Divider";
+import { Grid } from "@material-ui/core";
+
+// Data
+import content from "../../content/companyDetails.md";
 
 // Styles
-import "../../styles/main.scss";
+
 import styles from "./styles.scss";
+import SocialButtons from "../Common/SocialButtons";
 
 export default function NavMobile() {
   const [state, setState] = React.useState({
@@ -31,6 +36,10 @@ export default function NavMobile() {
     setState({ ...state, [side]: open });
   };
 
+  let {
+    attributes: { phone, email }
+  } = content;
+
   const sideList = side => (
     <div
       className={styles.list}
@@ -41,25 +50,40 @@ export default function NavMobile() {
       <div>
         <div className={styles.header}>
           <Link href="/">
-            <img className={styles.logo} src="/svg/logo-web.svg" />
+            <a>
+              <img
+                className={styles.logo}
+                src="/svg/logo-blue.svg"
+                alt="logo"
+              />
+            </a>
           </Link>
-          <i className="fab fa-linkedin"></i>
+          <Button
+            className={styles.buttonClose}
+            onClick={toggleDrawer("right", true)}
+          >
+            <i className="fas fa-times"></i>
+          </Button>
         </div>
-        <NavList />
-        <ContactButtons />
+        <Grid item xs={12}>
+          <NavList />
+        </Grid>
+        <div className={styles.contactButtons}>
+          <ContactButtons buttontype="primary" />
+        </div>
       </div>
       <div className={styles.footer}>
-        <Divider />
-        <div className={styles.terms}>
+        <div className={styles.connect}>
+          <SocialButtons />
+        </div>
+        <div className={styles.links}>
           <Link href="/careers">
             <a>Careers</a>
           </Link>
-          <Link href="/careers">
+          |
+          <Link href="privacy-policy">
             <a>Privacy Policy</a>
           </Link>
-        </div>
-        <div className={styles.copyright}>
-          &copy; {new Date().getFullYear()}. Carmichael Kingham &amp; Co
         </div>
       </div>
     </div>
@@ -68,7 +92,7 @@ export default function NavMobile() {
   return (
     <div className={styles.NavMobile}>
       <Button
-        className={styles.button_bars}
+        className={styles.buttonBars}
         onClick={toggleDrawer("right", true)}
       >
         <i className="fas fa-bars"></i>

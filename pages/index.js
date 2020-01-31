@@ -1,42 +1,68 @@
-import React from "react";
+import React from 'react';
 
 // Components
-import Layout from "../components/Layout";
-// import HomeBanner from "../components/HomeBanner";
-// import SectionHeader from "../components/Common/SectionHeader";
-// import AboutTile from "../components/AboutTile";
-// import ExpertiseTile from "../components/ExpertiseTile";
-// import TeamTile from "../components/TeamTile";
-import ComingSoon from "../components/ComingSoon";
+import MyLink from '../components/Common/MyLink';
+import Layout from '../components/Layout';
+import HomeBanner from '../components/HomeBanner';
+import SectionHeader from '../components/Common/SectionHeader';
+import AboutCard from '../components/AboutCard';
+import ExpertiseCards from '../components/ExpertiseCards';
+import TeamCards from '../components/TeamCards';
+import BlogPosts from '../components/BlogPosts';
 
 // Resources
-import { Container } from "@material-ui/core";
+import { Container } from '@material-ui/core';
 
-export default function Home() {
-  return (
-    <Layout
-      title="Carmichael Kingham &amp; Co"
-      description="Insert page description"
-      keywords="Insert keywords"
-    >
-      {/* <section>
-        <HomeBanner />
-      </section> */}
-      <Container maxWidth="md">
-        {/* <section>
-          <SectionHeader text="About us" image="/svg/about-us.svg" />
-          <AboutTile />
-        </section>
-        <section>
-          <SectionHeader text="Expertise" image="/svg/services.svg" />
-          <ExpertiseTile />
-        </section>
-        <section>
-          <SectionHeader text="Our people" image="/svg/our-people.svg" />
-          <TeamTile />
-        </section> */}
-        <ComingSoon />
-      </Container>
-    </Layout>
-  );
+export default class Home extends React.Component {
+  render() {
+    const {
+      about,
+      blog,
+      posts,
+      expertise,
+      expertiseCards,
+      team,
+      teamMembers
+    } = this.props;
+    return (
+      <Layout
+        title="Carmichael Kingham & Co."
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+      >
+        <div className="Home">
+          <Container maxWidth="lg">
+            <HomeBanner />
+          </Container>
+          <section>
+            <Container maxWidth="md">
+              <SectionHeader text={about.attributes.pageTitle} />
+              <AboutCard />
+              <MyLink href="/about-us" text="Read more" />
+            </Container>
+          </section>
+          <section>
+            <Container maxWidth="md">
+              <SectionHeader text={expertise.attributes.pageTitle} />
+              <ExpertiseCards expertise={expertiseCards} numOfServices="3" />
+              <MyLink href="/expertise" text="View all" />
+            </Container>
+          </section>
+          <section>
+            <Container maxWidth="md">
+              <SectionHeader text={team.attributes.pageTitle} />
+              <TeamCards team={teamMembers} />
+            </Container>
+          </section>
+          {/* <section>
+            <Container maxWidth="md">
+              <SectionHeader
+                text={`Latest from the ${blog.attributes.pageTitle}`}
+              />
+              <BlogPosts posts={posts} numOfPosts="3" />
+            </Container>
+          </section> */}
+        </div>
+      </Layout>
+    );
+  }
 }

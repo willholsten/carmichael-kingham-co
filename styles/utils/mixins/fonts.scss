@@ -1,0 +1,20 @@
+@mixin link {
+  width: auto;
+  a {
+    background-color: rgba($green, 0.2);
+    padding: 8px 17px;
+    border-radius: $border-radius;
+    width: auto;
+    color: darken($green, 10%);
+    font-weight: $bold;
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    letter-spacing: $letter-spacing-small;
+    transition: $transition;
+
+    &:hover {
+      background-color: rgba($green, 0.8);
+      color: $white;
+    }
+  }
+}

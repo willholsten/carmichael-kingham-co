@@ -1,0 +1,8 @@
+.LogoSmall {
+  @include screen-md {
+    display: none;
+  }
+  img {
+    width: 35px;
+  }
+}

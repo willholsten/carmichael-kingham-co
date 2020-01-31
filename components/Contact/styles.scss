@@ -1,0 +1,26 @@
+.Contact {
+  .map {
+    i {
+      color: $green;
+      margin-right: 15px;
+    }
+  }
+  .companyInfo {
+    padding-top: 10px;
+    padding-left: 15px;
+    > div {
+      margin: 20px 0;
+
+      a {
+        color: $text-color;
+      }
+
+      .appointment {
+        display: block;
+        margin-top: 5px;
+        margin-left: 25px;
+        font-style: italic;
+      }
+    }
+  }
+}
