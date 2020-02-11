@@ -1,18 +1,18 @@
 // Components
-import LogoLarge from "../LogoLarge";
-import LogoSmall from "../LogoSmall";
-import Nav from "../NavWeb";
-import NavMobile from "../NavMobile";
+import LogoLarge from '../LogoLarge';
+import LogoSmall from '../LogoSmall';
+import Nav from '../NavWeb';
+import NavMobile from '../NavMobile';
 
 // Resources
-import Container from "@material-ui/core/Container";
+import Container from '@material-ui/core/Container';
 
 // Data
-import content from "../../content/companyDetails.md";
+import content from '../../content/companyDetails.md';
 
 // Styles
 
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 export default function Header() {
   let {

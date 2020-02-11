@@ -53,14 +53,14 @@ export default class Home extends React.Component {
               <TeamCards team={teamMembers} />
             </Container>
           </section>
-          {/* <section>
+          <section>
             <Container maxWidth="md">
               <SectionHeader
                 text={`Latest from the ${blog.attributes.pageTitle}`}
               />
               <BlogPosts posts={posts} numOfPosts="3" />
             </Container>
-          </section> */}
+          </section>
         </div>
       </Layout>
     );
