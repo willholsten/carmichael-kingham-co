@@ -1,13 +1,13 @@
 // Components
-import Button from "../Common/MyButton";
-import DropZone from "../DropZone";
+import Button from '../Common/MyButton';
+import DropZone from '../DropZone';
 
 // Resources
-import { Grid } from "@material-ui/core";
+import { Grid } from '@material-ui/core';
 
 // Styles
 
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 export default function CareersForm(props) {
   return (
@@ -16,7 +16,7 @@ export default function CareersForm(props) {
         <input type="hidden" name="form-name" value="Careers" />
         <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
-            <DropZone />
+            {/* <DropZone /> */}
           </Grid>
           <Grid item xs={12} md={6}>
             <Grid container spacing={2}>
@@ -24,12 +24,13 @@ export default function CareersForm(props) {
                 <h4>Your Details</h4>
               </Grid>
               <Grid item xs={12} md={6}>
+                <input type="file" required />
                 <input
                   type="text"
                   name="fname"
                   placeholder="First Name"
-                  onFocus={e => (e.target.placeholder = "")}
-                  onBlur={e => (e.target.placeholder = "First name")}
+                  onFocus={e => (e.target.placeholder = '')}
+                  onBlur={e => (e.target.placeholder = 'First name')}
                   required
                 />
               </Grid>
@@ -38,8 +39,8 @@ export default function CareersForm(props) {
                   type="text"
                   name="lname"
                   placeholder="Last Name"
-                  onFocus={e => (e.target.placeholder = "")}
-                  onBlur={e => (e.target.placeholder = "Last name")}
+                  onFocus={e => (e.target.placeholder = '')}
+                  onBlur={e => (e.target.placeholder = 'Last name')}
                   required
                 />
               </Grid>
@@ -48,8 +49,8 @@ export default function CareersForm(props) {
                   type="email"
                   name="email"
                   placeholder="Email"
-                  onFocus={e => (e.target.placeholder = "")}
-                  onBlur={e => (e.target.placeholder = "Email")}
+                  onFocus={e => (e.target.placeholder = '')}
+                  onBlur={e => (e.target.placeholder = 'Email')}
                   required
                 />
               </Grid>
@@ -57,8 +58,8 @@ export default function CareersForm(props) {
                 <textarea
                   name="coverLetter"
                   placeholder="Cover letter..."
-                  onFocus={e => (e.target.placeholder = "")}
-                  onBlur={e => (e.target.placeholder = "Message...")}
+                  onFocus={e => (e.target.placeholder = '')}
+                  onBlur={e => (e.target.placeholder = 'Message...')}
                   required
                 ></textarea>
               </Grid>
