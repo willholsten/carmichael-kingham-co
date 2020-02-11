@@ -17,7 +17,6 @@ export default class CareersForm extends React.Component {
           name="Careers"
           method="POST"
           data-netlify="true"
-          // action="/thank-you"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="Careers" />
