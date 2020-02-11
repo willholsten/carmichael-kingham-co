@@ -1,45 +1,45 @@
-import React, { useMemo } from "react";
+import React, { useMemo } from 'react';
 
 // Components
-import Button from "../Common/MyButton";
+import Button from '../Common/MyButton';
 
 // Resources
-import { useDropzone } from "react-dropzone";
+import { useDropzone } from 'react-dropzone';
 
 // Styles
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 const baseStyle = {
   flex: 1,
-  display: "flex",
-  flexDirection: "column",
-  alignItems: "center",
-  padding: "86px 20px",
-  borderWidth: 2,
-  borderRadius: 2,
-  borderColor: "#d0d3de",
-  borderStyle: "dashed",
-  borderRadius: "10px",
-  backgroundColor: "#fafafa",
-  color: "#bdbdbd",
-  outline: "none",
-  transition: "border .24s ease-in-out",
-  marginBottom: "15px"
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  padding: '86px 20px',
+  // borderWidth: 2,
+  // borderRadius: 2,
+  // borderColor: '#d0d3de',
+  // borderStyle: 'dashed',
+  // borderRadius: '10px',
+  backgroundColor: '#fafafa',
+  color: '#bdbdbd',
+  outline: 'none',
+  transition: 'border .24s ease-in-out',
+  marginBottom: '15px'
 };
 
 const activeStyle = {
-  borderColor: "#939cb9",
-  backgroundColor: "#f2f4f9"
+  borderColor: '#939cb9',
+  backgroundColor: '#f2f4f9'
 };
 
 const acceptStyle = {
-  borderColor: "#939cb9",
-  backgroundColor: "#f2f4f9"
+  borderColor: '#939cb9',
+  backgroundColor: '#f2f4f9'
 };
 
 const rejectStyle = {
-  borderColor: "#939cb9",
-  backgroundColor: "#f2f4f9"
+  borderColor: '#939cb9',
+  backgroundColor: '#f2f4f9'
 };
 
 export default function StyledDropzone(props) {
@@ -65,10 +65,10 @@ export default function StyledDropzone(props) {
   return (
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
-        <input {...getInputProps()} type="file" required />
+        <input {...getInputProps()} type="file" name="Attachment" required />
         <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
-        <p>Drag and drop your CV here</p>
-        <strong className={styles.or}>OR</strong>
+        <p>Please upload your CV here</p>
+        {/* <strong className={styles.or}>OR</strong> */}
         <Button
           buttontype="secondary"
           text="Choose file"
