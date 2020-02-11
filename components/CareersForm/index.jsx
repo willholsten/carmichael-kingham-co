@@ -17,7 +17,7 @@ export default class CareersForm extends React.Component {
           name="Careers"
           method="POST"
           data-netlify="true"
-          action="/thank-you"
+          // action="/thank-you"
           data-netlify-honeypot="bot-field"
         >
           <input type="hidden" name="form-name" value="Careers" />
@@ -69,6 +69,7 @@ export default class CareersForm extends React.Component {
                 </Grid>
                 <Grid item xs={12}>
                   <textarea
+                    type="text"
                     name="Cover Letter"
                     placeholder="Cover letter..."
                     onFocus={e => (e.target.placeholder = '')}
