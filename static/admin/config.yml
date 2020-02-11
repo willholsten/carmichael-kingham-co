@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: dev
 
-media_folder: /cms
+media_folder: public/cms
 logo_url: https://dev.carmichaelkingham.com/svg/logo-blue.svg
 display_url: https://dev.carmichaelkingham.com
 
