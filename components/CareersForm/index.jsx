@@ -9,37 +9,7 @@ import { Grid } from '@material-ui/core';
 
 import styles from './styles.scss';
 
-function encode(data) {
-  const formData = new FormData();
-
-  for (const key of Object.keys(data)) {
-    formData.append(key, data[key]);
-  }
-
-  return formData;
-}
-
 export default class CareersForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  handleAttachment = e => {
-    this.setState({ [e.target.name]: e.target.files[0] });
-  };
-
-  handleSubmit = e => {
-    e.preventDefault();
-    const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state
-      })
-    }).catch(error => alert(error));
-  };
   render() {
     return (
       <div className={styles.CareersForm}>
@@ -47,8 +17,8 @@ export default class CareersForm extends React.Component {
           name="Careers"
           method="POST"
           data-netlify="true"
+          action="/thank-you"
           data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
         >
           <input type="hidden" name="form-name" value="Careers" />
           <p hidden>
@@ -67,12 +37,7 @@ export default class CareersForm extends React.Component {
                   <h4>Your Details</h4>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <input
-                    type="file"
-                    name="Attachment"
-                    onChange={this.handleAttachment}
-                    required
-                  />
+                  <input type="file" name="Attachment" required />
                   <input
                     type="text"
                     name="First Name"
