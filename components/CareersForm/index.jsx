@@ -12,7 +12,12 @@ import styles from './styles.scss';
 export default function CareersForm(props) {
   return (
     <div className={styles.CareersForm}>
-      <form name="Careers" method="POST" data-netlify="true">
+      <form
+        name="Careers"
+        method="POST"
+        data-netlify="true"
+        enctype="multipart/form-data"
+      >
         <input type="hidden" name="form-name" value="Careers" />
         <Grid container spacing={6}>
           <Grid item xs={12} md={6}>
@@ -27,7 +32,7 @@ export default function CareersForm(props) {
                 <input type="file" required />
                 <input
                   type="text"
-                  name="fname"
+                  name="First Name"
                   placeholder="First Name"
                   onFocus={e => (e.target.placeholder = '')}
                   onBlur={e => (e.target.placeholder = 'First name')}
@@ -37,7 +42,7 @@ export default function CareersForm(props) {
               <Grid item xs={12} md={6}>
                 <input
                   type="text"
-                  name="lname"
+                  name="Last Name"
                   placeholder="Last Name"
                   onFocus={e => (e.target.placeholder = '')}
                   onBlur={e => (e.target.placeholder = 'Last name')}
@@ -47,7 +52,7 @@ export default function CareersForm(props) {
               <Grid item xs={12}>
                 <input
                   type="email"
-                  name="email"
+                  name="Email"
                   placeholder="Email"
                   onFocus={e => (e.target.placeholder = '')}
                   onBlur={e => (e.target.placeholder = 'Email')}
@@ -56,7 +61,7 @@ export default function CareersForm(props) {
               </Grid>
               <Grid item xs={12}>
                 <textarea
-                  name="coverLetter"
+                  name="Cover Letter"
                   placeholder="Cover letter..."
                   onFocus={e => (e.target.placeholder = '')}
                   onBlur={e => (e.target.placeholder = 'Message...')}
