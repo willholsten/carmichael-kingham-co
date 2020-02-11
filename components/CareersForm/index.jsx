@@ -29,7 +29,7 @@ export default class CareersForm extends React.Component {
           </p>
           <Grid container spacing={6}>
             <Grid item xs={12} md={6}>
-              {/* <DropZone /> */}
+              <DropZone />
             </Grid>
             <Grid item xs={12} md={6}>
               <Grid container spacing={2}>
@@ -37,7 +37,7 @@ export default class CareersForm extends React.Component {
                   <h4>Your Details</h4>
                 </Grid>
                 <Grid item xs={12} md={6}>
-                  <input type="file" name="Attachment" required />
+                  {/* <input type="file" name="Attachment" required /> */}
                   <input
                     type="text"
                     name="First Name"
