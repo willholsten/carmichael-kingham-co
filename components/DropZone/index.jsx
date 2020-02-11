@@ -65,7 +65,7 @@ export default function StyledDropzone(props) {
   return (
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
-        <input {...getInputProps()} type="file" name="Attachment" />
+        <input {...getInputProps()} type="file" name="Attachment" required />
         <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
         <p>Please upload your CV here</p>
         {/* <strong className={styles.or}>OR</strong> */}
