@@ -9,9 +9,9 @@ navigation:
   - label: Expertise
     href: /expertise
     icon: /svg/expertise.svg
-  # - label: Blog
-  #   href: /blog
-  #   icon: /svg/blog.svg
+  - label: Blog
+    href: /blog
+    icon: /svg/blog.svg
   - label: Contact Us
     href: /contact
     icon: /svg/contact.svg

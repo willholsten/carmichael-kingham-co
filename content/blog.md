@@ -1,4 +1,7 @@
 ---
 pageTitle: Blog
-pageSummary: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+pageSummary: >-
+  The blog space is an area where you can keep up to date with our news, read
+  our musings, see where we’ve been and join our virtual book club!
 ---
+

@@ -1,5 +1,5 @@
 // Components
-import MyLink from "../Common/MyLink";
+import MyLink from '../Common/MyLink';
 
 // Resources
 import {
@@ -8,22 +8,22 @@ import {
   CardContent,
   CardActions,
   CardActionArea
-} from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import moment from "moment";
+} from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import moment from 'moment';
 
 // Styles
 
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 const useStyles = makeStyles({
   content: {
-    flex: "1 0 auto"
+    flex: '1 0 auto'
   },
   actionArea: {
-    pointerEvents: "none",
-    cursor: "auto",
-    "&:hover $focusHighlight": {
+    pointerEvents: 'none',
+    cursor: 'auto',
+    '&:hover $focusHighlight': {
       opacity: 0
     }
   },
@@ -45,15 +45,15 @@ export default function BlogCard({ title, image, summary, href, date }) {
           <CardContent>
             <div className={styles.date}>
               <i className="fas fa-clock"></i>
-              {moment(date).format("D MMMM, YYYY")}
+              {moment(date).format('D MMMM, YYYY')}
             </div>
             <h4 className={styles.title}>
               {`${title.substring(0, 50)}`}
-              {title.length > 50 && "..."}
+              {title.length > 50 && '...'}
             </h4>
             <p>
               {`${summary.substring(0, 60)}`}
-              {summary.length > 60 && "..."}
+              {summary.length > 60 && '...'}
             </p>
           </CardContent>
         </CardActionArea>

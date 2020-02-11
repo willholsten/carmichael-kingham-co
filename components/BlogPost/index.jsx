@@ -1,14 +1,14 @@
 // Components
-import SectionHeader from "../Common/SectionHeader";
-import MyLink from "../Common/MyLink";
+import SectionHeader from '../Common/SectionHeader';
+import MyLink from '../Common/MyLink';
 
 // Resources
-import { CardMedia, Divider } from "@material-ui/core";
-import moment from "moment";
+import { CardMedia, Divider } from '@material-ui/core';
+import moment from 'moment';
 
 // Styles
 
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 export default function BlogPost({ html, title, image, date }) {
   return (
@@ -17,7 +17,7 @@ export default function BlogPost({ html, title, image, date }) {
         <SectionHeader text={title} image="" />
         <div className={styles.date}>
           <i className="fas fa-clock"></i>
-          {moment(date).format("D MMMM, YYYY")}
+          {moment(date).format('D MMMM, YYYY')}
         </div>
       </div>
       <CardMedia className={styles.featuredImage} image={image} alt={title} />

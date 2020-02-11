@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import Layout from "../../../components/Layout";
-import BlogPost from "../../../components/BlogPost";
+import Layout from '../../../components/Layout';
+import BlogPost from '../../../components/BlogPost';
 
 // Resources
-import { Container } from "@material-ui/core";
+import { Container } from '@material-ui/core';
 
 class Post extends Component {
   static async getInitialProps({ query }) {
@@ -27,8 +27,7 @@ class Post extends Component {
     return (
       <Layout
         title={`${title} | Carmichael Kingham &amp; Co`}
-        description="Insert page description"
-        keywords="Insert keywords"
+        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
       >
         <Container maxWidth="md">
           <BlogPost title={title} image={image} html={html} date={date} />
