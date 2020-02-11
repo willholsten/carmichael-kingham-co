@@ -15,11 +15,11 @@ const baseStyle = {
   flexDirection: 'column',
   alignItems: 'center',
   padding: '86px 20px',
-  borderWidth: 2,
-  borderRadius: 2,
-  borderColor: '#d0d3de',
-  borderStyle: 'dashed',
-  borderRadius: '10px',
+  // borderWidth: 2,
+  // borderRadius: 2,
+  // borderColor: '#d0d3de',
+  // borderStyle: 'dashed',
+  // borderRadius: '10px',
   backgroundColor: '#fafafa',
   color: '#bdbdbd',
   outline: 'none',
@@ -65,10 +65,10 @@ export default function StyledDropzone(props) {
   return (
     <div className={`container ${styles.DropZone}`}>
       <div {...getRootProps({ style })}>
-        <input {...getInputProps()} type="file" name="Attachment" required />
+        <input {...getInputProps()} type="file" name="Attachment" />
         <i className={`fas fa-cloud-upload-alt ${styles.uploadIcon}`}></i>
-        <p>Drag and drop your CV here</p>
-        <strong className={styles.or}>OR</strong>
+        <p>Please upload your CV here</p>
+        {/* <strong className={styles.or}>OR</strong> */}
         <Button
           buttontype="secondary"
           text="Choose file"
