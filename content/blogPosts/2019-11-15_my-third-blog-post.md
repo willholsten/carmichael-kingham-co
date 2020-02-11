@@ -2,7 +2,10 @@
 title: 'A look back at our first two days! '
 date: 2020-02-10T10:37:36.623Z
 image: /public/cms/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
-summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+summary: >-
+  Launching a business is hard, we know that, we launched Carmichael Kingham &
+  Co. in September 2018 and the first few days, weeks and months are still very
+  much implanted on our minds!
 tags:
   - accounting
 ---
