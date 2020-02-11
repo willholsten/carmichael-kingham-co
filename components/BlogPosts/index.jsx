@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import BlogCard from "../BlogCard";
+import BlogCard from '../BlogCard';
 
 // Resources
-import Link from "next/link";
-import { Grid } from "@material-ui/core";
+import Link from 'next/link';
+import { Grid } from '@material-ui/core';
 
 export default class BlogPosts extends Component {
   render() {

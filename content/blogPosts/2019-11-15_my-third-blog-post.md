@@ -1,7 +1,7 @@
 ---
 title: 'A look back at our first two days! '
 date: 2020-02-10T10:37:36.623Z
-image: /public/cms/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
+image: /cms/glenn-carstens-peters-RLw-UC03Gwc-unsplash.jpg
 summary: >-
   Launching a business is hard, we know that, we launched Carmichael Kingham &
   Co. in September 2018 and the first few days, weeks and months are still very
@@ -9,6 +9,7 @@ summary: >-
 tags:
   - accounting
 ---
+
 Launching a business is hard, we know that, we launched Carmichael Kingham & Co. in September 2018 and the first few days, weeks and months are still very much implanted on our minds!
 
 At this point we’re still in the early stages of our business however I just wanted to take a moment to look back on the journey so far. Before starting Carmichael Kingham & Co. I attended a conference for accounting practitioners and the keynote speaker said something that really resonated with me, it wasn’t long or complicated it was simply ‘record everything’. Record everything because you’ll be so busy running your business, you’ll forget the details and it’s always good to look back. Those two words really resonated with me, so I started jotting down anything I thought was relevant to the business, I’ve dipped into my notebook to relive the first two days of starting this business.
