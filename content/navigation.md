@@ -15,13 +15,11 @@ navigation:
   - label: Contact Us
     href: /contact
     icon: /svg/contact.svg
-
 company:
   - label: Privacy Policy
     href: /privacy-policy
   - label: Careers
     href: /careers
-
 partners:
   - label: Xero
     icon: /svg/xero.svg
@@ -29,12 +27,13 @@ partners:
   - label: ACCA
     icon: /svg/acca.svg
     href: ''
-
+  - label: QuickBooks
+    icon: /public/cms/quickbooks_badge.png
 connect:
   - label: LinkedIn
-    icon: 'fab fa-linkedin'
+    icon: fab fa-linkedin
     href: 'https://www.linkedin.com/company/carmichael-kingham-co/about/'
   - label: Twitter
-    icon: 'fab fa-twitter'
+    icon: fab fa-twitter
     href: 'https://twitter.com/CarmiKingham'
 ---
