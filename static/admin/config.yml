@@ -227,7 +227,6 @@ collections:
             fields:
               - { label: Label, name: label, widget: string, required: true }
               - { label: Icon, name: icon, widget: image, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Company
             name: company
             widget: list
