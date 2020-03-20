@@ -1,6 +1,6 @@
 ---
 name: Alasdair Kingham
-summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+summary: Director
 image: /cms/download_2_.png
 ---
 
