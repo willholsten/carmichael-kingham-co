@@ -26,7 +26,7 @@ partners:
   - label: ACCA
     icon: /svg/acca.svg
   - label: QuickBooks
-    icon: /cms/quickbooks.png
+    icon: /public/cms/quickbooks-logo.png
 connect:
   - label: LinkedIn
     icon: fab fa-linkedin
