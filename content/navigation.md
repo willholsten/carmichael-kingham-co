@@ -23,10 +23,8 @@ company:
 partners:
   - label: Xero
     icon: /svg/xero.svg
-    href: ''
   - label: ACCA
     icon: /svg/acca.svg
-    href: ''
   - label: QuickBooks
     icon: /cms/quickbooks.png
 connect:
