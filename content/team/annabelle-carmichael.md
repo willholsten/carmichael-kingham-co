@@ -1,6 +1,6 @@
 ---
 name: Annabelle Carmichael
-summary: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+summary: Principal
 image: /cms/annabelle_photos.jpg
 ---
 
