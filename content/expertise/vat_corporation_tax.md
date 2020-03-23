@@ -1,5 +1,6 @@
 ---
 title: Bookkeeping
+summary: ''
 ---
 Bookkeeping is one of the most time-consuming aspects of running a business and from an accountancy point of view bookkeeping is one of the most fundamental aspects of tax compliance and management information. For business owners bookkeeping is just one more stress you could do without. 
 
