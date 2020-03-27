@@ -1,4 +1,4 @@
 ---
-title: Personal Tax Returns
+title: Self Assessment Returns
 ---
-If you are required to submit a self-assessment return due to self-employment, investment properties, sales of capital items, investments outside an ISA or any other reason we can submit your self-assessment return with HMRC.
+If any of the following apply to you: you are self-employed, own investment properties, have sold capital items, have investments outside an ISA (this list is not exhaustive) you are required to submit a Self-Assessment return to HMRC. We can do this on your behalf from £180 including VAT.
