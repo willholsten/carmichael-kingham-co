@@ -90,7 +90,7 @@ addOns:
   - label: P&L Forecasting
     subtext: (12 month P&L forecast broken down by month)
   - label: Budget Preparation
-    subtext: (12 month budget broken down by month)
+    subtext: '(12 month budget broken down by month) '
   - label: Management Meetings
     subtext: ''
   - label: Monthly or Quarterly Management Accounts & KPIs
