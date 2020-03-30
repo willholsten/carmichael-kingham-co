@@ -21,10 +21,10 @@ export default class AboutUsPage extends Component {
         <Container maxWidth="md">
           <SectionHeader text={pricing.attributes.pageTitle} />
           <PricingPackages pricing={pricing} />
-          <SectionHeader text={pricing.attributes.addOnsTitle} />
-          <PricingAddOns pricing={pricing} />
           <SectionHeader text={pricing.attributes.selfAssessmentTitle} />
           <PricingSelfAssessment pricing={pricing} />
+          <SectionHeader text={pricing.attributes.addOnsTitle} />
+          <PricingAddOns pricing={pricing} />
         </Container>
       </Layout>
     );

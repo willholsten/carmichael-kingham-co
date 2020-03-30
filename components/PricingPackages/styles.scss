@@ -1,4 +1,5 @@
 .Pricing {
+  margin-bottom: 50px;
   .packagesTitle {
     font-size: $font-size-large;
   }
@@ -99,8 +100,5 @@
         justify-content: center;
       }
     }
-  }
-  .pricingText {
-    margin-bottom: 100px;
   }
 }
