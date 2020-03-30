@@ -90,13 +90,11 @@ addOns:
   - label: P&L Forecasting
     subtext: (12 month P&L forecast broken down by month)
   - label: Budget Preparation
-    subtext: null
-  - label: Annual Company Accounts
-    subtext: (12 Month Budget broken down by month)
+    subtext: (12 month budget broken down by month)
   - label: Management Meetings
-    subtext: null
+    subtext: ''
   - label: Monthly or Quarterly Management Accounts & KPIs
-    subtext: null
+    subtext: ''
   - label: Finance Director Support
     subtext: null
   - label: Business Plan
