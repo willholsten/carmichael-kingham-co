@@ -13,8 +13,8 @@ export default function Custom404() {
       title={`404 | Carmichael Kingham & Co.`}
       description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
     >
-      <Container maxWidth="md" style="text-align:center;">
-        <h1 style="margin-bottom: 50px;">This page cannot be found</h1>
+      <Container maxWidth="md">
+        <h1>This page cannot be found</h1>
         <MyLink href="/" text="Go Home" buttontype="secondary" />
       </Container>
     </Layout>
