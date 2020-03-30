@@ -11,18 +11,26 @@
 
     @include screen-md {
       flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
     }
 
     h3 {
       color: $dark-grey;
-      margin-left: 24px;
-      margin-right: 24px;
+
+      @include screen-md {
+        margin-left: 24px;
+        margin-right: 24px;
+      }
     }
 
     .buttonContainer {
-      margin: 20px 20px 0;
       display: flex;
       justify-content: center;
+
+      @include screen-md {
+        margin-right: 24px;
+      }
     }
   }
 }
