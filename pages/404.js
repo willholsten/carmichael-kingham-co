@@ -15,7 +15,7 @@ export default function Custom404() {
     >
       <Container maxWidth="md">
         <h1>This page cannot be found</h1>
-        <MyLink href="/" text="Go Home" buttontype="secondary" />
+        <MyLink href="/" text="Back to Homepage" buttontype="secondary" />
       </Container>
     </Layout>
   );
