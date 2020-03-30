@@ -106,7 +106,7 @@ collections:
           - {
               label: 'Gold Price',
               name: 'goldPrice',
-              widget: 'string',
+              widget: 'number',
               required: true,
             }
           - {
@@ -118,7 +118,7 @@ collections:
           - {
               label: 'Silver Price',
               name: 'silverPrice',
-              widget: 'string',
+              widget: 'number',
               required: true,
             }
           - {
@@ -130,7 +130,7 @@ collections:
           - {
               label: 'Bronze Price',
               name: 'bronzePrice',
-              widget: 'string',
+              widget: 'number',
               required: true,
             }
           - {
@@ -162,34 +162,19 @@ collections:
             widget: list
             fields:
               - { label: Label, name: label, widget: string, required: true }
-              - {
-                  label: Subtext,
-                  name: subtext,
-                  widget: string,
-                  required: false,
-                }
+              - { label: Subtext, name: subtext, widget: string }
           - label: Silver
             name: silver
             widget: list
             fields:
               - { label: Label, name: label, widget: string, required: true }
-              - {
-                  label: Subtext,
-                  name: subtext,
-                  widget: string,
-                  required: false,
-                }
+              - { label: Subtext, name: subtext, widget: string }
           - label: Bronze
             name: bronze
             widget: list
             fields:
               - { label: Label, name: label, widget: string, required: true }
-              - {
-                  label: Subtext,
-                  name: subtext,
-                  widget: string,
-                  required: false,
-                }
+              - { label: Subtext, name: subtext, widget: string }
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
