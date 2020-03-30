@@ -12,7 +12,7 @@ pricingText: >-
   requirements.
 addOnsTitle: Monthly / One-off Add-ons
 selfAssessmentTitle: Self Assessment
-selfAssessmentText: Self assessment returns for employees from £150/month + VAT.
+selfAssessmentText: Self Assessment Returns from £150 + VAT.
 gold:
   - label: Bookkeeping
     subtext: (Up to 100 transactions per month)
