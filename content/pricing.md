@@ -7,9 +7,7 @@ silverTitle: For growing start-ups
 silverPrice: 499
 bronzeTitle: For early stage start-ups
 bronzePrice: 249
-pricingText: >-
-  Prices displayed as a guide and may be tailored according to your
-  requirements.
+pricingText: ' '
 addOnsTitle: Monthly / One-off Add-ons
 selfAssessmentTitle: Self Assessment
 selfAssessmentText: Self Assessment Returns from £149 + VAT.
