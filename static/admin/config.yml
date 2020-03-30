@@ -161,19 +161,19 @@ collections:
             name: gold
             widget: list
             fields:
-              - { label: Label, name: label, widget: string, required: true }
+              - { label: Label, name: label, widget: string }
               - { label: Subtext, name: subtext, widget: string }
           - label: Silver
             name: silver
             widget: list
             fields:
-              - { label: Label, name: label, widget: string, required: true }
+              - { label: Label, name: label, widget: string }
               - { label: Subtext, name: subtext, widget: string }
           - label: Bronze
             name: bronze
             widget: list
             fields:
-              - { label: Label, name: label, widget: string, required: true }
+              - { label: Label, name: label, widget: string }
               - { label: Subtext, name: subtext, widget: string }
       - label: 'Blog'
         name: 'blog'
