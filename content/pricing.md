@@ -90,7 +90,7 @@ addOns:
   - label: Budget Preparation
     subtext: '(12 month budget broken down by month) '
   - label: Management Meetings
-    subtext: ''
+    subtext: '(Monthly, Quarterly or Ad Hoc)'
   - label: Monthly or Quarterly Management Accounts & KPIs
     subtext: ''
   - label: Finance Director Support
