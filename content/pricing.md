@@ -86,7 +86,7 @@ addOns:
     subtext: null
 bronze:
   - label: Bookkeeping
-    subtext: (Up to 50 transactions per month)
+    subtext: (Up to 50 transactions per quarter)
   - label: Receipt Capture Software
     subtext: null
   - label: Cloud Accounting Software
