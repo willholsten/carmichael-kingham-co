@@ -190,7 +190,6 @@ collections:
                   widget: string,
                   required: false,
                 }
-
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
@@ -337,24 +336,19 @@ collections:
             fields:
               - { label: Label, name: label, widget: string, required: true }
               - { label: Icon, name: icon, widget: image, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Company
             name: company
             widget: list
             fields:
               - { label: Label, name: label, widget: string, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Partners
             name: partners
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
               - { label: Icon, name: icon, widget: image, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Connect
             name: connect
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
-              - { label: Icon, name: icon, widget: hidden }
-              - { label: href, name: href, widget: string, required: true }
