@@ -162,19 +162,34 @@ collections:
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
-              - { label: Subtext, name: subtext, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
           - label: Silver
             name: silver
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
-              - { label: Subtext, name: subtext, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
           - label: Bronze
             name: bronze
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
-              - { label: Subtext, name: subtext, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
