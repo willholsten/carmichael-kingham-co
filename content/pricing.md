@@ -6,103 +6,101 @@ goldPrice: 899
 silverTitle: For growing start-ups
 silverPrice: 499
 bronzeTitle: For early stage start-ups
-bronzePrice: 250
-pricingText: Prices quoted in GBP and exclusive of VAT. Prices displayed as a guide and may be tailored according to your requirements.
+bronzePrice: 249
+pricingText: >-
+  Prices quoted in GBP and exclusive of VAT. Prices displayed as a guide and may
+  be tailored according to your requirements.
 addOnsTitle: Monthly / One-off Add-ons
 selfAssessmentTitle: Self Assessment
 selfAssessmentText: Self assessment returns for employees from £150/month + VAT.
-
 gold:
   - label: Bookkeeping
     subtext: (Up to 100 transactions per month)
   - label: Receipt Capture Software
-    subtext:
+    subtext: null
   - label: Cloud Accounting Software
-    subtext:
+    subtext: null
   - label: Payroll
     subtext: (Up to 5 employees)
   - label: Annual Company Accounts
-    subtext:
+    subtext: null
   - label: Dirctors Tax Returns
-    subtext:
+    subtext: null
   - label: Accountancy Software Training
-    subtext:
+    subtext: null
   - label: Ongoing Advice & Support
-    subtext:
+    subtext: null
   - label: Company Tax Return
-    subtext:
+    subtext: null
   - label: Confirmation Statement
-    subtext:
+    subtext: null
   - label: Quarterly VAT Returns
-    subtext:
+    subtext: null
   - label: Quarterly Management Accounts & KPIs
-    subtext:
+    subtext: null
   - label: Quarterly Management Meetings
-    subtext:
-
+    subtext: null
 silver:
   - label: Bookkeeping
     subtext: (Up to 50 transactions per month)
   - label: Receipt Capture Software
-    subtext:
+    subtext: null
   - label: Cloud Accounting Software
-    subtext:
+    subtext: null
   - label: Payroll
     subtext: (Up to 2 employees)
   - label: Annual Company Accounts
-    subtext:
+    subtext: null
   - label: Dirctors Tax Returns
-    subtext:
+    subtext: null
   - label: Accountancy Software Training
-    subtext:
+    subtext: null
   - label: Ongoing Advice & Support
-    subtext:
+    subtext: null
   - label: Company Tax Return
-    subtext:
+    subtext: null
   - label: Confirmation Statement
-    subtext:
+    subtext: null
   - label: Quarterly VAT Returns
-    subtext:
-
-bronze:
-  - label: Bookkeeping
-    subtext: (Up to 50 transactions per month)
-  - label: Receipt Capture Software
-    subtext:
-  - label: Cloud Accounting Software
-    subtext:
-  - label: Payroll
-    subtext: (Up to 1 employee)
-  - label: Annual Company Accounts
-    subtext:
-  - label: Dirctors Tax Returns
-    subtext:
-  - label: Accountancy Software Training
-    subtext:
-  - label: Ongoing Advice & Support
-    subtext:
-  - label: Company Tax Return
-    subtext:
-
+    subtext: null
 addOns:
   - label: Additional Bookkeeping Transactions
-    subtext:
+    subtext: null
   - label: Cash Flow Forcasting
     subtext: (Rolling 12 Month)
   - label: Cash Flow Forecast Profit Forecasting
     subtext: (12 month P&L forecast broken down by month)
   - label: Budget Preparation
-    subtext:
+    subtext: null
   - label: Annual Company Accounts
     subtext: (12 Month Budget broken down by month)
   - label: Management Meetings
-    subtext:
+    subtext: null
   - label: Monthly or Quarterly Management Accounts & KPIs
-    subtext:
+    subtext: null
   - label: Finance Director Support
-    subtext:
+    subtext: null
   - label: Business Plan
-    subtext:
+    subtext: null
   - label: Additional Employees on Payroll
-    subtext:
+    subtext: null
+bronze:
+  - label: Bookkeeping
+    subtext: (Up to 50 transactions per month)
+  - label: Receipt Capture Software
+    subtext: null
+  - label: Cloud Accounting Software
+    subtext: null
+  - label: Payroll
+    subtext: (Up to 1 employee)
+  - label: Annual Company Accounts
+    subtext: null
+  - label: Dirctors Tax Returns
+    subtext: null
+  - label: Accountancy Software Training
+    subtext: null
+  - label: Ongoing Advice & Support
+    subtext: null
+  - label: Company Tax Return
+    subtext: null
 ---
