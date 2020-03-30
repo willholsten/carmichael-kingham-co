@@ -1,0 +1,106 @@
+.Pricing {
+  .packagesTitle {
+    font-size: $font-size-large;
+  }
+  .packages {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    .tile {
+      @include card;
+      background-color: $white;
+      border-radius: $border-radius;
+      padding: 32px 0;
+
+      .medalContainer {
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      .medal {
+        width: 60px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-family: $sans-serif;
+        font-weight: $bold;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      .packageTitleGold {
+        color: $gold;
+      }
+
+      .packageTitleSilver {
+        color: $silver;
+      }
+
+      .packageTitleBronze {
+        color: $bronze;
+      }
+
+      h3 {
+        min-height: 56px;
+        text-align: center;
+        color: $dark-grey;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+
+      .packagePrice {
+        text-align: center;
+        font-size: 1.1em;
+      }
+
+      .packageServices {
+        margin-left: 2em;
+        li {
+          padding: 5px 15px 5px 30px;
+          color: $grey;
+          font-weight: $semi-bold;
+          min-height: 50px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          .iconContainer {
+            min-height: 50px;
+            height: 100%;
+            top: 0;
+            padding: 4px 10px;
+            width: 3.5em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          span {
+            color: $green;
+          }
+          small {
+            font-size: 90%;
+            font-weight: normal;
+          }
+        }
+
+        li:nth-child(odd) {
+          background-color: $lightest-grey;
+
+          .iconContainer {
+            background-color: $lightest-grey;
+          }
+        }
+      }
+
+      .buttonContainer {
+        margin: 20px 20px 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+  .pricingText {
+    margin-bottom: 100px;
+  }
+}

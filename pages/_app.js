@@ -1,19 +1,20 @@
-import React from "react";
-import App from "next/app";
+import React from 'react';
+import App from 'next/app';
 
 // Data
-import about from "../content/about.md";
-import team from "../content/ourPeople.md";
-import expertise from "../content/expertise.md";
-import blog from "../content/blog.md";
-import contact from "../content/contactUs.md";
-import privacy from "../content/privacyPolicy.md";
-import careers from "../content/careers.md";
-import companyDetails from "../content/companyDetails.md";
+import about from '../content/about.md';
+import team from '../content/ourPeople.md';
+import expertise from '../content/expertise.md';
+import blog from '../content/blog.md';
+import contact from '../content/contactUs.md';
+import pricing from '../content/pricing.md';
+import privacy from '../content/privacyPolicy.md';
+import careers from '../content/careers.md';
+import companyDetails from '../content/companyDetails.md';
 
 const importBlogPosts = async () => {
   const markdownFiles = require
-    .context("../content/blogPosts", false, /\.md$/)
+    .context('../content/blogPosts', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
@@ -26,7 +27,7 @@ const importBlogPosts = async () => {
 
 const importTeamMembers = async () => {
   const markdownFiles = require
-    .context("../content/team", false, /\.md$/)
+    .context('../content/team', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
@@ -39,7 +40,7 @@ const importTeamMembers = async () => {
 
 const importexpertiseCards = async () => {
   const markdownFiles = require
-    .context("../content/expertise", false, /\.md$/)
+    .context('../content/expertise', false, /\.md$/)
     .keys()
     .map(relativePath => relativePath.substring(2));
   return Promise.all(
@@ -68,8 +69,9 @@ export default class MyApp extends App {
     expertiseCards: this.props.expertiseCards,
     blog,
     posts: this.props.postsList,
-    sortPosts: "latest",
+    sortPosts: 'latest',
     contact,
+    pricing,
     privacy,
     careers,
     companyDetails

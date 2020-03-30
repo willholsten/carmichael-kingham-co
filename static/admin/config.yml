@@ -81,6 +81,116 @@ collections:
               widget: 'text',
               required: true,
             }
+      - label: 'Pricing'
+        name: 'pricing'
+        file: 'content/pricing.md'
+        fields:
+          - {
+              label: 'Page Title',
+              name: 'pageTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Packages Title',
+              name: 'packagesTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Gold Title',
+              name: 'goldTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Gold Price',
+              name: 'goldPrice',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Silver Title',
+              name: 'silverTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Silver Price',
+              name: 'silverPrice',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Bronze Title',
+              name: 'bronzeTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Bronze Price',
+              name: 'bronzePrice',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Packages Pricing Text',
+              name: 'pricingText',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Add Ons Title',
+              name: 'addOnsTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Self Assessment Title',
+              name: 'selfAssessmentTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Self Assessment Text',
+              name: 'selfAssessmentText',
+              widget: 'string',
+              required: true,
+            }
+          - label: Gold
+            name: gold
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string, required: true }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+          - label: Silver
+            name: silver
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string, required: true }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+          - label: Bronze
+            name: bronze
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string, required: true }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
