@@ -11,7 +11,7 @@ navigation:
     icon: /svg/expertise.svg
   - label: Pricing
     href: /pricing
-    icon: /svg/expertise.svg
+    icon: /svg/pricing.svg
   - label: Blog
     href: /blog
     icon: /svg/blog.svg
