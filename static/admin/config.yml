@@ -190,6 +190,17 @@ collections:
                   widget: string,
                   required: false,
                 }
+          - label: Add Ons
+            name: addOns
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
