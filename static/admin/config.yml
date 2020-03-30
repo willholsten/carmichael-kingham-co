@@ -81,6 +81,126 @@ collections:
               widget: 'text',
               required: true,
             }
+      - label: 'Pricing'
+        name: 'pricing'
+        file: 'content/pricing.md'
+        fields:
+          - {
+              label: 'Page Title',
+              name: 'pageTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Packages Title',
+              name: 'packagesTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Gold Title',
+              name: 'goldTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Gold Price',
+              name: 'goldPrice',
+              widget: 'number',
+              required: true,
+            }
+          - {
+              label: 'Silver Title',
+              name: 'silverTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Silver Price',
+              name: 'silverPrice',
+              widget: 'number',
+              required: true,
+            }
+          - {
+              label: 'Bronze Title',
+              name: 'bronzeTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Bronze Price',
+              name: 'bronzePrice',
+              widget: 'number',
+              required: true,
+            }
+          - {
+              label: 'Packages Pricing Text',
+              name: 'pricingText',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Add Ons Title',
+              name: 'addOnsTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Self Assessment Title',
+              name: 'selfAssessmentTitle',
+              widget: 'string',
+              required: true,
+            }
+          - {
+              label: 'Self Assessment Text',
+              name: 'selfAssessmentText',
+              widget: 'string',
+              required: true,
+            }
+          - label: Gold
+            name: gold
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+          - label: Silver
+            name: silver
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+          - label: Bronze
+            name: bronze
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
+          - label: Add Ons
+            name: addOns
+            widget: list
+            fields:
+              - { label: Label, name: label, widget: string }
+              - {
+                  label: Subtext,
+                  name: subtext,
+                  widget: string,
+                  required: false,
+                }
       - label: 'Blog'
         name: 'blog'
         file: 'content/blog.md'
@@ -227,13 +347,11 @@ collections:
             fields:
               - { label: Label, name: label, widget: string, required: true }
               - { label: Icon, name: icon, widget: image, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Company
             name: company
             widget: list
             fields:
               - { label: Label, name: label, widget: string, required: true }
-              - { label: href, name: href, widget: hidden }
           - label: Partners
             name: partners
             widget: list
@@ -245,5 +363,3 @@ collections:
             widget: list
             fields:
               - { label: Label, name: label, widget: string }
-              - { label: Icon, name: icon, widget: hidden }
-              - { label: href, name: href, widget: string, required: true }

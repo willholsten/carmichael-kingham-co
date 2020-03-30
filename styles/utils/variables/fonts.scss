@@ -1,13 +1,14 @@
 @font-face {
-  font-family: "Constantia";
-  src: url("/fonts/Constantia.ttf");
+  font-family: 'Constantia';
+  src: url('/fonts/Constantia.ttf');
 }
 
-$serif: "Constantia", serif;
-$sans-serif: "Source Sans Pro", Helvetica, Arial, sans-serif;
+$serif: 'Constantia', serif;
+$sans-serif: 'Source Sans Pro', Helvetica, Arial, sans-serif;
 
 $font-size-small: 12px;
 $font-size-normal: 14px;
+$font-size-large: 22px;
 
 $line-height-small: 12px;
 $line-height-normal: 14px;
