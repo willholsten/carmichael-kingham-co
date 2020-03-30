@@ -63,27 +63,6 @@ silver:
     subtext: null
   - label: Quarterly VAT Returns
     subtext: null
-addOns:
-  - label: Additional Bookkeeping Transactions
-    subtext: null
-  - label: Cash Flow Forcasting
-    subtext: (Rolling 12 Month)
-  - label: Cash Flow Forecast Profit Forecasting
-    subtext: (12 month P&L forecast broken down by month)
-  - label: Budget Preparation
-    subtext: null
-  - label: Annual Company Accounts
-    subtext: (12 Month Budget broken down by month)
-  - label: Management Meetings
-    subtext: null
-  - label: Monthly or Quarterly Management Accounts & KPIs
-    subtext: null
-  - label: Finance Director Support
-    subtext: null
-  - label: Business Plan
-    subtext: null
-  - label: Additional Employees on Payroll
-    subtext: null
 bronze:
   - label: Bookkeeping
     subtext: (Up to 20 transactions per month)
@@ -102,5 +81,26 @@ bronze:
   - label: Ongoing Advice & Support
     subtext: null
   - label: Company Tax Return
+    subtext: null
+addOns:
+  - label: Additional Bookkeeping Transactions
+    subtext: null
+  - label: Cash Flow Forcasting
+    subtext: (Rolling 12 Month)
+  - label: P&L Forecasting
+    subtext: (12 month P&L forecast broken down by month)
+  - label: Budget Preparation
+    subtext: null
+  - label: Annual Company Accounts
+    subtext: (12 Month Budget broken down by month)
+  - label: Management Meetings
+    subtext: null
+  - label: Monthly or Quarterly Management Accounts & KPIs
+    subtext: null
+  - label: Finance Director Support
+    subtext: null
+  - label: Business Plan
+    subtext: null
+  - label: Additional Employees on Payroll
     subtext: null
 ---
