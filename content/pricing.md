@@ -8,8 +8,8 @@ silverPrice: 499
 bronzeTitle: For early stage start-ups
 bronzePrice: 249
 pricingText: >-
-  Prices quoted in GBP and exclusive of VAT. Prices displayed as a guide and may
-  be tailored according to your requirements.
+  Prices displayed as a guide and may be tailored according to your
+  requirements.
 addOnsTitle: Monthly / One-off Add-ons
 selfAssessmentTitle: Self Assessment
 selfAssessmentText: Self assessment returns for employees from £150/month + VAT.
