@@ -1,6 +1,6 @@
 ---
 pageTitle: Pricing
-packagesTitle: Pricing packages suitable for your business. All packages include bookkeeping.
+packagesTitle: All packages include bookkeeping.
 goldTitle: For scaling start-ups & established businesses
 goldPrice: 899
 silverTitle: For growing start-ups
