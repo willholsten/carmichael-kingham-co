@@ -1,7 +1,7 @@
 ---
 title: 'Cash Flow  '
 date: 2020-04-06T15:59:50.721Z
-image: /static/cms/blog.jpg
+image: /static/cms/micheile-henderson-sot4-mzhyhe-unsplash_3_1_.jpg
 summary: >-
   By now it goes without saying that Covid-19 is causing huge financial
   challenges for businesses and individuals however financial pressure can occur
