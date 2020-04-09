@@ -33,8 +33,9 @@ partners:
 connect:
   - label: LinkedIn
     icon: fab fa-linkedin
-    href: 'https://www.linkedin.com/company/carmichael-kingham-co/about/'
+    href: https://www.linkedin.com/company/carmichael-kingham-co/about/
   - label: Twitter
     icon: fab fa-twitter
-    href: 'https://twitter.com/CarmiKingham'
+    href: https://twitter.com/CarmiKingham
+  - label: Facebook
 ---
