@@ -11,14 +11,16 @@ import content from '../../content/navigation.md';
 export default class FooterPartners extends React.Component {
   render() {
     let {
-      attributes: { partners }
+      attributes: { partners },
     } = content;
     return (
       <div className={styles.FooterPartners}>
         <h4>Partners</h4>
-        {partners.map(partner => (
-          <img key={partner.label} src={partner.icon} alt={partner.label} />
-        ))}
+        <div className={styles.partnersContainer}>
+          {partners.map((partner) => (
+            <img key={partner.label} src={partner.icon} alt={partner.label} />
+          ))}
+        </div>
       </div>
     );
   }

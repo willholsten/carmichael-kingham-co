@@ -35,7 +35,12 @@ connect:
     icon: fab fa-linkedin
     href: https://www.linkedin.com/company/carmichael-kingham-co/about/
   - label: Twitter
-    icon: fab fa-twitter
+    icon: fab fa-twitter-square
     href: https://twitter.com/CarmiKingham
   - label: Facebook
+    icon: fab fa-facebook-square
+    href: https://www.facebook.com/carmichaelkingham
+  - label: Instagram
+    icon: fab fa-instagram-square
+    href: https://www.instagram.com/carmichael_kingham/
 ---

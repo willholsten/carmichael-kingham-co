@@ -1,0 +1,24 @@
+.FooterConnect {
+  .socialButtons {
+    i {
+      color: $lighter-grey;
+      font-size: 32px;
+      padding: 3px;
+      margin-right: 25px;
+      opacity: 0.7;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      @include screen-md {
+        font-size: 24px;
+        margin-right: 10px;
+      }
+    }
+
+    i:first-of-type {
+      padding-left: 0;
+    }
+  }
+}
