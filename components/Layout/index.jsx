@@ -7,11 +7,22 @@ import Cookies from '../Cookies';
 import Head from 'next/head';
 import { NextSeo } from 'next-seo';
 
+// Google Analytics
+import React from 'react';
+import { initGA, logPageView } from '../utils/analytics';
+
 // Styles
 import '../../styles/main.scss';
 import styles from './styles.scss';
 
 export default class Layout extends React.Component {
+  componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA();
+      window.GA_INITIALIZED = true;
+    }
+    logPageView();
+  }
   render() {
     const { children, title, description } = this.props;
     return (
@@ -45,14 +56,14 @@ export default class Layout extends React.Component {
                 url: 'https://www.carmichaelkingham.com/logo-blue.svg',
                 width: 136,
                 height: 34,
-                alt: title
-              }
-            ]
+                alt: title,
+              },
+            ],
           }}
           twitter={{
             handle: '@CarmiKingham',
             site: '@CarmiKingham',
-            cardType: 'summary_large_image'
+            cardType: 'summary_large_image',
           }}
         />
         <Cookies />
