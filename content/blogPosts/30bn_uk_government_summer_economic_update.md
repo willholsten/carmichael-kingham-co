@@ -23,13 +23,9 @@ The £30bn package includes:
 * VAT charged on food, accommodation and attractions will be reduced from 20% to 5% for the period 15 July 2020–12 January 2021. See below for more details. 
 * ‘Eat Out to Help Out’ scheme to help the hospitality sector. See below for more details.
 
+**Specific Support for Hospitality & Tourism**
 
-
-# Specific Support for Hospitality & Tourism
-
-
-
-## VAT Reduction on Food, Accommodation & Attractions
+**VAT Reduction on Food, Accommodation & Attractions**
 
 As mentioned above, if you own a business in the hospitality or tourism sector, you may benefit from the Chancellor's recent announcement however you may also have additional compliance requirements you need to address. The rest of this document focuses on specific support available and changes applicable for businesses in the hospitality and tourism sectors. 
 
@@ -46,9 +42,7 @@ If you are a business owner registered for VAT in the hospitality or tourism sec
 * The timeline for submitting VAT returns will not change
 * VAT on alcoholic drinks does not change
 
-
-
-## ‘Eat Out to Help Out’
+**‘Eat Out to Help Out’**
 
  Hospitality businesses can register for the ‘eat out to help out’ scheme as of Monday 13 July. The scheme will operate for the month of August and will provide consumers a discount of 50% per head up to a maximum of £10 on meals Monday–Wednesday. Businesses part of the scheme will be able to claim back the discount offered to individuals from the government each week and the funds will be in business bank accounts within 5 days. 
 
