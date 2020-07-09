@@ -11,10 +11,6 @@ summary: The Chancellor of the Exchequer, Rishi Sunak, recently outlined further
   announcements made by the Government on 8 July 2020, at the end of the
   document you will find links to further guidance on this topic.
 ---
-# £30bn UK Government Summer Economic Update
-
-
-
 The Chancellor of the Exchequer, Rishi Sunak, recently outlined further incentives to stimulate the UK economy. If you are a business owner, particularly in the hospitality and tourism sector this stimulus package could mean you need to act now in order to benefit from the package and comply with changes to regulations, this is particularly important for VAT registered businesses. We have put together this guide outlining some of the key announcements made by the Government on 8 July 2020, at the end of the document you will find links to further guidance on this topic.
 
 The £30bn package includes:
@@ -24,10 +20,8 @@ The £30bn package includes:
 * Furlough will end in October however a £1,000 cash bonus per ‘re-employed furloughed employee’ will be available to employers per each furloughed employee providing the employee is employed by October and continuously employed until at least January 2021 at an average wage of at least £520 a month. 
 * Apprenticeship incentives will give employers a cash bonus of £2,000 for apprentices aged 16-24 and £1,500 for apprentices aged over 25. These cash bonuses are available in addition to the £1,000 cash bonus for re-employing furloughed employees. 
 * ‘Kick-start for jobs’ program targeted at those aged 16-24 years old will provide employers with funding to pay employees the National Minimum Wage for 25 hours per week plus National Insurance contributions and minimum enrollment pension contributions for a period of 6 months. 
-*  VAT charged on food, accommodation and attractions will be reduced from 20% to 5% for the period 15 July 2020 – 12 January 2021.See below for more details. 
+* VAT charged on food, accommodation and attractions will be reduced from 20% to 5% for the period 15 July 2020 – 12 January 2021.See below for more details. 
 * ‘Eat Out to Help Out’ scheme to help the hospitality sector. See below for more details.
-
-
 
 ## Specific Support for Hospitality & Tourism
 
@@ -49,14 +43,12 @@ If you are a business owner registered for VAT in the hospitality or tourism sec
 * You can continue to claim 20% input VAT on any vatable purchases you have incurred as normal
 * The reduction in VAT will cease on 12 July 2021, so you must increase VAT to 20% on this date
 * The timeline for submitting VAT returns will not change
-*  VAT on alcoholic drinks does not change
+* VAT on alcoholic drinks does not change
 
 #### ‘Eat Out to Help Out’
 
  Hospitality businesses can register for the ‘eat out to help out’ scheme as of Monday 13 July. The scheme will operate for the month of August and will provide consumers a discount of 50% per head up to a maximum of £10 on meals Monday–Wednesday. Businesses part of the scheme will be able to claim back the discount offered to individuals from the government each week and the funds will be in business bank accounts within 5 days. 
 
 Sign up to the scheme online from Monday.
-
-
 
 Find out more about the Government’s plans for jobs [here](https://www.gov.uk/government/publications/a-plan-for-jobs-documents/a-plan-for-jobs-2020#policy-decisions)
