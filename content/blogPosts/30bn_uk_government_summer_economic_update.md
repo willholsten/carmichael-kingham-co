@@ -36,11 +36,11 @@ If you are a business owner registered for VAT in the hospitality or tourism sec
 * Update your billing/receipt systems so you are ready to charge decreased VAT as of Wednesday. 
 * Ensure you can separately account for sales of alcohol separately to items which will have a reduced rate of VAT applied.
 * Ensure staff are aware of the changes to VAT rates and the products the reductions apply to.
-* On 15 July 2020 you must charge VAT at 5% instead of the usual 20% on eat-in and takeaway hot food, non-alcoholic beverages 
-* You can continue to claim 20% input VAT on any vatable purchases you have incurred as normal
-* The reduction in VAT will cease on 12 July 2021, so you must increase VAT to 20% on this date
-* The timeline for submitting VAT returns will not change
-* VAT on alcoholic drinks does not change
+* On 15 July 2020 you must charge VAT at 5% instead of the usual 20% on eat-in and takeaway hot food, non-alcoholic beverages. 
+* You can continue to claim 20% input VAT on any vatable purchases you have incurred as normal.
+* The reduction in VAT will cease on 12 July 2021, so you must increase VAT to 20% on this date.
+* The timeline for submitting VAT returns will not change.
+* VAT on alcoholic drinks does not change.
 
 **‘Eat Out to Help Out’**
 
