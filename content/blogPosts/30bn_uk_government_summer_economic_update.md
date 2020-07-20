@@ -29,14 +29,14 @@ The £30bn package includes:
 
 As mentioned above, if you own a business in the hospitality or tourism sector, you may benefit from the Chancellor's recent announcement however you may also have additional compliance requirements you need to address. The rest of this document focuses on specific support available and changes applicable for businesses in the hospitality and tourism sectors. 
 
-From Wednesday 15 July cafes, pubs, restaurants, theme parks, and accommodation providers will benefit from reduced sales tax charged on eat-in and takeaway hot food, non-alcoholic beverages, and attractions such as cinemas, theme parks and zoos. Hospitality and tourism business owners will need to reduce VAT from 20% to 5%. The reduction is intended to encourage consumers to spend money in the hospitality and tourism sectors. The reduction will operate from 15 July 2020 – 12 January 2021, this means that businesses will need to change VAT rates mid-week on two occasions.
+From Wednesday 15 July cafes, pubs, restaurants, theme parks, and accommodation providers will benefit from reduced sales tax charged on eat-in and takeaway hot food, non-alcoholic beverages, and attractions such as cinemas, theme parks and zoos. Hospitality and tourism business owners will can reduce VAT from 20% to 5%. The reduction is intended to encourage consumers to spend money in the hospitality and tourism sectors. The reduction will operate from 15 July 2020 – 12 January 2021, this means that businesses will need to change VAT rates mid-week on two occasions.
 
-If you are a business owner registered for VAT in the hospitality or tourism sector you need to do the following to make sure your business is ready:
+If you are a business owner registered for VAT in the hospitality or tourism sector you should consider the following to make sure your business is ready:
 
 * Update your billing/receipt systems so you are ready to charge decreased VAT as of Wednesday. 
 * Ensure you can separately account for sales of alcohol separately to items which will have a reduced rate of VAT applied.
 * Ensure staff are aware of the changes to VAT rates and the products the reductions apply to.
-* On 15 July 2020 you must charge VAT at 5% instead of the usual 20% on eat-in and takeaway hot food and non-alcoholic beverages. 
+* On 15 July 2020 you can charge VAT at 5% instead of the usual 20% on eat-in and takeaway hot food and non-alcoholic beverages. 
 * You can continue to claim 20% input VAT on any vatable purchases you have incurred as normal.
 * The reduction in VAT will cease on 12 January 2021, so you must increase VAT to 20% on this date.
 * The timeline for submitting VAT returns will not change.
