@@ -22,7 +22,7 @@ gold:
     subtext: (Up to 5 employees)
   - label: Annual Company Accounts
     subtext: null
-  - label: Dirctors Tax Returns
+  - label: Directors Tax Returns
     subtext: null
   - label: Accountancy Software Training
     subtext: null
@@ -49,7 +49,7 @@ silver:
     subtext: (Up to 2 employees)
   - label: Annual Company Accounts
     subtext: null
-  - label: Dirctors Tax Returns
+  - label: Directors Tax Returns
     subtext: null
   - label: Accountancy Software Training
     subtext: null
@@ -72,7 +72,7 @@ bronze:
     subtext: (Up to 1 employee)
   - label: Annual Company Accounts
     subtext: null
-  - label: Dirctors Tax Returns
+  - label: Directors Tax Returns
     subtext: null
   - label: Accountancy Software Training
     subtext: null
