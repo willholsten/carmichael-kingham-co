@@ -1,7 +1,7 @@
 ---
 title: "We've partnered with Starling "
 date: 2020-07-29T13:49:41.751Z
-image: /static/cms/starling_bank_logo_master_horizontal.png
+image: /static/cms/starlingbank_iphone-pulse-card.png
 summary: It’s the bank we recommend to our clients anyway and now we’re
   officially a Starling Bank referral partner!
 ---
