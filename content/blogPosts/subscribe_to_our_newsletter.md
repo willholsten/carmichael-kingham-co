@@ -1,7 +1,7 @@
 ---
 title: "Subscribe to our Newsletter "
 date: 2020-07-30T11:38:25.785Z
-image: /static/cms/subscribe_to_our_newsletter.mp4
+image: /static/cms/copy_of_copy_of_aquamarine_illustrated_confetti_congratulations_email_header.png
 summary: "We're launching a newsletter, 'The Quarterly' fill in your details to
   subscribe! As the name suggests this will be a "
 ---
