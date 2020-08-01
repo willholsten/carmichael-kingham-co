@@ -16,7 +16,7 @@ export default class BlogPage extends Component {
     return (
       <Layout
         title={`${blog.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description={blog.attributes.seoTitle}
+        description={blog.attributes.seoDescription}
       >
         <Container maxWidth="md">
           <SectionHeader text={blog.attributes.pageTitle} />

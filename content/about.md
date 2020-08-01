@@ -1,6 +1,6 @@
 ---
 pageTitle: About us
-seoTitle: Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow.
+seoDescription: Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow.
 quote: We take care of the accounting so you can focus on growth.
 ---
 

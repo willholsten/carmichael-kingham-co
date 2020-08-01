@@ -14,7 +14,7 @@ export default class TeamPage extends Component {
     return (
       <Layout
         title={`${team.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description={team.attributes.seoTitle}
+        description={team.attributes.seoDescription}
       >
         <Container maxWidth="md">
           <SectionHeader text={team.attributes.pageTitle} />

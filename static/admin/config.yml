@@ -20,8 +20,8 @@ collections:
         file: 'content/home.md'
         fields:
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -60,8 +60,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -78,8 +78,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -94,8 +94,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -116,8 +116,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -242,8 +242,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -264,8 +264,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }
@@ -286,8 +286,8 @@ collections:
               required: true,
             }
           - {
-              label: 'SEO Title',
-              name: 'seoTitle',
+              label: 'SEO Descrption',
+              name: 'seoDescription',
               widget: 'string',
               required: true,
             }

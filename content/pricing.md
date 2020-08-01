@@ -1,6 +1,6 @@
 ---
 pageTitle: Pricing
-seoTitle: Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow.
+seoDescription: Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow.
 packagesTitle: All packages include bookkeeping.
 goldTitle: For scaling start-ups & established businesses
 goldPrice: 899

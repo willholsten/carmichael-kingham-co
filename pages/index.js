@@ -29,7 +29,7 @@ export default class Home extends React.Component {
     return (
       <Layout
         title="Carmichael Kingham & Co."
-        description={home.attributes.seoTitle}
+        description={home.attributes.seoDescription}
       >
         <div className="Home">
           <Container maxWidth="lg">
