@@ -63,6 +63,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid $lighter-grey;
+    flex-direction: column;
     .connect {
       display: flex;
       justify-content: flex-start;

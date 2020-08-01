@@ -1,23 +1,23 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 // Components
-import BlogPosts from "../BlogPosts";
-import BlogFilter from "../BlogFilter";
+import BlogPosts from '../BlogPosts';
+import BlogFilter from '../BlogFilter';
 
 // Resources
-import Sticky from "react-sticky-el";
-import Container from "@material-ui/core/Container";
+import Sticky from 'react-sticky-el';
+import Container from '@material-ui/core/Container';
 
 // Styles
 
-import styles from "./styles.scss";
+import styles from './styles.scss';
 
 export default class Blog extends Component {
   constructor(props) {
     super(props);
     this.state = {
       posts: this.props.posts,
-      sortPosts: this.props.sortPosts
+      sortPosts: this.props.sortPosts,
     };
 
     this.handleSortPosts = this.handleSortPosts.bind(this);
@@ -35,33 +35,33 @@ export default class Blog extends Component {
     let state = this.state;
     let expr = sortBy;
     switch (expr) {
-      case "A-Z":
+      case 'A-Z':
         return {
           ...state,
           posts: posts.sort((a, b) =>
             a.attributes.title.localeCompare(b.attributes.title)
-          )
+          ),
         };
-      case "Z-A":
+      case 'Z-A':
         return {
           ...state,
           posts: posts.sort((a, b) =>
             b.attributes.title.localeCompare(a.attributes.title)
-          )
+          ),
         };
-      case "latest":
+      case 'latest':
         return {
           ...state,
-          posts: posts.sort(function(a, b) {
+          posts: posts.sort(function (a, b) {
             return new Date(b.attributes.date) - new Date(a.attributes.date);
-          })
+          }),
         };
-      case "oldest":
+      case 'oldest':
         return {
           ...state,
-          posts: posts.sort(function(a, b) {
+          posts: posts.sort(function (a, b) {
             return new Date(a.attributes.date) - new Date(b.attributes.date);
-          })
+          }),
         };
       default:
         console.log(`${expr} doesn't exist`);
@@ -69,14 +69,14 @@ export default class Blog extends Component {
   }
 
   render() {
-    let { posts } = this.props;
+    let { posts, numOfPosts } = this.props;
     return (
       <div>
         <div className={styles.filterContainer}>
           <Sticky
             style={{
-              backgroundColor: "#f9f9fa",
-              zIndex: "999"
+              backgroundColor: '#f9f9fa',
+              zIndex: '999',
             }}
           >
             <Container maxWidth="md">
@@ -88,7 +88,7 @@ export default class Blog extends Component {
           </Sticky>
         </div>
         <Container maxWidth="md">
-          <BlogPosts posts={posts} numOfPosts="999" />
+          <BlogPosts posts={posts} numOfPosts={numOfPosts} />
         </Container>
       </div>
     );

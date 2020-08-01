@@ -9,6 +9,7 @@ import AboutCard from '../components/AboutCard';
 import ExpertiseCards from '../components/ExpertiseCards';
 import TeamCards from '../components/TeamCards';
 import BlogPosts from '../components/BlogPosts';
+import Blog from '../components/Blog';
 
 // Resources
 import { Container } from '@material-ui/core';
@@ -22,7 +23,7 @@ export default class Home extends React.Component {
       expertise,
       expertiseCards,
       team,
-      teamMembers
+      teamMembers,
     } = this.props;
     return (
       <Layout
@@ -58,7 +59,8 @@ export default class Home extends React.Component {
               <SectionHeader
                 text={`Latest from the ${blog.attributes.pageTitle}`}
               />
-              <BlogPosts posts={posts} numOfPosts="3" />
+              {/* <BlogPosts posts={posts} numOfPosts="3" /> */}
+              <Blog posts={posts} sortPosts="latest" numOfPosts="3" />
             </Container>
           </section>
         </div>

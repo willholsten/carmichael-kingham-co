@@ -1,5 +1,10 @@
 .HomeBanner {
   position: relative;
+  margin-bottom: 50px;
+
+  @include screen-md {
+    margin-bottom: 100px;
+  }
   .banner_web {
     display: none;
 
@@ -27,6 +32,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
+    h1 {
+      line-height: 1;
+    }
 
     h4 {
       color: $dark-grey;

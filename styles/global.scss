@@ -30,7 +30,7 @@ section {
 
 :global {
   .Home {
-    section:nth-child(odd) {
+    section:nth-child(even) {
       background-color: darken($body-bg, 2%);
     }
 
@@ -80,7 +80,7 @@ h2 {
 h4 {
   color: $header-color;
   letter-spacing: $letter-spacing-small;
-  font-size: 14px;
+  font-size: 15px;
   text-transform: uppercase;
 }
 
