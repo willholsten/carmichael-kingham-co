@@ -22,13 +22,14 @@ export default class Home extends React.Component {
       posts,
       expertise,
       expertiseCards,
+      home,
       team,
       teamMembers,
     } = this.props;
     return (
       <Layout
         title="Carmichael Kingham & Co."
-        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+        description={home.attributes.seoTitle}
       >
         <div className="Home">
           <Container maxWidth="lg">

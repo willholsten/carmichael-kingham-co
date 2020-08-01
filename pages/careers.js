@@ -14,7 +14,7 @@ export default class CareersPage extends Component {
     return (
       <Layout
         title={`${careers.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+        description={careers.attributes.seoTitle}
       >
         <Container maxWidth="md">
           <SectionHeader text={careers.attributes.pageTitle} />

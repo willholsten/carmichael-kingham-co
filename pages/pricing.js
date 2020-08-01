@@ -16,7 +16,7 @@ export default class AboutUsPage extends Component {
     return (
       <Layout
         title={`${pricing.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+        description={pricing.attributes.seoTitle}
       >
         <Container maxWidth="md">
           <SectionHeader text={pricing.attributes.pageTitle} />

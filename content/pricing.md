@@ -1,5 +1,6 @@
 ---
 pageTitle: Pricing
+seoTitle: Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow.
 packagesTitle: All packages include bookkeeping.
 goldTitle: For scaling start-ups & established businesses
 goldPrice: 899
@@ -7,7 +8,7 @@ silverTitle: For growing start-ups
 silverPrice: 499
 bronzeTitle: For early stage start-ups
 bronzePrice: 249
-pricingText: " "
+pricingText: ' '
 addOnsTitle: Monthly / One-off Add-ons
 selfAssessmentTitle: Self Assessment
 selfAssessmentText: Self Assessment Returns from £299 + VAT.
@@ -88,11 +89,11 @@ addOns:
   - label: P&L Forecasting
     subtext: (12 month P&L forecast broken down by month)
   - label: Budget Preparation
-    subtext: "(12 month budget broken down by month) "
+    subtext: '(12 month budget broken down by month) '
   - label: Management Meetings
     subtext: (Monthly, Quarterly or Ad Hoc)
   - label: Monthly or Quarterly Management Accounts & KPIs
-    subtext: ""
+    subtext: ''
   - label: Finance Director Support
     subtext: null
   - label: Business Plan

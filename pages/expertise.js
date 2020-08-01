@@ -15,7 +15,7 @@ export default class ExpertisePage extends Component {
     return (
       <Layout
         title={`${expertise.attributes.pageTitle} | Carmichael Kingham & Co.`}
-        description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+        description={expertise.attributes.seoTitle}
       >
         <Container maxWidth="md">
           <SectionHeader text={expertise.attributes.pageTitle} />
