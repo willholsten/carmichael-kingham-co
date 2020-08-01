@@ -14,14 +14,21 @@
       height: 65px;
 
       a {
-        color: $white;
         line-height: 0;
-        i {
-          color: $green;
+      }
+
+      .snippetConnect {
+        display: flex;
+        align-items: center;
+
+        > a {
           margin-right: 15px;
-        }
-        &:last-child {
-          margin: 0 20px;
+          color: $white;
+
+          i {
+            color: $green;
+            margin-right: 15px;
+          }
         }
       }
     }

@@ -3,6 +3,7 @@ import LogoLarge from '../LogoLarge';
 import LogoSmall from '../LogoSmall';
 import Nav from '../NavWeb';
 import NavMobile from '../NavMobile';
+import FooterConnect from '../FooterConnect';
 
 // Resources
 import Container from '@material-ui/core/Container';
@@ -16,14 +17,14 @@ import styles from './styles.scss';
 
 export default function Header() {
   let {
-    attributes: { phone, email }
+    attributes: { phone, email },
   } = content;
   return (
     <header className={styles.Header}>
       <div className={styles.headerSnippet}>
         <Container maxWidth="lg" className={styles.snippetContainer}>
           <LogoLarge />
-          <div>
+          <div className={styles.snippetConnect}>
             <a href={`tel:${phone}`}>
               <i className="fas fa-phone"></i>
               {phone}
@@ -32,6 +33,7 @@ export default function Header() {
               <i className="fas fa-envelope"></i>
               {email}
             </a>
+            <FooterConnect />
           </div>
         </Container>
       </div>
