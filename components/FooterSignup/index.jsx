@@ -83,7 +83,7 @@ export default class FooterSignup extends React.Component {
               <ReCAPTCHA
                 ref={recaptchaRef}
                 size="invisible"
-                sitekey="6Ld2WWQUAAAAAGXM4DhsYHx1glA875PZIjgQpN00"
+                sitekey="6LfKG70ZAAAAAJSo6ZagjfdRWX3UvbYRTovQ2lri"
               />
             </div>
           </form>
