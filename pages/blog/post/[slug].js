@@ -12,7 +12,7 @@ class Post extends Component {
     const { slug } = query;
     const blogpost = await import(
       `../../../content/blogPosts/${slug}.md`
-    ).catch(error => null);
+    ).catch((error) => null);
 
     return { blogpost };
   }
@@ -21,13 +21,14 @@ class Post extends Component {
 
     const {
       html,
-      attributes: { image, title, date }
+      attributes: { image, title, date },
     } = this.props.blogpost.default;
 
     return (
       <Layout
         title={`${title} | Carmichael Kingham &amp; Co`}
         description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
+        image={image}
       >
         <Container maxWidth="md">
           <BlogPost title={title} image={image} html={html} date={date} />

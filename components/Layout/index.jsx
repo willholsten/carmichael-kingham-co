@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
     logPageView();
   }
   render() {
-    const { children, title, description } = this.props;
+    const { children, title, description, image } = this.props;
     return (
       <div className={styles.site}>
         <Head>
@@ -53,7 +53,9 @@ export default class Layout extends React.Component {
             site_name: title,
             images: [
               {
-                url: 'https://www.carmichaelkingham.com/logo-blue.svg',
+                url: image
+                  ? `${'https://www.carmichaelkingham.com' + image}`
+                  : 'https://www.carmichaelkingham.com/logo-blue.svg',
                 width: 136,
                 height: 34,
                 alt: title,

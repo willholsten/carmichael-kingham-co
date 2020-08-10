@@ -27,6 +27,7 @@ export default function BlogPost({ html, title, image, date }) {
       />
       <Divider className={styles.divider} />
       <MyLink href="/blog" text="Back to posts" />
+      {image}
     </div>
   );
 }
