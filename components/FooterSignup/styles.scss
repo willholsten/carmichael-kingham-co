@@ -1,0 +1,81 @@
+.FooterSignup {
+  margin: 0 auto;
+  background-color: darken($body-bg, 2%);
+  padding: 0 24px;
+
+  h1 {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  input[type='submit'] {
+    background-color: $green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border-radius: $border-radius;
+    height: 45px;
+    text-transform: uppercase;
+    font-weight: $semi-bold;
+    letter-spacing: $letter-spacing-small;
+    color: #fff;
+
+    &:hover {
+      background-color: darken($green, 10%);
+    }
+  }
+
+  .UserData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include screen-md {
+      flex-direction: row;
+    }
+
+    .formGroup {
+      margin-bottom: 20px;
+
+      @include screen-md {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+
+      input {
+        background-color: #fff;
+      }
+    }
+  }
+
+  .FormCheck {
+    margin-bottom: 50px;
+    label {
+      display: flex;
+      justify-content: flex-start;
+
+      @include screen-md {
+        justify-content: center;
+      }
+
+      input {
+        width: 35px;
+        height: 35px;
+        margin-right: 20px;
+      }
+
+      small {
+        @include screen-md {
+          max-width: 300px;
+        }
+      }
+    }
+    .reCaptcha {
+      display: flex;
+      justify-content: center;
+      margin: 20px auto 0;
+    }
+  }
+}

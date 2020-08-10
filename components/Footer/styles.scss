@@ -1,8 +1,10 @@
 .Footer {
-  background-color: $footer-bg;
-
   @include screen-md {
     padding-top: 100px;
+  }
+
+  .FooterMain {
+    background-color: $footer-bg;
   }
 
   .FooterLinks {

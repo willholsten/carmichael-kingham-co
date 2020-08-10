@@ -1,5 +1,6 @@
 // Comnponents
 import ContactButtons from '../Common/ContactButtons';
+import FooterSignup from '../FooterSignup';
 import FooterNav from '../FooterNav';
 import FooterCompany from '../FooterCompany';
 import FooterConnect from '../FooterConnect';
@@ -25,38 +26,41 @@ export default class Footer extends React.Component {
     } = content;
     return (
       <footer className={styles.Footer}>
-        <Container maxWidth="md" className={styles.FooterLinks}>
-          <Grid container spacing={3} className={styles.listContainer}>
-            <Grid item xs={3} md={3} className={styles.column}>
-              <FooterNav />
+        <FooterSignup />
+        <div className={styles.FooterMain}>
+          <Container maxWidth="md" className={styles.FooterLinks}>
+            <Grid container spacing={3} className={styles.listContainer}>
+              <Grid item xs={3} md={3} className={styles.column}>
+                <FooterNav />
+              </Grid>
+              <Grid item xs={3} md={3} className={styles.column}>
+                <FooterCompany />
+              </Grid>
+              <Grid item xs={3} md={3} className={styles.column}>
+                <FooterPartners />
+              </Grid>
+              <Grid item xs={3} md={3} className={styles.column}>
+                <h4>Connect</h4>
+                <FooterConnect />
+              </Grid>
             </Grid>
-            <Grid item xs={3} md={3} className={styles.column}>
-              <FooterCompany />
-            </Grid>
-            <Grid item xs={3} md={3} className={styles.column}>
-              <FooterPartners />
-            </Grid>
-            <Grid item xs={3} md={3} className={styles.column}>
-              <h4>Connect</h4>
-              <FooterConnect />
-            </Grid>
-          </Grid>
-        </Container>
-
-        <div className={styles.contactButtons}>
-          <ContactButtons buttontype="secondary" />
-        </div>
-        <div className={styles.FooterSnippet}>
-          <Container maxWidth="md">
-            <div className={styles.mobileConnect}>
-              <FooterConnect />
-            </div>
-            <span>
-              &copy; {new Date().getFullYear()}. {companyName} All Rights
-              Reserved.
-            </span>
-            <span className={styles.companyInfo}>{companyRegistration}</span>
           </Container>
+
+          <div className={styles.contactButtons}>
+            <ContactButtons buttontype="secondary" />
+          </div>
+          <div className={styles.FooterSnippet}>
+            <Container maxWidth="md">
+              <div className={styles.mobileConnect}>
+                <FooterConnect />
+              </div>
+              <span>
+                &copy; {new Date().getFullYear()}. {companyName} All Rights
+                Reserved.
+              </span>
+              <span className={styles.companyInfo}>{companyRegistration}</span>
+            </Container>
+          </div>
         </div>
       </footer>
     );
