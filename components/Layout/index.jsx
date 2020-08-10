@@ -39,6 +39,7 @@ export default class Layout extends React.Component {
             rel="stylesheet"
           />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          <script src="https://boma-assets.s3.amazonaws.com/public/boma-form-submit.js"></script>
         </Head>
         <NextSeo
           title={title}
