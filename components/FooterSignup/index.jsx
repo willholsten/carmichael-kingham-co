@@ -1,7 +1,3 @@
-import ReCAPTCHA from 'react-google-recaptcha';
-
-const recaptchaRef = React.createRef();
-
 // Styles
 import styles from './styles.scss';
 
@@ -14,9 +10,6 @@ export default class FooterSignup extends React.Component {
           <form
             action="https://public.bomamarketing.com/lp/7NDI9Zv"
             method="post"
-            onSubmit={() => {
-              recaptchaRef.current.execute();
-            }}
           >
             <div className={styles.UserData}>
               <div className={styles.formGroup}>
@@ -65,7 +58,7 @@ export default class FooterSignup extends React.Component {
                   newsletters and occasional marketing emails.
                 </small>
               </label>
-              {/* <div className={styles.reCaptcha}>
+              <div className={styles.reCaptcha}>
                 <div
                   id="g-recaptcha"
                   className="g-recaptcha"
@@ -79,12 +72,7 @@ export default class FooterSignup extends React.Component {
                   data-expired-callback="denySubmit"
                   data-error-callback="denySubmit"
                 ></div>
-              </div> */}
-              <ReCAPTCHA
-                ref={recaptchaRef}
-                size="invisible"
-                sitekey="6LfKG70ZAAAAAJSo6ZagjfdRWX3UvbYRTovQ2lri"
-              />
+              </div>
             </div>
           </form>
         </section>

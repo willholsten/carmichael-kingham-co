@@ -40,6 +40,12 @@ export default class Layout extends React.Component {
           />
           <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
           <script src="https://boma-assets.s3.amazonaws.com/public/boma-form-submit.js"></script>
+          <script
+            src="https://www.google.com/recaptcha/api.js"
+            async
+            defer
+          ></script>
+          ;
         </Head>
         <NextSeo
           title={title}
