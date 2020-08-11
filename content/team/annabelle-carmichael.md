@@ -1,7 +1,7 @@
 ---
 name: Annabelle Carmichael
 summary: Principal
-image: /static/cms/untitled_design_1_.png
+image: /static/cms/annabelle_photos.jpg
 ---
 
 Annabelle is the Principal of Carmichael Kingham & Co. she has worked in
