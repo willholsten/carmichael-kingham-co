@@ -12,7 +12,6 @@ export default function Custom404() {
     <Layout
       title={`404 | Carmichael Kingham & Co.`}
       description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
-      url={window.location.href}
     >
       <Container maxWidth="md">
         <h1>This page cannot be found</h1>
