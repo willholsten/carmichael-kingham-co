@@ -60,12 +60,18 @@ export default class Layout extends React.Component {
             site_name: title,
             images: [
               {
-                url: image
-                  ? `${
-                      'https://www.carmichaelkingham.com' + image + '?t=12345?'
-                    }`
-                  : 'https://www.carmichaelkingham.com/logo-blue.jpg',
+                url: `${'https://www.carmichaelkingham.com' + image}`,
+                width: 1000,
+                height: 500,
+                alt: 'Carmichael Kingham & Co',
               },
+              {
+                url: 'https://www.carmichaelkingham.com/logo-blue.jpg',
+                width: 1773,
+                height: 592,
+                alt: 'Carmichael Kingham & Co',
+              },
+              ,
             ],
           }}
           twitter={{
