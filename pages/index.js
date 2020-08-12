@@ -30,6 +30,7 @@ export default class Home extends React.Component {
       <Layout
         title="Carmichael Kingham & Co."
         description={home.attributes.seoDescription}
+        url={window.location.href}
       >
         <div className="Home">
           <Container maxWidth="lg">

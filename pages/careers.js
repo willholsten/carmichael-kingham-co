@@ -15,6 +15,7 @@ export default class CareersPage extends Component {
       <Layout
         title={`${careers.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description={careers.attributes.seoDescription}
+        url={window.location.href}
       >
         <Container maxWidth="md">
           <SectionHeader text={careers.attributes.pageTitle} />

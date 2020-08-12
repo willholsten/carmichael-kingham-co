@@ -24,7 +24,7 @@ export default class Layout extends React.Component {
     logPageView();
   }
   render() {
-    const { children, title, description, image } = this.props;
+    const { children, title, description, image, type, url } = this.props;
     return (
       <div className={styles.site}>
         <Head>
@@ -32,6 +32,14 @@ export default class Layout extends React.Component {
           <meta
             name="viewport"
             content="initial-scale=1.0, width=device-width"
+          />
+          <meta
+            property="og:image"
+            content={
+              image
+                ? `${'https://www.carmichaelkingham.com' + image}`
+                : 'https://www.carmichaelkingham.com/logo-blue.svg'
+            }
           />
           <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link
@@ -52,9 +60,9 @@ export default class Layout extends React.Component {
           description={description}
           canonical="https://www.carmichaelkingham.com"
           openGraph={{
-            type: 'website',
+            type: type ? type : 'website',
             locale: 'en_GB',
-            url: 'https://www.carmichaelkingham.com',
+            url: url ? url : 'https://www.carmichaelkingham.com',
             title: title,
             description: 'Corporate Accounting + Advisory Services',
             site_name: title,

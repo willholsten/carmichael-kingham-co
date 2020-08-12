@@ -17,6 +17,7 @@ export default class AboutUsPage extends Component {
       <Layout
         title={`${pricing.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description={pricing.attributes.seoDescription}
+        url={window.location.href}
       >
         <Container maxWidth="md">
           <SectionHeader text={pricing.attributes.pageTitle} />

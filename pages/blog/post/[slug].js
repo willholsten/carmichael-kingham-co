@@ -29,6 +29,8 @@ class Post extends Component {
         title={`${title} | Carmichael Kingham &amp; Co`}
         description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
         image={image}
+        type="article"
+        url={window.location.href}
       >
         <Container maxWidth="md">
           <BlogPost title={title} image={image} html={html} date={date} />

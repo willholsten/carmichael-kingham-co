@@ -17,6 +17,7 @@ export default class ContactPage extends Component {
       <Layout
         title={`${contact.attributes.pageTitle} | Carmichael Kingham & Co.`}
         description={contact.attributes.seoDescription}
+        url={window.location.href}
       >
         <Container maxWidth="md">
           <SectionHeader text={contact.attributes.pageTitle} />
