@@ -30,7 +30,10 @@ class Post extends Component {
         description="Carmichael Kingham & Co. provides corporate accounting and advisory services to help businesses grow."
         image={image}
         type="article"
-        url={window.location.href}
+        url={
+          'https://www.carmichaelkingham.com/blog/post/' +
+          title.toLocaleLowerCase().split(' ').join('_')
+        }
       >
         <Container maxWidth="md">
           <BlogPost title={title} image={image} html={html} date={date} />
