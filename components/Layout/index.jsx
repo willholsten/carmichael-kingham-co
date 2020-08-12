@@ -33,14 +33,6 @@ export default class Layout extends React.Component {
             name="viewport"
             content="initial-scale=1.0, width=device-width"
           />
-          <meta
-            property="og:image"
-            content={
-              image
-                ? `${'https://www.carmichaelkingham.com' + image}`
-                : 'https://www.carmichaelkingham.com/logo-blue.svg'
-            }
-          />
           <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
           <link
             href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap"
@@ -70,10 +62,7 @@ export default class Layout extends React.Component {
               {
                 url: image
                   ? `${'https://www.carmichaelkingham.com' + image}`
-                  : 'https://www.carmichaelkingham.com/logo-blue.svg',
-                width: 136,
-                height: 34,
-                alt: title,
+                  : 'https://www.carmichaelkingham.com/logo-blue.jpg',
               },
             ],
           }}
