@@ -61,7 +61,9 @@ export default class Layout extends React.Component {
             images: [
               {
                 url: image
-                  ? `${'https://www.carmichaelkingham.com' + image}`
+                  ? `${
+                      'https://www.carmichaelkingham.com' + image + '?t=12345?'
+                    }`
                   : 'https://www.carmichaelkingham.com/logo-blue.jpg',
               },
             ],
