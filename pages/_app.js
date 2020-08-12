@@ -53,11 +53,11 @@ const importexpertiseCards = async () => {
 };
 
 export default class MyApp extends App {
-  static async getStaticProps(appContext) {
+  static async getInitialProps(appContext) {
     const postsList = await importBlogPosts();
     const teamMembers = await importTeamMembers();
     const expertiseCards = await importexpertiseCards();
-    const appProps = await App.getStaticProps(appContext);
+    const appProps = await App.getInitialProps(appContext);
 
     return { ...appProps, postsList, teamMembers, expertiseCards };
   }
