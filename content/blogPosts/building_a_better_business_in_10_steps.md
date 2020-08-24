@@ -1,7 +1,7 @@
 ---
 title: Building a Better Business in 10 Steps
 date: 2020-08-24T07:33:52.717Z
-image: /static/cms/stil-ck0i9dnjtj0-unsplash_1_.jpg
+image: /static/cms/andrew-neel-cckf4tshauw-unsplash_1_.jpg
 summary: You’re in business, congratulations, that takes courage and
   commitment.  It’s not easy, and at times you might find yourself questioning
   why you’re e
